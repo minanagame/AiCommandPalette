@@ -551,7 +551,6 @@ menu_1441,showgrid,FALSE,menu,TRUE,FALSE,,,View > Show / Hide Grid,Ansicht > Ras
 menu_1442,snapgrid,FALSE,menu,TRUE,FALSE,,,View > Snap to Grid,Ansicht > Am Raster ausrichten,Просмотр > Выравнивать по сетке
 menu_2154,,TRUE,menu,TRUE,FALSE,,,View > Snap to Pixel
 menu_1443,snappoint,FALSE,menu,TRUE,FALSE,,,View > Snap to Point,Ansicht > An Punkt ausrichten,Просмотр > Выравнивать по точкам
-menu_2155,Snapomatic on-off menu item,FALSE,menu,TRUE,FALSE,,,View > Smart Guides
 menu_2156,,TRUE,menu,TRUE,FALSE,,,View > Snap to Glyph
 menu_1444,newview,FALSE,menu,TRUE,FALSE,,,View > New View...,Ansicht > Neue Ansicht …,Просмотр > Новый вид…
 menu_1445,editview,FALSE,menu,TRUE,FALSE,,,View > Edit Views...,Ansicht > Ansicht bearbeiten …,Просмотр > Редактировать виды…
