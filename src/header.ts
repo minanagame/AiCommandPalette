@@ -3,7 +3,7 @@
 // SCRIPT INFORMATION
 
 const _title = "Ai Command Palette";
-const _version = "0.16.0";
+const _version = "0.16.1";
 const _copyright = "Copyright 2026 Josh Duncan";
 const _website = "joshbduncan.com";
 const _github = "https://github.com/joshbduncan";

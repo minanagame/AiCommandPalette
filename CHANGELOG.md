@@ -6,14 +6,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Fixed
+## [0.16.1] 2026-09-23
 
-- No result bug in built-in commands palette
-- Bad arg to `filterCommands` calls
+### Added
+
+- New menu commands discovered through Ai version 30.7, including Version History, Invite to Edit / Share for Review, Remove Background, Concept to Vector, Turntable, the generative Rewrite submenu (Generate Text, Fit Text, Proofread, Translate), Retype, and additional Align/Distribute options
+- New Astute Graphics custom commands
 
 ### Changed
 
 - Update menu command `View > Guides > Lock Guides` to `View > Guides > Lock / Unlock Guides` to better match other toggle style menu commands
+- Normalized menu command `minVersion`/`maxVersion` values to strings for consistency
+- Updated `build_commands.py` to correctly handle longer version numbers (e.g., 30.5.0)
+- 2026 copyright update and menu command data cleanup
+
+### Fixed
+
+- No result bug in built-in commands palette
+- Bad arg to `filterCommands` calls
+- Illustrator actions undoing unexpectedly when interacting with artboards, by calling `app.redraw()` after running an action (#40)
+- Incorrect action mapped to "Switch Selection Tool" menu command (#39)
+- Removed duplicate Smart Guides menu command
+- Corrected several menu command version numbers and labels reported by [@sttk3](https://community.adobe.com/t5/illustrator-discussions/executemenucommand-command-list/m-p/15646212/page/3#M460298)
 
 ## [0.16.0] 2026-01-04
 
