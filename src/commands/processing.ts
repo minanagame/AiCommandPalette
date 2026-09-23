@@ -138,6 +138,7 @@ function actionAction(command: CommandEntry): void {
         ? localize(command.name)
         : command.name;
     app.doScript(actionName, command.set);
+    app.redraw();
 }
 
 /**
