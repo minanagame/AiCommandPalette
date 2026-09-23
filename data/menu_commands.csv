@@ -580,6 +580,7 @@ menu_1466,Style Palette,FALSE,menu,FALSE,FALSE,,,Window > Appearance,Fenster > A
 menu_1467,Adobe Artboard Palette,FALSE,menu,FALSE,FALSE,,,Window > Artboards,Fenster > Zeichenflächen,Окно > Монтажные области
 menu_1468,Adobe SmartExport Panel Menu Item,FALSE,menu,FALSE,FALSE,20,,Window > Asset Export,Fenster > Export von Element,Окно > Экспорт ресурсов
 menu_1469,internal palettes posing as plug-in menus-attributes,FALSE,menu,FALSE,FALSE,,,Window > Attributes,Fenster > Attribute,Окно > Атрибуты
+menu_2181,"",FALSE,menu,FALSE,FALSE,30.7,,Window > Blend,,,,Note that the key is '' an empty string
 menu_1470,Adobe BrushManager Menu Item,FALSE,menu,FALSE,FALSE,,,Window > Brushes,Fenster > Pinsel,Окно > Кисти
 menu_1471,Adobe Color Palette,FALSE,menu,FALSE,FALSE,,,Window > Color,Fenster > Farbe,Окно > Цвет
 menu_1472,Adobe Harmony Palette,FALSE,menu,FALSE,FALSE,,,Window > Color Guide,Fenster > Farbhilfe,Окно > Каталог цветов

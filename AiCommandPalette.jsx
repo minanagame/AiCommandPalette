@@ -1675,13 +1675,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Close All",
-                de: "Close All",
-                ru: "Close All",
-                "zh-cn": "Close All",
+                en: "File > Close All",
+                de: "File > Close All",
+                ru: "File > Close All",
+                "zh-cn": "File > Close All",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_1005: {
             id: "menu_save",
@@ -1754,6 +1754,21 @@ See the LICENSE file for details.
             },
             hidden: false,
         },
+        menu_2070: {
+            id: "menu_Adobe_Version_History_File_Menu_Item",
+            action: "Adobe Version History File Menu Item",
+            type: "menu",
+            docRequired: false,
+            selRequired: false,
+            name: {
+                en: "Window > Version History",
+                de: "Fenster > Versionsverlauf",
+                ru: "\u041e\u043a\u043d\u043e > \u0416\u0443\u0440\u043d\u0430\u043b \u0432\u0435\u0440\u0441\u0438\u0439",
+                "zh-cn": "Window > Version History",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
+        },
         menu_1010: {
             id: "menu_revert",
             action: "revert",
@@ -1775,13 +1790,13 @@ See the LICENSE file for details.
             docRequired: false,
             selRequired: false,
             name: {
-                en: "File > Search Adobe Stock",
+                en: "File > Search Adobe Stock...",
                 de: "Datei > Adobe Stock durchsuchen \u2026",
                 ru: "\u0424\u0430\u0439\u043b > \u041f\u043e\u0438\u0441\u043a \u0432 Adobe Stock...",
                 "zh-cn": "\u6587\u4ef6>\u641c\u7d22Adobe Stock\u2026",
             },
             hidden: false,
-            minVersion: 19,
+            minVersion: "19",
         },
         menu_1012: {
             id: "menu_AI_Place",
@@ -1797,6 +1812,36 @@ See the LICENSE file for details.
             },
             hidden: false,
         },
+        menu_2071: {
+            id: "menu_Invite_People",
+            action: "Invite People",
+            type: "menu",
+            docRequired: true,
+            selRequired: false,
+            name: {
+                en: "File > Invite to Edit...",
+                de: "File > Invite to Edit...",
+                ru: "File > Invite to Edit...",
+                "zh-cn": "File > Invite to Edit...",
+            },
+            hidden: false,
+            minVersion: "27.0",
+        },
+        menu_2072: {
+            id: "menu_Share_For_Review",
+            action: "Share For Review",
+            type: "menu",
+            docRequired: true,
+            selRequired: false,
+            name: {
+                en: "File > Share for Review...",
+                de: "File > Share for Review...",
+                ru: "File > Share for Review...",
+                "zh-cn": "File > Share for Review...",
+            },
+            hidden: false,
+            minVersion: "27.0",
+        },
         menu_1013: {
             id: "menu_Generate_Modal_File_Menu_",
             action: "Generate Modal File Menu ",
@@ -1810,8 +1855,8 @@ See the LICENSE file for details.
                 "zh-cn": "\u6587\u4ef6>\u751f\u6210\u77e2\u91cf\u2026",
             },
             hidden: false,
-            minVersion: 28.6,
-            maxVersion: 29.999,
+            minVersion: "28.6",
+            maxVersion: "29.999",
         },
         menu_1014: {
             id: "menu_exportForScreens",
@@ -1820,13 +1865,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "File > Export > Export For Screens...",
+                en: "File > Export > Export for Screens...",
                 de: "Datei > Exportieren > F\u00fcr Bildschirme exportieren \u2026",
                 ru: "\u0424\u0430\u0439\u043b > \u042d\u043a\u0441\u043f\u043e\u0440\u0442 \u0434\u043b\u044f \u044d\u043a\u0440\u0430\u043d\u043e\u0432...",
                 "zh-cn": "\u6587\u4ef6>\u5bfc\u51fa>\u5c4f\u5e55\u5bfc\u51fa\u2026",
             },
             hidden: false,
-            minVersion: 20,
+            minVersion: "20",
         },
         menu_1015: {
             id: "menu_export",
@@ -1870,7 +1915,7 @@ See the LICENSE file for details.
                 "zh-cn": "\u6587\u4ef6>\u5bfc\u51fa\u9009\u62e9\u2026",
             },
             hidden: false,
-            minVersion: 20,
+            minVersion: "20",
         },
         menu_1018: {
             id: "menu_Package_Menu_Item",
@@ -1879,7 +1924,7 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "File > Package",
+                en: "File > Package...",
                 de: "Datei > Verpacken \u2026",
                 ru: "\u0424\u0430\u0439\u043b > \u0423\u043f\u0430\u043a\u043e\u0432\u0430\u0442\u044c...",
                 "zh-cn": "\u6587\u4ef6>\u6253\u5305\u2026",
@@ -2111,7 +2156,7 @@ See the LICENSE file for details.
                 "zh-cn": "Edit > Paste without Formatting",
             },
             hidden: false,
-            minVersion: 25.3,
+            minVersion: "25.3",
         },
         menu_1036: {
             id: "menu_clear",
@@ -2134,10 +2179,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Edit > Find & Replace...",
+                en: "Edit > Find and Replace...",
                 de: "Bearbeiten > Suchen und ersetzen \u2026",
                 ru: "\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 > \u041d\u0430\u0439\u0442\u0438 \u0438 \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c...",
-                "zh-cn": "Edit > Find & Replace...",
+                "zh-cn": "Edit > Find and Replace...",
             },
             hidden: false,
         },
@@ -2168,7 +2213,7 @@ See the LICENSE file for details.
                 "zh-cn": "Edit > Spelling > Auto Spell Check",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1040: {
             id: "menu_Check_Spelling",
@@ -2183,7 +2228,7 @@ See the LICENSE file for details.
                 "zh-cn": "Edit > Spelling > Check Spelling...",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1041: {
             id: "menu_Edit_Custom_Dictionary",
@@ -2324,7 +2369,7 @@ See the LICENSE file for details.
                 "zh-cn": "Edit > Edit Colors > Generative Recolor",
             },
             hidden: false,
-            minVersion: 27.6,
+            minVersion: "27.6",
         },
         menu_1051: {
             id: "menu_Colors6",
@@ -2381,6 +2426,21 @@ See the LICENSE file for details.
                 "zh-cn": "Edit > Edit Original",
             },
             hidden: false,
+        },
+        menu_2079: {
+            id: "menu_EditGeneratedObjectEditMenu",
+            action: "EditGeneratedObjectEditMenu",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Edit > Prompt to edit",
+                de: "Edit > Prompt to edit",
+                ru: "Edit > Prompt to edit",
+                "zh-cn": "Edit > Prompt to edit",
+            },
+            hidden: false,
+            minVersion: "30.5",
         },
         menu_1055: {
             id: "menu_Transparency_Presets",
@@ -2493,8 +2553,8 @@ See the LICENSE file for details.
                 "zh-cn": "Edit > SWF Presets...",
             },
             hidden: false,
-            minVersion: 22,
-            maxVersion: 25.9,
+            minVersion: "22",
+            maxVersion: "25.9",
         },
         menu_1064: {
             id: "menu_transformagain",
@@ -2587,10 +2647,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Transform Each...",
+                en: "Object > Transform > Transform Each...",
                 de: "Objekt > Transformieren > Einzeln transformieren \u2026",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u0422\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0438\u0440\u043e\u0432\u0430\u0442\u044c > \u0422\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043a\u0430\u0436\u0434\u044b\u0439...",
-                "zh-cn": "Object > Transform Each...",
+                "zh-cn": "Object > Transform > Transform Each...",
             },
             hidden: false,
         },
@@ -2683,7 +2743,7 @@ See the LICENSE file for details.
             action: "Horizontal Align Left",
             type: "menu",
             docRequired: true,
-            selRequired: false,
+            selRequired: true,
             name: {
                 en: "Object > Align > Horizontal Align Left",
                 de: "Objekt > Ausrichten > Horizontal links ausrichten",
@@ -2691,14 +2751,14 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Align > Horizontal Align Left",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1078: {
             id: "menu_Horizontal_Align_Center",
             action: "Horizontal Align Center",
             type: "menu",
             docRequired: true,
-            selRequired: false,
+            selRequired: true,
             name: {
                 en: "Object > Align > Horizontal Align Center",
                 de: "Objekt > Ausrichten > Horizontal zentriert ausrichten",
@@ -2706,14 +2766,14 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Align > Horizontal Align Center",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1079: {
             id: "menu_Horizontal_Align_Right",
             action: "Horizontal Align Right",
             type: "menu",
             docRequired: true,
-            selRequired: false,
+            selRequired: true,
             name: {
                 en: "Object > Align > Horizontal Align Right",
                 de: "Objekt > Ausrichten > Horizontal rechts ausrichten",
@@ -2721,14 +2781,29 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Align > Horizontal Align Right",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
+        },
+        menu_2083: {
+            id: "menu_Horizontal_&&_Vertical_Align_Center",
+            action: "Horizontal && Vertical Align Center",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Horizontal & Vertical Align Center",
+                de: "Horizontal & Vertical Align Center",
+                ru: "Horizontal & Vertical Align Center",
+                "zh-cn": "Horizontal & Vertical Align Center",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
         },
         menu_1080: {
             id: "menu_Vertical_Align_Top",
             action: "Vertical Align Top",
             type: "menu",
             docRequired: true,
-            selRequired: false,
+            selRequired: true,
             name: {
                 en: "Object > Align > Vertical Align Top",
                 de: "Objekt > Ausrichten > Vertikal oben ausrichten",
@@ -2736,14 +2811,14 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Align > Vertical Align Top",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1081: {
             id: "menu_Vertical_Align_Center",
             action: "Vertical Align Center",
             type: "menu",
             docRequired: true,
-            selRequired: false,
+            selRequired: true,
             name: {
                 en: "Object > Align > Vertical Align Center",
                 de: "Objekt > Ausrichten > Vertikal zentriert ausrichten",
@@ -2751,14 +2826,14 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Align > Vertical Align Center",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1082: {
             id: "menu_Vertical_Align_Bottom",
             action: "Vertical Align Bottom",
             type: "menu",
             docRequired: true,
-            selRequired: false,
+            selRequired: true,
             name: {
                 en: "Object > Align > Vertical Align Bottom",
                 de: "Objekt > Ausrichten > Vertikal unten ausrichten",
@@ -2766,7 +2841,52 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Align > Vertical Align Bottom",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
+        },
+        menu_2170: {
+            id: "menu_Align_To_Selection",
+            action: "Align To Selection",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Align > Align To Selection",
+                de: "Object > Align > Align To Selection",
+                ru: "Object > Align > Align To Selection",
+                "zh-cn": "Object > Align > Align To Selection",
+            },
+            hidden: false,
+            minVersion: "30.6",
+        },
+        menu_2171: {
+            id: "menu_Align_To_Key_Object",
+            action: "Align To Key Object",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Align > Align To Key Object",
+                de: "Object > Align > Align To Key Object",
+                ru: "Object > Align > Align To Key Object",
+                "zh-cn": "Object > Align > Align To Key Object",
+            },
+            hidden: false,
+            minVersion: "30.6",
+        },
+        menu_2172: {
+            id: "menu_Align_To_Artboard",
+            action: "Align To Artboard",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Align > Align To Artboard",
+                de: "Object > Align > Align To Artboard",
+                ru: "Object > Align > Align To Artboard",
+                "zh-cn": "Object > Align > Align To Artboard",
+            },
+            hidden: false,
+            minVersion: "30.6",
         },
         menu_1083: {
             id: "menu_Vertical_Distribute_Top",
@@ -2781,7 +2901,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Distribute > Vertical Distribute Top",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1084: {
             id: "menu_Vertical_Distribute_Center",
@@ -2796,7 +2916,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Distribute > Vertical Distribute Center",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1085: {
             id: "menu_Vertical_Distribute_Bottom",
@@ -2811,7 +2931,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Distribute > Vertical Distribute Bottom",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1086: {
             id: "menu_Horizontal_Distribute_Left",
@@ -2826,7 +2946,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Distribute > Horizontal Distribute Left",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1087: {
             id: "menu_Horizontal_Distribute_Center",
@@ -2841,7 +2961,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Distribute > Horizontal Distribute Center",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1088: {
             id: "menu_Horizontal_Distribute_Right",
@@ -2856,7 +2976,37 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Distribute > Horizontal Distribute Right",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
+        },
+        menu_2173: {
+            id: "menu_Vertical_Distribute_Space",
+            action: "Vertical Distribute Space",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Distribute > Vertical Distribute Space",
+                de: "Object > Distribute > Vertical Distribute Space",
+                ru: "Object > Distribute > Vertical Distribute Space",
+                "zh-cn": "Object > Distribute > Vertical Distribute Space",
+            },
+            hidden: false,
+            minVersion: "30.6",
+        },
+        menu_2174: {
+            id: "menu_Horizontal_Distribute_Space",
+            action: "Horizontal Distribute Space",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Distribute > Horizontal Distribute Space",
+                de: "Object > Distribute > Horizontal Distribute Space",
+                ru: "Object > Distribute > Horizontal Distribute Space",
+                "zh-cn": "Object > Distribute > Horizontal Distribute Space",
+            },
+            hidden: false,
+            minVersion: "30.6",
         },
         menu_1089: {
             id: "menu_group",
@@ -2899,7 +3049,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Ungroup All",
             },
             hidden: false,
-            minVersion: 29.3,
+            minVersion: "29.3",
         },
         menu_1092: {
             id: "menu_lock",
@@ -3013,6 +3163,21 @@ See the LICENSE file for details.
             },
             hidden: false,
         },
+        menu_2085: {
+            id: "menu_Remove_Background_Object_Menu",
+            action: "Remove Background Object Menu",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Remove Background",
+                de: "Object > Remove Background",
+                ru: "Object > Remove Background",
+                "zh-cn": "Object > Remove Background",
+            },
+            hidden: false,
+            minVersion: "30.4",
+        },
         menu_1100: {
             id: "menu_Crop_Image",
             action: "Crop Image",
@@ -3026,7 +3191,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Crop Image",
             },
             hidden: false,
-            minVersion: 23,
+            minVersion: "23",
         },
         menu_1101: {
             id: "menu_Rasterize_8_menu_item",
@@ -3077,10 +3242,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Create Trim Marks...",
+                en: "Object > Create Trim Marks",
                 de: "Objekt > Schnittmarken erstellen",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043c\u0435\u0442\u043a\u0438 \u043e\u0431\u0440\u0435\u0437\u0430",
-                "zh-cn": "Object > Create Trim Marks...",
+                "zh-cn": "Object > Create Trim Marks",
             },
             hidden: false,
         },
@@ -3125,7 +3290,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Generative > Generate Vectors...",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1108: {
             id: "menu_GenAIConsolidatedShapeFill",
@@ -3134,13 +3299,119 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative > Gen Shape Fill...",
-                de: "Object > Generative > Gen Shape Fill...",
-                ru: "Object > Generative > Gen Shape Fill...",
-                "zh-cn": "Object > Generative > Gen Shape Fill...",
+                en: "Object > Generative > Generative Shape Fill...",
+                de: "Object > Generative > Generative Shape Fill...",
+                ru: "Object > Generative > Generative Shape Fill...",
+                "zh-cn": "Object > Generative > Generative Shape Fill...",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
+        },
+        menu_2086: {
+            id: "menu_SketchToVectorUnified",
+            action: "SketchToVectorUnified",
+            type: "menu",
+            docRequired: true,
+            selRequired: false,
+            name: {
+                en: "Object > Generative > Concept to Vector",
+                de: "Object > Generative > Concept to Vector",
+                ru: "Object > Generative > Concept to Vector",
+                "zh-cn": "Object > Generative > Concept to Vector",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
+        },
+        menu_2087: {
+            id: "menu_GenAIConsolidatedTurntable",
+            action: "GenAIConsolidatedTurntable",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Generative > Turntable",
+                de: "Object > Generative > Turntable",
+                ru: "Object > Generative > Turntable",
+                "zh-cn": "Object > Generative > Turntable",
+            },
+            hidden: false,
+            minVersion: "30.3",
+        },
+        menu_2088: {
+            id: "menu_GenerateTextTypeMenu",
+            action: "GenerateTextTypeMenu",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Generative > Text > Rewrite...",
+                de: "Object > Generative > Text > Rewrite...",
+                ru: "Object > Generative > Text > Rewrite...",
+                "zh-cn": "Object > Generative > Text > Rewrite...",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
+            maxVersion: "30.5.999",
+        },
+        menu_2180: {
+            id: "menu_GenAIConsolidatedGenerateTextGenerate",
+            action: "GenAIConsolidatedGenerateTextGenerate",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Generative > Rewrite > Generate Text...",
+                de: "Object > Generative > Rewrite > Generate Text...",
+                ru: "Object > Generative > Rewrite > Generate Text...",
+                "zh-cn": "Object > Generative > Rewrite > Generate Text...",
+            },
+            hidden: false,
+            minVersion: "30.6",
+        },
+        menu_2091: {
+            id: "menu_GenAIConsolidatedGenerateTextRephraseToFit",
+            action: "GenAIConsolidatedGenerateTextRephraseToFit",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Generative > Rewrite > Fit text",
+                de: "Object > Generative > Rewrite > Fit text",
+                ru: "Object > Generative > Rewrite > Fit text",
+                "zh-cn": "Object > Generative > Rewrite > Fit text",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
+        },
+        menu_2090: {
+            id: "menu_GenAIConsolidatedGenerateTextProofread",
+            action: "GenAIConsolidatedGenerateTextProofread",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Generative > Rewrite > Proofread",
+                de: "Object > Generative > Rewrite > Proofread",
+                ru: "Object > Generative > Rewrite > Proofread",
+                "zh-cn": "Object > Generative > Rewrite > Proofread",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
+        },
+        menu_2089: {
+            id: "menu_GenAIConsolidatedGenerateTextTranslate",
+            action: "GenAIConsolidatedGenerateTextTranslate",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Object > Generative > Rewrite > Translate...",
+                de: "Object > Generative > Rewrite > Translate...",
+                ru: "Object > Generative > Rewrite > Translate...",
+                "zh-cn": "Object > Generative > Rewrite > Translate...",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
         },
         menu_1109: {
             id: "menu_Gen_Expand_Object_Make",
@@ -3149,13 +3420,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Object > Generative > Generative Expand... > Make...",
-                de: "Object > Generative > Generative Expand... > Make...",
-                ru: "Object > Generative > Generative Expand... > Make...",
-                "zh-cn": "Object > Generative > Generative Expand... > Make...",
+                en: "Object > Generative > Generative Expand > Make",
+                de: "Object > Generative > Generative Expand > Make",
+                ru: "Object > Generative > Generative Expand > Make",
+                "zh-cn": "Object > Generative > Generative Expand > Make",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1110: {
             id: "menu_Gen_Expand_Object_Combine",
@@ -3164,13 +3435,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Object > Generative > Generative Expand... > Combine",
-                de: "Object > Generative > Generative Expand... > Combine",
-                ru: "Object > Generative > Generative Expand... > Combine",
-                "zh-cn": "Object > Generative > Generative Expand... > Combine",
+                en: "Object > Generative > Generative Expand > Combine",
+                de: "Object > Generative > Generative Expand > Combine",
+                ru: "Object > Generative > Generative Expand > Combine",
+                "zh-cn": "Object > Generative > Generative Expand > Combine",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1111: {
             id: "menu_GenAIConsolidatedBleed",
@@ -3179,13 +3450,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative > Print Bleed...",
-                de: "Object > Generative > Print Bleed...",
-                ru: "Object > Generative > Print Bleed...",
-                "zh-cn": "Object > Generative > Print Bleed...",
+                en: "Object > Generative > Print Bleed",
+                de: "Object > Generative > Print Bleed",
+                ru: "Object > Generative > Print Bleed",
+                "zh-cn": "Object > Generative > Print Bleed",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1112: {
             id: "menu_GenAIConsolidatedRecolor",
@@ -3194,13 +3465,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative > Generative Recolor...",
-                de: "Object > Generative > Generative Recolor...",
-                ru: "Object > Generative > Generative Recolor...",
-                "zh-cn": "Object > Generative > Generative Recolor...",
+                en: "Object > Generative > Generative Recolor",
+                de: "Object > Generative > Generative Recolor",
+                ru: "Object > Generative > Generative Recolor",
+                "zh-cn": "Object > Generative > Generative Recolor",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1113: {
             id: "menu_GenAIConsolidatedPatterns",
@@ -3209,13 +3480,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative > Generate Patterns...",
-                de: "Object > Generative > Generate Patterns...",
-                ru: "Object > Generative > Generate Patterns...",
-                "zh-cn": "Object > Generative > Generate Patterns...",
+                en: "Object > Generative > Generate Patterns",
+                de: "Object > Generative > Generate Patterns",
+                ru: "Object > Generative > Generate Patterns",
+                "zh-cn": "Object > Generative > Generate Patterns",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1114: {
             id: "menu_GenAIConsolidatedVariations",
@@ -3224,13 +3495,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative > Generation History...",
-                de: "Object > Generative > Generation History...",
-                ru: "Object > Generative > Generation History...",
-                "zh-cn": "Object > Generative > Generation History...",
+                en: "Object > Generative > Generation History",
+                de: "Object > Generative > Generation History",
+                ru: "Object > Generative > Generation History",
+                "zh-cn": "Object > Generative > Generation History",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1115: {
             id: "menu_AISlice_Make_Slice",
@@ -3385,8 +3656,8 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Generate Vectors...",
             },
             hidden: false,
-            minVersion: 28.6,
-            maxVersion: 29.999,
+            minVersion: "28.6",
+            maxVersion: "29.999",
         },
         menu_1126: {
             id: "menu_Expand3",
@@ -3485,7 +3756,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Path > Reverse Path Direction",
             },
             hidden: false,
-            minVersion: 21,
+            minVersion: "21",
         },
         menu_1133: {
             id: "menu_simplify_menu_item",
@@ -3578,13 +3849,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Path > Smooth",
-                de: "Object > Path > Smooth",
-                ru: "Object > Path > Smooth",
-                "zh-cn": "Object > Path > Smooth",
+                en: "Object > Path > Smooth...",
+                de: "Object > Path > Smooth...",
+                ru: "Object > Path > Smooth...",
+                "zh-cn": "Object > Path > Smooth...",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
         },
         menu_1140: {
             id: "menu_Convert_to_Shape",
@@ -3593,13 +3864,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Shape > Convert to Shapes",
+                en: "Object > Shape > Convert to Shape",
                 de: "Objekt > Form > In Form umwandeln",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u0424\u0438\u0433\u0443\u0440\u0430 > \u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c \u0432 \u0444\u0438\u0433\u0443\u0440\u044b",
-                "zh-cn": "Object > Shape > Convert to Shapes",
+                "zh-cn": "Object > Shape > Convert to Shape",
             },
             hidden: false,
-            minVersion: 18,
+            minVersion: "18",
         },
         menu_1141: {
             id: "menu_Expand_Shape",
@@ -3608,13 +3879,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Shape > Expand Shapes",
+                en: "Object > Shape > Expand Shape",
                 de: "Objekt > Form > Form umwandeln",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u0424\u0438\u0433\u0443\u0440\u0430 > \u0420\u0430\u0437\u043e\u0431\u0440\u0430\u0442\u044c \u0444\u0438\u0433\u0443\u0440\u0443",
-                "zh-cn": "Object > Shape > Expand Shapes",
+                "zh-cn": "Object > Shape > Expand Shape",
             },
             hidden: false,
-            minVersion: 18,
+            minVersion: "18",
         },
         menu_1142: {
             id: "menu_Shape_Fill_Object_Menu",
@@ -3629,8 +3900,8 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Gen Shape Fill...",
             },
             hidden: false,
-            minVersion: 28.6,
-            maxVersion: 29.999,
+            minVersion: "28.6",
+            maxVersion: "29.999",
         },
         menu_1143: {
             id: "menu_Gen_Expand_Object_Make",
@@ -3639,14 +3910,14 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative Expand... > Make...",
-                de: "Object > Generative Expand... > Make...",
-                ru: "Object > Generative Expand... > Make...",
-                "zh-cn": "Object > Generative Expand... > Make...",
+                en: "Object > Generative Expand > Make...",
+                de: "Object > Generative Expand > Make...",
+                ru: "Object > Generative Expand > Make...",
+                "zh-cn": "Object > Generative Expand > Make...",
             },
             hidden: false,
-            minVersion: 29.6,
-            maxVersion: 29.999,
+            minVersion: "29.6",
+            maxVersion: "29.999",
         },
         menu_1144: {
             id: "menu_Gen_Expand_Object_Combine",
@@ -3655,14 +3926,14 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Generative Expand... > Combine",
-                de: "Object > Generative Expand... > Combine",
-                ru: "Object > Generative Expand... > Combine",
-                "zh-cn": "Object > Generative Expand... > Combine",
+                en: "Object > Generative Expand > Combine",
+                de: "Object > Generative Expand > Combine",
+                ru: "Object > Generative Expand > Combine",
+                "zh-cn": "Object > Generative Expand > Combine",
             },
             hidden: false,
-            minVersion: 29.6,
-            maxVersion: 29.999,
+            minVersion: "29.6",
+            maxVersion: "29.999",
         },
         menu_1145: {
             id: "menu_Gen_Bleed_Object_Menu",
@@ -3677,8 +3948,8 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Print Bleed...",
             },
             hidden: false,
-            minVersion: 29.6,
-            maxVersion: 29.999,
+            minVersion: "29.6",
+            maxVersion: "29.999",
         },
         menu_1146: {
             id: "menu_Adobe_Make_Pattern",
@@ -3735,8 +4006,8 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Pattern > Generate Patterns",
             },
             hidden: false,
-            minVersion: 28.6,
-            maxVersion: 29.999,
+            minVersion: "28.6",
+            maxVersion: "29.999",
         },
         menu_1150: {
             id: "menu_GenAIConsolidatedPatterns",
@@ -3751,7 +4022,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Pattern > Generate Patterns",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1151: {
             id: "menu_Partial_Rearrange_Make",
@@ -3766,7 +4037,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Intertwine > Make",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1152: {
             id: "menu_Partial_Rearrange_Release",
@@ -3781,7 +4052,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Intertwine > Release",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1153: {
             id: "menu_Partial_Rearrange_Edit",
@@ -3796,7 +4067,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Intertwine > Edit",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1154: {
             id: "menu_Make_Radial_Repeat",
@@ -3805,13 +4076,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Repeat > Make Radial",
+                en: "Object > Repeat > Radial",
                 de: "Objekt > Wiederholen > Radial",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c > \u0420\u0430\u0434\u0438\u0430\u043b\u044c\u043d\u044b\u0439",
-                "zh-cn": "Object > Repeat > Make Radial",
+                "zh-cn": "Object > Repeat > Radial",
             },
             hidden: false,
-            minVersion: 25.1,
+            minVersion: "25.1",
         },
         menu_1155: {
             id: "menu_Make_Grid_Repeat",
@@ -3820,13 +4091,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Repeat > Make Grid",
+                en: "Object > Repeat > Grid",
                 de: "Objekt > Wiederholen > Raster",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c > \u0421\u0435\u0442\u043a\u0430",
-                "zh-cn": "Object > Repeat > Make Grid",
+                "zh-cn": "Object > Repeat > Grid",
             },
             hidden: false,
-            minVersion: 25.1,
+            minVersion: "25.1",
         },
         menu_1156: {
             id: "menu_Make_Symmetry_Repeat",
@@ -3835,13 +4106,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Repeat > Make Symmetry",
+                en: "Object > Repeat > Mirror",
                 de: "Objekt > Wiederholen > Spiegeln",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c > \u0417\u0435\u0440\u043a\u0430\u043b\u044c\u043d\u043e",
-                "zh-cn": "Object > Repeat > Make Symmetry",
+                "zh-cn": "Object > Repeat > Mirror",
             },
             hidden: false,
-            minVersion: 25.1,
+            minVersion: "25.1",
         },
         menu_1157: {
             id: "menu_Release_Repeat_Art",
@@ -3856,7 +4127,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Repeat > Release",
             },
             hidden: false,
-            minVersion: 25.1,
+            minVersion: "25.1",
         },
         menu_1158: {
             id: "menu_Repeat_Art_Options",
@@ -3865,13 +4136,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Object > Repeat > Repeat Options...",
+                en: "Object > Repeat > Options...",
                 de: "Objekt > Wiederholen > Optionen \u2026",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c > \u041f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b\u2026",
-                "zh-cn": "Object > Repeat > Repeat Options...",
+                "zh-cn": "Object > Repeat > Options...",
             },
             hidden: false,
-            minVersion: 25.1,
+            minVersion: "25.1",
         },
         menu_1159: {
             id: "menu_Attach_Objects_on_Path",
@@ -3886,7 +4157,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Objects on Path > Attach...",
             },
             hidden: false,
-            minVersion: 29,
+            minVersion: "29",
         },
         menu_1160: {
             id: "menu_Options_Objects_on_Path",
@@ -3901,7 +4172,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Objects on Path > Options...",
             },
             hidden: false,
-            minVersion: 29,
+            minVersion: "29",
         },
         menu_1161: {
             id: "menu_Expand_Objects_on_Path",
@@ -3916,7 +4187,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Objects on Path > Expand",
             },
             hidden: false,
-            minVersion: 29,
+            minVersion: "29",
         },
         menu_1162: {
             id: "menu_Path_Blend_Make",
@@ -4303,13 +4574,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: true,
             name: {
-                en: "Object > Mockup > Make",
-                de: "Object > Mockup > Make",
-                ru: "Object > Mockup > Make",
-                "zh-cn": "Object > Mockup > Make",
+                en: "Object > Mockup > Make / Preview",
+                de: "Object > Mockup > Make / Preview",
+                ru: "Object > Mockup > Make / Preview",
+                "zh-cn": "Object > Mockup > Make / Preview",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
         },
         menu_1190: {
             id: "menu_Release_Vector_Edge",
@@ -4324,7 +4595,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Mockup > Release",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
         },
         menu_1191: {
             id: "menu_Edit_Vector_Edge",
@@ -4339,7 +4610,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Mockup > Edit",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
         },
         menu_1192: {
             id: "menu_Make_Text_Wrap",
@@ -4474,10 +4745,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Object > Artboards > Rearrange All Artboards",
+                en: "Object > Artboards > Rearrange Artboards",
                 de: "Objekt > Zeichenfl\u00e4chen > Alle Zeichenfl\u00e4chen neu anordnen",
                 ru: "\u041e\u0431\u044a\u0435\u043a\u0442 > \u041c\u043e\u043d\u0442\u0430\u0436\u043d\u044b\u0435 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 > \u041f\u0435\u0440\u0435\u0443\u043f\u043e\u0440\u044f\u0434\u043e\u0447\u0438\u0442\u044c \u0432\u0441\u0435 \u043c\u043e\u043d\u0442. \u043e\u0431\u043b.",
-                "zh-cn": "Object > Artboards > Rearrange All Artboards",
+                "zh-cn": "Object > Artboards > Rearrange Artboards",
             },
             hidden: false,
         },
@@ -4508,7 +4779,7 @@ See the LICENSE file for details.
                 "zh-cn": "Object > Artboards > Switch Orientation",
             },
             hidden: false,
-            minVersion: 30.0,
+            minVersion: "30.0",
         },
         menu_1204: {
             id: "menu_Fit_Artboard_to_selected_Art",
@@ -4607,7 +4878,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > More from Adobe Fonts...",
             },
             hidden: false,
-            minVersion: 17.1,
+            minVersion: "17.1",
         },
         menu_1211: {
             id: "menu_alternate_glyph_palette_plugin",
@@ -4636,7 +4907,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Convert to Area Type / Point Type",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_1213: {
             id: "menu_area-type-options",
@@ -4932,6 +5203,36 @@ See the LICENSE file for details.
             },
             hidden: false,
         },
+        menu_2094: {
+            id: "menu_ReTypeTypeMenu",
+            action: "ReTypeTypeMenu",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Type > Retype",
+                de: "Type > Retype",
+                ru: "Type > Retype",
+                "zh-cn": "Type > Retype",
+            },
+            hidden: false,
+            minVersion: "30.5",
+        },
+        menu_2095: {
+            id: "menu_GenerateTextTypeMenu",
+            action: "GenerateTextTypeMenu",
+            type: "menu",
+            docRequired: true,
+            selRequired: true,
+            name: {
+                en: "Type > Rewrite...",
+                de: "Type > Rewrite...",
+                ru: "Type > Rewrite...",
+                "zh-cn": "Type > Rewrite...",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
+        },
         menu_1234: {
             id: "menu_convert_list_style_to_text",
             action: "convert list style to text",
@@ -4945,7 +5246,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Bullets and Numbering > Convert to text",
             },
             hidden: false,
-            minVersion: 27.1,
+            minVersion: "27.1",
         },
         menu_2001: {
             id: "menu_~bullet",
@@ -4960,7 +5261,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Special Character > Symbols > Bullet",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2002: {
             id: "menu_~copyright",
@@ -4975,7 +5276,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Special Character > Symbols > Copyright Symbol",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2003: {
             id: "menu_~ellipsis",
@@ -4990,7 +5291,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Special Character > Symbols > Ellipsis",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2004: {
             id: "menu_~paragraphSymbol",
@@ -5005,7 +5306,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Special Character > Symbols > Paragraph Symbol",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2005: {
             id: "menu_~registeredTrademark",
@@ -5021,7 +5322,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Symbols > Registered Trademark Symbol",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2006: {
             id: "menu_~sectionSymbol",
@@ -5036,7 +5337,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Special Character > Symbols > Section Symbol",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2007: {
             id: "menu_~trademarkSymbol",
@@ -5051,7 +5352,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Special Character > Symbols > Trademark Symbol",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2008: {
             id: "menu_~emDash",
@@ -5067,7 +5368,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Hyphens And Dashes > Em Dash",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2009: {
             id: "menu_~enDash",
@@ -5083,7 +5384,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Hyphens And Dashes > En Dash",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2010: {
             id: "menu_~discretionaryHyphen",
@@ -5099,7 +5400,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Hyphens And Dashes > Discretionary Hyphen",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2011: {
             id: "menu_~doubleLeftQuote",
@@ -5115,7 +5416,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Quotation Marks > Double Left Quotation Marks",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2012: {
             id: "menu_~doubleRightQuote",
@@ -5131,7 +5432,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Quotation Marks > Double Right Quotation Marks",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2013: {
             id: "menu_~singleLeftQuote",
@@ -5147,7 +5448,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Quotation Marks > Single Left Quotation Marks",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2014: {
             id: "menu_~singleRightQuote",
@@ -5163,7 +5464,7 @@ See the LICENSE file for details.
                     "Type > Insert Special Character > Quotation Marks > Single Right Quotation Marks",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2015: {
             id: "menu_~emSpace",
@@ -5178,7 +5479,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert WhiteSpace Character > Em Space",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2016: {
             id: "menu_~enSpace",
@@ -5193,7 +5494,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert WhiteSpace Character > En Space",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2017: {
             id: "menu_~hairSpace",
@@ -5208,7 +5509,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert WhiteSpace Character > Hair Space",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2018: {
             id: "menu_~thinSpace",
@@ -5223,7 +5524,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert WhiteSpace Character > Thin Space",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2019: {
             id: "menu_~forcedLineBreak",
@@ -5238,7 +5539,7 @@ See the LICENSE file for details.
                 "zh-cn": "Type > Insert Break Character > Forced Line Break",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_1235: {
             id: "menu_showHiddenChar",
@@ -5561,7 +5862,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Font Family",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1258: {
             id: "menu_Find_Text_Font_Family_Style_menu_item",
@@ -5576,7 +5877,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Font Family & Style",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1259: {
             id: "menu_Find_Text_Font_Family_Style_Size_menu_item",
@@ -5591,7 +5892,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Font Family, Style & Size",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1260: {
             id: "menu_Find_Text_Font_Size_menu_item",
@@ -5606,7 +5907,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Font Size",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1261: {
             id: "menu_Find_Text_Fill_Color_menu_item",
@@ -5621,7 +5922,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Text Fill Color",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1262: {
             id: "menu_Find_Text_Stroke_Color_menu_item",
@@ -5636,7 +5937,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Text Stroke Color",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1263: {
             id: "menu_Find_Text_Fill_Stroke_Color_menu_item",
@@ -5651,7 +5952,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Same > Text Fill & Stroke Color",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1264: {
             id: "menu_Selection_Hat_3",
@@ -5758,10 +6059,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Select > Object > Point Text Objects",
+                en: "Select > Object > Point Type Objects",
                 de: "Auswahl > Objekt > Punkttextobjekte",
                 ru: "\u0412\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435 > \u041f\u043e \u0442\u0438\u043f\u0443 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432 > \u041e\u0431\u044a\u0435\u043a\u0442\u044b \u0442\u0435\u043a\u0441\u0442\u0430 \u0438\u0437 \u0442\u043e\u0447\u043a\u0438",
-                "zh-cn": "Select > Object > Point Text Objects",
+                "zh-cn": "Select > Object > Point Type Objects",
             },
             hidden: false,
         },
@@ -5772,10 +6073,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Select > Object > Area Text Objects",
+                en: "Select > Object > Area Type Objects",
                 de: "Auswahl > Objekt > Fl\u00e4chenttextobjekte",
                 ru: "\u0412\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435 > \u041f\u043e \u0442\u0438\u043f\u0443 \u043e\u0431\u044a\u0435\u043a\u0442\u043e\u0432 > \u041e\u0431\u044a\u0435\u043a\u0442\u044b \u0442\u0435\u043a\u0441\u0442\u0430 \u0432 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
-                "zh-cn": "Select > Object > Area Text Objects",
+                "zh-cn": "Select > Object > Area Type Objects",
             },
             hidden: false,
         },
@@ -5792,7 +6093,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Start/Stop Global Edit",
             },
             hidden: false,
-            minVersion: 23,
+            minVersion: "23",
         },
         menu_1274: {
             id: "menu_Selection_Hat_10",
@@ -5835,7 +6136,7 @@ See the LICENSE file for details.
                 "zh-cn": "Select > Update Selection",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
         },
         menu_1277: {
             id: "menu_Adobe_Apply_Last_Effect",
@@ -5892,7 +6193,7 @@ See the LICENSE file for details.
                 "zh-cn": "Effect > 3D and Materials > Extrude & Bevel...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1281: {
             id: "menu_Live_Adobe_Geometry3D_Revolve",
@@ -5907,7 +6208,7 @@ See the LICENSE file for details.
                 "zh-cn": "Effect > 3D and Materials > Revolve...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1282: {
             id: "menu_Live_Adobe_Geometry3D_Inflate",
@@ -5922,7 +6223,7 @@ See the LICENSE file for details.
                 "zh-cn": "Effect > 3D and Materials > Inflate...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1283: {
             id: "menu_Live_Adobe_Geometry3D_Rotate",
@@ -5937,7 +6238,7 @@ See the LICENSE file for details.
                 "zh-cn": "Effect > 3D and Materials > Rotate...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1284: {
             id: "menu_Live_Adobe_Geometry3D_Materials",
@@ -5952,7 +6253,7 @@ See the LICENSE file for details.
                 "zh-cn": "Effect > 3D and Materials > Materials...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1285: {
             id: "menu_Live_3DExtrude",
@@ -5968,7 +6269,7 @@ See the LICENSE file for details.
                     "Effect > 3D and Materials > 3D (Classic) > Extrude & Bevel (Classic)...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1286: {
             id: "menu_Live_3DRevolve",
@@ -5984,7 +6285,7 @@ See the LICENSE file for details.
                     "Effect > 3D and Materials > 3D (Classic) > Revolve (Classic)...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1287: {
             id: "menu_Live_3DRotate",
@@ -6000,7 +6301,7 @@ See the LICENSE file for details.
                     "Effect > 3D and Materials > 3D (Classic) > Rotate (Classic)...",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1288: {
             id: "menu_Live_Rectangle",
@@ -6475,34 +6776,6 @@ See the LICENSE file for details.
                 de: "Effekt > Stilisierungsfilter > Scribble \u2026",
                 ru: "\u042d\u0444\u0444\u0435\u043a\u0442 > \u0421\u0442\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u044f > \u041a\u0430\u0440\u0430\u043a\u0443\u043b\u0438\u2026",
                 "zh-cn": "Effect > Stylize > Scribble...",
-            },
-            hidden: false,
-        },
-        menu_1322: {
-            id: "menu_Live_SVG_Filters",
-            action: "Live SVG Filters",
-            type: "menu",
-            docRequired: true,
-            selRequired: false,
-            name: {
-                en: "Effect > SVG Filters > Apply SVG Filter...",
-                de: "Effekt > SVG-Filter > SVG-Filter anwenden \u2026",
-                ru: "\u042d\u0444\u0444\u0435\u043a\u0442 > \u0424\u0438\u043b\u044c\u0442\u0440\u044b SVG > \u041f\u0440\u0438\u043c\u0435\u043d\u0438\u0442\u044c SVG-\u0444\u0438\u043b\u044c\u0442\u0440...",
-                "zh-cn": "Effect > SVG Filters > Apply SVG Filter...",
-            },
-            hidden: false,
-        },
-        menu_1323: {
-            id: "menu_SVG_Filter_Import",
-            action: "SVG Filter Import",
-            type: "menu",
-            docRequired: true,
-            selRequired: false,
-            name: {
-                en: "Effect > SVG Filters > Import SVG Filter...",
-                de: "Effekt > SVG-Filter > SVG-Filter importieren \u2026",
-                ru: "\u042d\u0444\u0444\u0435\u043a\u0442 > \u0424\u0438\u043b\u044c\u0442\u0440\u044b SVG > \u0418\u043c\u043f\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0444\u0438\u043b\u044c\u0442\u0440 SVG...",
-                "zh-cn": "Effect > SVG Filters > Import SVG Filter...",
             },
             hidden: false,
         },
@@ -7535,10 +7808,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "View > GPU Preview / Preview on CPU",
+                en: "View using GPU / CPU",
                 de: "Ansicht > Mit GPU anzeigen / Mit CPU anzeigen",
                 ru: "\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 > \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u0441 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435\u043c \u0426\u041f / \u0413\u041f",
-                "zh-cn": "View > GPU Preview / Preview on CPU",
+                "zh-cn": "View using GPU / CPU",
             },
             hidden: false,
         },
@@ -7849,7 +8122,7 @@ See the LICENSE file for details.
                 "zh-cn": "View > Show / Hide Corner Widget",
             },
             hidden: false,
-            minVersion: 17.1,
+            minVersion: "17.1",
         },
         menu_1420: {
             id: "menu_edge",
@@ -7878,6 +8151,7 @@ See the LICENSE file for details.
                 "zh-cn": "View > Smart Guides",
             },
             hidden: false,
+            minVersion: "16.0",
         },
         menu_1422: {
             id: "menu_Show_Perspective_Grid",
@@ -7956,24 +8230,10 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "View > Perspective Grid > Define Grid",
+                en: "View > Perspective Grid > Define Grid...",
                 de: "Ansicht > Perspektivenraster > Raster definieren",
                 ru: "\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 > \u0421\u0435\u0442\u043a\u0430 \u043f\u0435\u0440\u0441\u043f\u0435\u043a\u0442\u0438\u0432\u044b > \u041e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c \u0441\u0435\u0442\u043a\u0443...",
-                "zh-cn": "View > Perspective Grid > Define Grid",
-            },
-            hidden: false,
-        },
-        menu_1428: {
-            id: "menu_Save_Perspective_Grid_as_Preset",
-            action: "Save Perspective Grid as Preset",
-            type: "menu",
-            docRequired: true,
-            selRequired: false,
-            name: {
-                en: "View > Perspective Grid > Save Grid as Preset",
-                de: "Ansicht > Perspektivenraster > Raster als Vorgabe speichern",
-                ru: "\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 > \u0421\u0435\u0442\u043a\u0430 \u043f\u0435\u0440\u0441\u043f\u0435\u043a\u0442\u0438\u0432\u044b > \u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0441\u0435\u0442\u043a\u0443 \u043a\u0430\u043a \u0441\u0442\u0438\u043b\u044c...",
-                "zh-cn": "View > Perspective Grid > Save Grid as Preset",
+                "zh-cn": "View > Perspective Grid > Define Grid...",
             },
             hidden: false,
         },
@@ -8312,7 +8572,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Find Extensions on Exchange...",
             },
             hidden: false,
-            minVersion: 19,
+            minVersion: "19",
         },
         menu_1453: {
             id: "menu_Adobe_Reset_Workspace",
@@ -8383,7 +8643,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Toolbars > Advanced",
             },
             hidden: false,
-            minVersion: 23,
+            minVersion: "23",
         },
         menu_1459: {
             id: "menu_Adobe_Basic_Toolbar_Menu",
@@ -8398,7 +8658,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Toolbars > Basic",
             },
             hidden: false,
-            minVersion: 23,
+            minVersion: "23",
         },
         menu_1460: {
             id: "menu_Adobe_Quick_Toolbar_Menu",
@@ -8413,7 +8673,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Toolbars > Getting Started",
             },
             hidden: false,
-            minVersion: 29.3,
+            minVersion: "29.3",
         },
         menu_1461: {
             id: "menu_New_Tools_Panel",
@@ -8428,7 +8688,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Toolbars > New Toolbar...",
             },
             hidden: false,
-            minVersion: 17,
+            minVersion: "17",
         },
         menu_1462: {
             id: "menu_Manage_Tools_Panel",
@@ -8437,13 +8697,13 @@ See the LICENSE file for details.
             docRequired: false,
             selRequired: false,
             name: {
-                en: "Window > Toolbars > Manage Toolbar...",
+                en: "Window > Toolbars > Manage Toolbars...",
                 de: "Fenster > Werkzeugleisten > Werkzeugleisten verwalten \u2026",
                 ru: "\u041e\u043a\u043d\u043e > \u041f\u0430\u043d\u0435\u043b\u0438 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u043e\u0432 > \u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u0430\u043d\u0435\u043b\u044f\u043c\u0438 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u043e\u0432...",
-                "zh-cn": "Window > Toolbars > Manage Toolbar...",
+                "zh-cn": "Window > Toolbars > Manage Toolbars...",
             },
             hidden: false,
-            minVersion: 17,
+            minVersion: "17",
         },
         menu_1463: {
             id: "menu_Adobe_3D_Panel",
@@ -8458,7 +8718,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > 3D and Materials",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1464: {
             id: "menu_Adobe_Action_Palette",
@@ -8529,7 +8789,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Asset Export",
             },
             hidden: false,
-            minVersion: 20,
+            minVersion: "20",
         },
         menu_1469: {
             id: "menu_internal_palettes_posing_as_plug-in_menus-attributes",
@@ -8544,6 +8804,21 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Attributes",
             },
             hidden: false,
+        },
+        menu_2181: {
+            id: "menu_",
+            action: "",
+            type: "menu",
+            docRequired: false,
+            selRequired: false,
+            name: {
+                en: "Window > Blend",
+                de: "Window > Blend",
+                ru: "Window > Blend",
+                "zh-cn": "Window > Blend",
+            },
+            hidden: false,
+            minVersion: "30.7",
         },
         menu_1470: {
             id: "menu_Adobe_BrushManager_Menu_Item",
@@ -8600,8 +8875,8 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Color Themes",
             },
             hidden: false,
-            minVersion: 22,
-            maxVersion: 25.9,
+            minVersion: "22",
+            maxVersion: "25.9",
         },
         menu_1474: {
             id: "menu_Adobe_Commenting_Palette",
@@ -8616,7 +8891,22 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Comments",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
+        },
+        menu_2160: {
+            id: "menu_SketchToVectorUnified",
+            action: "SketchToVectorUnified",
+            type: "menu",
+            docRequired: true,
+            selRequired: false,
+            name: {
+                en: "Window > Concept to Vector",
+                de: "Window > Concept to Vector",
+                ru: "Window > Concept to Vector",
+                "zh-cn": "Window > Concept to Vector",
+            },
+            hidden: false,
+            minVersion: "30.5.0",
         },
         menu_1475: {
             id: "menu_CSS_Menu_Item",
@@ -8625,10 +8915,10 @@ See the LICENSE file for details.
             docRequired: false,
             selRequired: false,
             name: {
-                en: "Window > CSS Properties",
+                en: "Window > CSS Properties (Deprecated)",
                 de: "CSS-Eigenschaften",
                 ru: "\u041e\u043a\u043d\u043e > \u0421\u0432\u043e\u0439\u0441\u0442\u0432\u0430 CSS",
-                "zh-cn": "Window > CSS Properties",
+                "zh-cn": "Window > CSS Properties (Deprecated)",
             },
             hidden: false,
         },
@@ -8667,14 +8957,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Window > Generate Patterns",
-                de: "Window > Generate Patterns",
-                ru: "Window > Generate Patterns",
-                "zh-cn": "Window > Generate Patterns",
+                en: "Window > Generation History",
+                de: "Window > Generation History",
+                ru: "Window > Generation History",
+                "zh-cn": "Window > Generation History",
             },
             hidden: false,
-            minVersion: 28.6,
-            maxVersion: 29.999,
+            minVersion: "28.6",
         },
         menu_1479: {
             id: "menu_Generate",
@@ -8689,7 +8978,8 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Generated Variations",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
+            maxVersion: "30.4.999",
         },
         menu_1480: {
             id: "menu_Adobe_Gradient_Palette",
@@ -8732,8 +9022,8 @@ See the LICENSE file for details.
                 "zh-cn": "Window > History",
             },
             hidden: false,
-            minVersion: 26.4,
-            maxVersion: 26.9,
+            minVersion: "26.4",
+            maxVersion: "26.9",
         },
         menu_1483: {
             id: "menu_Adobe_History_Panel_Menu_Item",
@@ -8748,7 +9038,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > History",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         menu_1484: {
             id: "menu_Adobe_Vectorize_Panel",
@@ -8805,8 +9095,8 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Learn",
             },
             hidden: false,
-            minVersion: 22,
-            maxVersion: 25.9,
+            minVersion: "22",
+            maxVersion: "25.9",
         },
         menu_1488: {
             id: "menu_Adobe_CSXS_Extension_comadobeDesignLibrariesangularLibraries",
@@ -8863,7 +9153,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Mockup",
             },
             hidden: false,
-            minVersion: 28,
+            minVersion: "28",
         },
         menu_1492: {
             id: "menu_AdobeNavigator",
@@ -8920,7 +9210,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Retype",
             },
             hidden: false,
-            minVersion: 27.6,
+            minVersion: "27.6",
         },
         menu_1497: {
             id: "menu_Adobe_Separation_Preview_Panel",
@@ -9117,7 +9407,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Type > Reflow Viewer",
             },
             hidden: false,
-            minVersion: 29,
+            minVersion: "29",
         },
         menu_1511: {
             id: "menu_internal_palettes_posing_as_plug-in_menus-tab",
@@ -9160,7 +9450,7 @@ See the LICENSE file for details.
                 "zh-cn": "Window > Version History",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1539: {
             id: "menu_AdobeBrushMgrUI_Other_libraries_menu_item",
@@ -9169,10 +9459,10 @@ See the LICENSE file for details.
             docRequired: false,
             selRequired: false,
             name: {
-                en: "Window > Brush Libraries > Other Library",
+                en: "Window > Brush Libraries > Other Library...",
                 de: "Fenster > Pinsel-Bibliotheken > Andere Bibliothek \u2026",
                 ru: "\u041e\u043a\u043d\u043e > \u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438 \u043a\u0438\u0441\u0442\u0435\u0439 > \u0414\u0440\u0443\u0433\u0430\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430...",
-                "zh-cn": "Window > Brush Libraries > Other Library",
+                "zh-cn": "Window > Brush Libraries > Other Library...",
             },
             hidden: false,
         },
@@ -9245,7 +9535,22 @@ See the LICENSE file for details.
                 "zh-cn": "Help > Tutorials...",
             },
             hidden: false,
-            minVersion: 27.9,
+            minVersion: "27.9",
+        },
+        menu_2161: {
+            id: "menu_whatsNewContent",
+            action: "whatsNewContent",
+            type: "menu",
+            docRequired: false,
+            selRequired: false,
+            name: {
+                en: "Help > What's New...",
+                de: "Help > What's New...",
+                ru: "Help > What's New...",
+                "zh-cn": "Help > What's New...",
+            },
+            hidden: false,
+            minVersion: "27.9",
         },
         menu_1686: {
             id: "menu_supportCommunity",
@@ -9260,7 +9565,7 @@ See the LICENSE file for details.
                 "zh-cn": "Help > Support Community",
             },
             hidden: false,
-            minVersion: 26,
+            minVersion: "26",
         },
         menu_1687: {
             id: "menu_wishform",
@@ -9275,7 +9580,7 @@ See the LICENSE file for details.
                 "zh-cn": "Help > Submit Bug/Feature Request...",
             },
             hidden: false,
-            minVersion: 25,
+            minVersion: "25",
         },
         menu_1688: {
             id: "menu_System_Info",
@@ -9584,7 +9889,7 @@ See the LICENSE file for details.
                 "zh-cn": "Preferences > Performance",
             },
             hidden: false,
-            minVersion: 19,
+            minVersion: "19",
         },
         menu_1715: {
             id: "menu_FilePref",
@@ -9613,7 +9918,7 @@ See the LICENSE file for details.
                 "zh-cn": "Preferences > Clipboard Handling",
             },
             hidden: false,
-            minVersion: 25,
+            minVersion: "25",
         },
         menu_1717: {
             id: "menu_BlackPref",
@@ -9642,7 +9947,7 @@ See the LICENSE file for details.
                 "zh-cn": "Preferences > Devices",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         menu_1719: {
             id: "menu_Debug_Panel",
@@ -9671,7 +9976,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Point Size Up",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2021: {
             id: "menu_faceSizeDown",
@@ -9686,7 +9991,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Point Size Down",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2022: {
             id: "menu_sizeStepUp",
@@ -9701,7 +10006,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Font Size Step Up",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2023: {
             id: "menu_sizeStepDown",
@@ -9716,7 +10021,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Font Size Step Down",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2024: {
             id: "menu_~kernFurther",
@@ -9731,7 +10036,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Kern Looser",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2025: {
             id: "menu_~kernCloser",
@@ -9746,7 +10051,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Kern Tighter",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2026: {
             id: "menu_tracking",
@@ -9761,7 +10066,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Tracking",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2027: {
             id: "menu_clearTrack",
@@ -9776,7 +10081,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Clear Tracking",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2028: {
             id: "menu_spacing",
@@ -9791,7 +10096,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Spacing",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2029: {
             id: "menu_clearTypeScale",
@@ -9806,7 +10111,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Uniform Type",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2030: {
             id: "menu_highlightFont",
@@ -9821,7 +10126,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Highlight Font",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2031: {
             id: "menu_highlightFont2",
@@ -9836,7 +10141,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Highlight Font (Secondary)",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2032: {
             id: "menu_leftAlign",
@@ -9851,7 +10156,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Left Align Text",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2033: {
             id: "menu_centerAlign",
@@ -9866,7 +10171,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Center Text",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2034: {
             id: "menu_rightAlign",
@@ -9881,7 +10186,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Right Align Text",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2035: {
             id: "menu_justify",
@@ -9896,7 +10201,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Justify Text Left",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2036: {
             id: "menu_justifyCenter",
@@ -9911,7 +10216,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Justify Text Center",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2037: {
             id: "menu_justifyRight",
@@ -9926,7 +10231,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Justify Text Right",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2038: {
             id: "menu_justifyAll",
@@ -9941,7 +10246,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Justify All Lines",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2039: {
             id: "menu_toggleAutoHyphen",
@@ -9956,7 +10261,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Toggle Auto Hyphenation",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2040: {
             id: "menu_toggleLineComposer",
@@ -9971,7 +10276,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Toggle Line Composer",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2041: {
             id: "menu_~subscript",
@@ -9986,7 +10291,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Subscript",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2042: {
             id: "menu_~superScript",
@@ -10001,7 +10306,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Superscript",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2043: {
             id: "menu_~textBold",
@@ -10016,7 +10321,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Bold",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2044: {
             id: "menu_~textItalic",
@@ -10031,7 +10336,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Italic",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2045: {
             id: "menu_~textUnderline",
@@ -10046,7 +10351,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Text > Underline",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2046: {
             id: "menu_lock2",
@@ -10061,7 +10366,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Object > Lock Others",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2047: {
             id: "menu_hide2",
@@ -10076,7 +10381,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Object > Hide Others",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2048: {
             id: "menu_repeatPathfinder",
@@ -10091,7 +10396,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Object > Repeat Pathfinder",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2049: {
             id: "menu_avgAndJoin",
@@ -10106,7 +10411,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Object > Average & Join",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2050: {
             id: "menu_enterFocus",
@@ -10121,7 +10426,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Object > Isolate Selected Object",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2051: {
             id: "menu_exitFocus",
@@ -10136,7 +10441,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Object > Exit Isolation Mode",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2052: {
             id: "menu_switchSelTool",
@@ -10145,13 +10450,13 @@ See the LICENSE file for details.
             docRequired: true,
             selRequired: false,
             name: {
-                en: "Other Misc > Switch Units",
-                de: "Other Misc > Switch Units",
-                ru: "Other Misc > Switch Units",
-                "zh-cn": "Other Misc > Switch Units",
+                en: "Other Select > Switch Selection Tool",
+                de: "Other Select > Switch Selection Tool",
+                ru: "Other Select > Switch Selection Tool",
+                "zh-cn": "Other Select > Switch Selection Tool",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2053: {
             id: "menu_new2",
@@ -10166,7 +10471,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Misc > New File (No Dialog)",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2060: {
             id: "menu_navigateToNextDocument",
@@ -10181,7 +10486,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Misc > Navigate to Next Document",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2061: {
             id: "menu_navigateToPreviousDocument",
@@ -10196,7 +10501,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Misc > Navigate to Previous Document",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2062: {
             id: "menu_navigateToNextDocumentGroup",
@@ -10211,7 +10516,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Misc > Navigate to Next Document Group",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         menu_2063: {
             id: "menu_navigateToPreviousDocumentGroup",
@@ -10226,7 +10531,7 @@ See the LICENSE file for details.
                 "zh-cn": "Other Misc > Navigate to Previous Document Group",
             },
             hidden: false,
-            minVersion: 29.4,
+            minVersion: "29.4",
         },
         tool_1000: {
             id: "tool_Adobe_Add_Anchor_Point_Tool",
@@ -10240,7 +10545,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043e\u043f\u043e\u0440\u043d\u0443\u044e \u0442\u043e\u0447\u043a\u0443",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1001: {
             id: "tool_Adobe_Anchor_Point_Tool",
@@ -10254,7 +10559,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041e\u043f\u043e\u0440\u043d\u0430\u044f \u0442\u043e\u0447\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1002: {
             id: "tool_Adobe_Arc_Tool",
@@ -10268,7 +10573,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0443\u0433\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1003: {
             id: "tool_Adobe_Area_Graph_Tool",
@@ -10282,7 +10587,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430 \u0441 \u043e\u0431\u043b\u0430\u0441\u0442\u044f\u043c\u0438",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1004: {
             id: "tool_Adobe_Area_Type_Tool",
@@ -10296,7 +10601,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0422\u0435\u043a\u0441\u0442 \u0432 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1005: {
             id: "tool_Adobe_Constraints_Tool",
@@ -10310,7 +10615,7 @@ See the LICENSE file for details.
                 ru: "Objects on Path",
             },
             hidden: false,
-            minVersion: 29,
+            minVersion: "29",
         },
         tool_1006: {
             id: "tool_Adobe_Crop_Tool",
@@ -10324,7 +10629,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041c\u043e\u043d\u0442\u0430\u0436\u043d\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1007: {
             id: "tool_Adobe_Bar_Graph_Tool",
@@ -10338,7 +10643,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430 \u0433\u043e\u0440\u0438\u0437\u043e\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u043e\u043b\u043e\u0441\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1008: {
             id: "tool_Adobe_Blend_Tool",
@@ -10352,7 +10657,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0435\u0440\u0435\u0445\u043e\u0434",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1009: {
             id: "tool_Adobe_Bloat_Tool",
@@ -10366,7 +10671,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0420\u0430\u0437\u0434\u0443\u0432\u0430\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1010: {
             id: "tool_Adobe_Blob_Brush_Tool",
@@ -10380,7 +10685,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041a\u0438\u0441\u0442\u044c-\u043a\u043b\u044f\u043a\u0441\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1011: {
             id: "tool_Adobe_Column_Graph_Tool",
@@ -10394,7 +10699,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430 \u0432\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u043e\u043b\u043e\u0441\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1012: {
             id: "tool_Adobe_Cyrstallize_Tool",
@@ -10408,7 +10713,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b\u0438\u0437\u0430\u0446\u0438\u044f",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1013: {
             id: "tool_Adobe_Curvature_Tool",
@@ -10422,7 +10727,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041a\u0440\u0438\u0432\u0438\u0437\u043d\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1014: {
             id: "tool_Adobe_Delete_Anchor_Point_Tool",
@@ -10436,7 +10741,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0423\u0434\u0430\u043b\u0438\u0442\u044c \u043e\u043f\u043e\u0440\u043d\u0443\u044e \u0442\u043e\u0447\u043a\u0443",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1015: {
             id: "tool_Adobe_Dimension_Tool",
@@ -10446,7 +10751,7 @@ See the LICENSE file for details.
             selRequired: false,
             name: { en: "Dimension Tool", de: "Dimension Tool", ru: "Dimension Tool" },
             hidden: false,
-            minVersion: 28.1,
+            minVersion: "28.1",
         },
         tool_1016: {
             id: "tool_Adobe_Direct_Select_Tool",
@@ -10460,7 +10765,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0440\u044f\u043c\u043e\u0435 \u0432\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1017: {
             id: "tool_Adobe_Ellipse_Shape_Tool",
@@ -10474,7 +10779,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u042d\u043b\u043b\u0438\u043f\u0441",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1018: {
             id: "tool_Adobe_Eraser_Tool",
@@ -10488,7 +10793,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041b\u0430\u0441\u0442\u0438\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1019: {
             id: "tool_Adobe_Eyedropper_Tool",
@@ -10502,7 +10807,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0438\u043f\u0435\u0442\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1020: {
             id: "tool_Adobe_Flare_Tool",
@@ -10516,7 +10821,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0411\u043b\u0438\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1021: {
             id: "tool_Adobe_Free_Transform_Tool",
@@ -10530,7 +10835,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u0432\u043e\u0431\u043e\u0434\u043d\u043e\u0435 \u0442\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1022: {
             id: "tool_Adobe_Gradient_Vector_Tool",
@@ -10544,7 +10849,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0413\u0440\u0430\u0434\u0438\u0435\u043d\u0442",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1023: {
             id: "tool_Adobe_Direct_Object_Select_Tool",
@@ -10558,7 +10863,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0413\u0440\u0443\u043f\u043f\u043e\u0432\u043e\u0435 \u0432\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1024: {
             id: "tool_Adobe_Scroll_Tool",
@@ -10572,7 +10877,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0420\u0443\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1025: {
             id: "tool_Adobe_Intertwine_Zone_Marker_Tool",
@@ -10586,7 +10891,7 @@ See the LICENSE file for details.
                 ru: "Intertwine Tool",
             },
             hidden: false,
-            minVersion: 27,
+            minVersion: "27",
         },
         tool_1026: {
             id: "tool_Adobe_Corner_Join_Tool",
@@ -10600,7 +10905,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1027: {
             id: "tool_Adobe_Knife_Tool",
@@ -10614,7 +10919,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041d\u043e\u0436",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1028: {
             id: "tool_Adobe_Direct_Lasso_Tool",
@@ -10628,7 +10933,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041b\u0430\u0441\u0441\u043e",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1029: {
             id: "tool_Adobe_Line_Graph_Tool",
@@ -10642,7 +10947,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041b\u0438\u043d\u0435\u0439\u043d\u0430\u044f \u0434\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1030: {
             id: "tool_Adobe_Line_Tool",
@@ -10656,7 +10961,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041e\u0442\u0440\u0435\u0437\u043e\u043a \u043b\u0438\u043d\u0438\u0438",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1031: {
             id: "tool_Adobe_Planar_Paintbucket_Tool",
@@ -10670,7 +10975,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0411\u044b\u0441\u0442\u0440\u0430\u044f \u0437\u0430\u043b\u0438\u0432\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1032: {
             id: "tool_Adobe_Planar_Face_Select_Tool",
@@ -10684,7 +10989,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0431\u044b\u0441\u0442\u0440\u044b\u0445 \u0437\u0430\u043b\u0438\u0432\u043e\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1033: {
             id: "tool_Adobe_Magic_Wand_Tool",
@@ -10698,7 +11003,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u043e\u043b\u0448\u0435\u0431\u043d\u0430\u044f \u043f\u0430\u043b\u043e\u0447\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1034: {
             id: "tool_Adobe_Measure_Tool",
@@ -10712,7 +11017,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041b\u0438\u043d\u0435\u0439\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1035: {
             id: "tool_Adobe_Mesh_Editing_Tool",
@@ -10726,7 +11031,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u0435\u0442\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1036: {
             id: "tool_Adobe_Brush_Tool",
@@ -10740,7 +11045,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041a\u0438\u0441\u0442\u044c",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1037: {
             id: "tool_Adobe_Freehand_Erase_Tool",
@@ -10754,7 +11059,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u0442\u0438\u0440\u0430\u043d\u0438\u0435 \u043a\u043e\u043d\u0442\u0443\u0440\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1038: {
             id: "tool_Adobe_Pattern_Tile_Tool",
@@ -10768,7 +11073,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u042d\u043b\u0435\u043c\u0435\u043d\u0442 \u0443\u0437\u043e\u0440\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1039: {
             id: "tool_Adobe_Pen_Tool",
@@ -10782,7 +11087,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0435\u0440\u043e",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1040: {
             id: "tool_Adobe_Freehand_Tool",
@@ -10796,7 +11101,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041a\u0430\u0440\u0430\u043d\u0434\u0430\u0448",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1041: {
             id: "tool_Perspective_Grid_Tool",
@@ -10810,7 +11115,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u0435\u0442\u043a\u0430 \u043f\u0435\u0440\u0441\u043f\u0435\u043a\u0442\u0438\u0432\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1042: {
             id: "tool_Perspective_Selection_Tool",
@@ -10824,7 +11129,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u044b\u0431\u043e\u0440 \u043f\u0435\u0440\u0441\u043f\u0435\u043a\u0442\u0438\u0432\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1043: {
             id: "tool_Adobe_Pie_Graph_Tool",
@@ -10838,7 +11143,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041a\u0440\u0443\u0433\u043e\u0432\u0430\u044f \u0434\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1045: {
             id: "tool_Adobe_Polar_Grid_Tool",
@@ -10852,7 +11157,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u043e\u043b\u044f\u0440\u043d\u0430\u044f \u0441\u0435\u0442\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1046: {
             id: "tool_Adobe_Shape_Construction_Regular_Polygon_Tool",
@@ -10866,7 +11171,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041c\u043d\u043e\u0433\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1047: {
             id: "tool_Adobe_Page_Tool",
@@ -10880,7 +11185,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0420\u0430\u0437\u0431\u0438\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u043f\u0435\u0447\u0430\u0442\u0438",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1048: {
             id: "tool_Adobe_Pucker_Tool",
@@ -10894,7 +11199,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u0442\u044f\u0433\u0438\u0432\u0430\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1049: {
             id: "tool_Adobe_Puppet_Warp_Tool",
@@ -10908,7 +11213,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041c\u0430\u0440\u0438\u043e\u043d\u0435\u0442\u043e\u0447\u043d\u0430\u044f \u0434\u0435\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1050: {
             id: "tool_Adobe_Radar_Graph_Tool",
@@ -10922,7 +11227,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430 \u0440\u0430\u0434\u0430\u0440",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1051: {
             id: "tool_Adobe_Rectangle_Shape_Tool",
@@ -10936,7 +11241,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1052: {
             id: "tool_Adobe_Rectangular_Grid_Tool",
@@ -10950,7 +11255,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0430\u044f \u0441\u0435\u0442\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1053: {
             id: "tool_Adobe_Reflect_Tool",
@@ -10964,7 +11269,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0417\u0435\u0440\u043a\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0442\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1054: {
             id: "tool_Adobe_Reshape_Tool",
@@ -10978,7 +11283,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0435\u0440\u0435\u0440\u0438\u0441\u043e\u0432\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1055: {
             id: "tool_Adobe_Rotate_Tool",
@@ -10992,7 +11297,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u043e\u0432\u043e\u0440\u043e\u0442",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1056: {
             id: "tool_Adobe_Rotate_Canvas_Tool",
@@ -11006,7 +11311,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u043e\u0432\u043e\u0440\u043e\u0442 \u0432\u0438\u0434\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1057: {
             id: "tool_Adobe_Rounded_Rectangle_Tool",
@@ -11020,7 +11325,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u0438\u043a \u0441\u043e \u0441\u043a\u0440\u0443\u0433\u043b\u0435\u043d\u043d\u044b\u043c\u0438 \u0443\u0433\u043b\u0430\u043c\u0438",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1058: {
             id: "tool_Adobe_Scale_Tool",
@@ -11034,7 +11339,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041c\u0430\u0441\u0448\u0442\u0430\u0431",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1059: {
             id: "tool_Adobe_Scallop_Tool",
@@ -11048,7 +11353,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0417\u0443\u0431\u0446\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1060: {
             id: "tool_Adobe_Scatter_Graph_Tool",
@@ -11062,7 +11367,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0422\u043e\u0447\u0435\u0447\u043d\u0430\u044f \u0434\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1061: {
             id: "tool_Adobe_Scissors_Tool",
@@ -11076,7 +11381,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041d\u043e\u0436\u043d\u0438\u0446\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1062: {
             id: "tool_Adobe_Select_Tool",
@@ -11090,7 +11395,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1063: {
             id: "tool_Adobe_Shape_Builder_Tool",
@@ -11104,7 +11409,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0444\u0438\u0433\u0443\u0440",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1064: {
             id: "tool_Adobe_Shaper_Tool",
@@ -11118,7 +11423,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0440\u043e\u0438\u0437\u0432\u043e\u043b\u044c\u043d\u0430\u044f \u043a\u0440\u0438\u0432\u0430\u044f",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1065: {
             id: "tool_Adobe_Shear_Tool",
@@ -11132,7 +11437,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041d\u0430\u043a\u043b\u043e\u043d",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1066: {
             id: "tool_Adobe_Slice_Tool",
@@ -11146,7 +11451,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0424\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1067: {
             id: "tool_Adobe_Slice_Select_Tool",
@@ -11160,7 +11465,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1068: {
             id: "tool_Adobe_Freehand_Smooth_Tool",
@@ -11174,7 +11479,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u0433\u043b\u0430\u0436\u0438\u0432\u0430\u043d\u0438\u0435",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1069: {
             id: "tool_Adobe_Shape_Construction_Spiral_Tool",
@@ -11188,7 +11493,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u043f\u0438\u0440\u0430\u043b\u044c",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1070: {
             id: "tool_Adobe_Stacked_Bar_Graph_Tool",
@@ -11202,7 +11507,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430 \u0433\u043e\u0440\u0438\u0437\u043e\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0442\u0435\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1071: {
             id: "tool_Adobe_Stacked_Column_Graph_Tool",
@@ -11216,7 +11521,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0438\u0430\u0433\u0440\u0430\u043c\u043c\u0430 \u0432\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0442\u0435\u043a",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1072: {
             id: "tool_Adobe_Shape_Construction_Star_Tool",
@@ -11230,7 +11535,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0417\u0432\u0435\u0437\u0434\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1074: {
             id: "tool_Adobe_Symbol_Screener_Tool",
@@ -11244,7 +11549,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041f\u0440\u043e\u0437\u0440\u0430\u0447\u043d\u043e\u0441\u0442\u044c \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1075: {
             id: "tool_Adobe_Symbol_Scruncher_Tool",
@@ -11258,7 +11563,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0423\u043f\u043b\u043e\u0442\u043d\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1076: {
             id: "tool_Adobe_Symbol_Shifter_Tool",
@@ -11272,7 +11577,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1077: {
             id: "tool_Adobe_Symbol_Sizer_Tool",
@@ -11286,7 +11591,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0420\u0430\u0437\u043c\u0435\u0440 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1078: {
             id: "tool_Adobe_Symbol_Spinner_Tool",
@@ -11300,7 +11605,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1079: {
             id: "tool_Adobe_Symbol_Sprayer_Tool",
@@ -11314,7 +11619,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0420\u0430\u0441\u043f\u044b\u043b\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1080: {
             id: "tool_Adobe_Symbol_Stainer_Tool",
@@ -11328,7 +11633,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041e\u0431\u0435\u0441\u0446\u0432\u0435\u0447\u0438\u0432\u0430\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1081: {
             id: "tool_Adobe_Symbol_Styler_Tool",
@@ -11342,7 +11647,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0421\u0442\u0438\u043b\u0438 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1082: {
             id: "tool_Adobe_Touch_Type_Tool",
@@ -11356,7 +11661,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0418\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u0435 \u0442\u0435\u043a\u0441\u0442\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1083: {
             id: "tool_Adobe_New_Twirl_Tool",
@@ -11370,7 +11675,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u043e\u0440\u043e\u043d\u043a\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1084: {
             id: "tool_Adobe_Type_Tool",
@@ -11384,7 +11689,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0422\u0435\u043a\u0441\u0442",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1085: {
             id: "tool_Adobe_Path_Type_Tool",
@@ -11398,7 +11703,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0422\u0435\u043a\u0441\u0442 \u043f\u043e \u043a\u043e\u043d\u0442\u0443\u0440\u0443",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1086: {
             id: "tool_Adobe_Vertical_Area_Type_Tool",
@@ -11412,7 +11717,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442 \u0432 \u043e\u0431\u043b\u0430\u0441\u0442\u0438",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1087: {
             id: "tool_Adobe_Vertical_Type_Tool",
@@ -11426,7 +11731,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1088: {
             id: "tool_Adobe_Vertical_Path_Type_Tool",
@@ -11440,7 +11745,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0412\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442 \u043f\u043e \u043a\u043e\u043d\u0442\u0443\u0440\u0443",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1089: {
             id: "tool_Adobe_Warp_Tool",
@@ -11454,7 +11759,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0414\u0435\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1090: {
             id: "tool_Adobe_Width_Tool",
@@ -11468,7 +11773,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u0428\u0438\u0440\u0438\u043d\u0430",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1091: {
             id: "tool_Adobe_Wrinkle_Tool",
@@ -11482,7 +11787,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041c\u043e\u0440\u0449\u0438\u043d\u044b",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         tool_1092: {
             id: "tool_Adobe_Zoom_Tool",
@@ -11496,7 +11801,7 @@ See the LICENSE file for details.
                 ru: "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442: \u041c\u0430\u0441\u0448\u0442\u0430\u0431",
             },
             hidden: false,
-            minVersion: 24,
+            minVersion: "24",
         },
         builtin_documentReport: {
             id: "builtin_documentReport",
@@ -14872,6 +15177,7 @@ See the LICENSE file for details.
             ? localize(command.name)
             : command.name;
         app.doScript(actionName, command.set);
+        app.redraw();
     }
     /**
      * Open a bookmarked file or folder.
