@@ -17,6 +17,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Load locale-specific string overrides from `data/strings.<locale>.csv`
 - Add Prettier as a development dependency for reproducible data generation
 
+### Fixed
+
+- Localize remaining user-facing labels in the Traditional Chinese interface
+- Display missing or version-incompatible workflow status text without modifying saved command IDs
+- Correct workflow command version checks and handle cancelled picker dialogs safely
+- Preserve watched folder paths in removal confirmations
+- Correct document report height units and use a locale-neutral report timestamp
+
 ## [0.16.1] 2026-09-23
 
 ### Added

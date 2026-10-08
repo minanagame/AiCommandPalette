@@ -102,6 +102,7 @@ const strings = {
         zh_TW: "\u66f8\u7c64",
     },
     builtin: { en: "Built-In", de: "Built-In", ru: "Built-In", zh_TW: "\u5167\u5efa" },
+    button_ok: { en: "OK", de: "OK", ru: "OK", zh_TW: "\u78ba\u5b9a" },
     cancel: {
         en: "Cancel",
         de: "Abbrechen",
@@ -112,13 +113,13 @@ const strings = {
         en: "Command '%1' requires an active document. Continue Anyway?",
         de: "Der Befehl '%1' erfordert ein ge\u00f6ffnetes Dokument. Trotzdem fortfahren?",
         ru: "Command '%1' requires an active document. Continue Anyway?",
-        zh_TW: "\u6307\u4ee4\u300c%1\u300d\u9700\u8981\u958b\u555f\u4e2d\u7684\u6587\u4ef6\u3002\u4ecd\u8981\u7e7c\u7e8c\u55ce\uff1f",
+        zh_TW: "\u6307\u4ee4\u300c%1\u300d\u9700\u8981\u5148\u958b\u555f\u6587\u4ef6\u3002\u4ecd\u8981\u7e7c\u7e8c\u55ce\uff1f",
     },
     cd_active_selection_required: {
         en: "Command '%1' requires an active selection. Continue Anyway?",
         de: "Der Befehl '%1' erfordert eine Auswahl. Trotzdem fortfahren?",
         ru: "Command '%1' requires an active selection. Continue Anyway?",
-        zh_TW: "\u6307\u4ee4\u300c%1\u300d\u9700\u8981\u76ee\u524d\u6709\u9078\u53d6\u7269\u4ef6\u3002\u4ecd\u8981\u7e7c\u7e8c\u55ce\uff1f",
+        zh_TW: "\u6307\u4ee4\u300c%1\u300d\u9700\u8981\u5148\u9078\u53d6\u7269\u4ef6\u3002\u4ecd\u8981\u7e7c\u7e8c\u55ce\uff1f",
     },
     cd_all: {
         en: "Built-In Commands",
@@ -127,22 +128,28 @@ const strings = {
         zh_TW: "\u5167\u5efa\u6307\u4ee4",
     },
     cd_clear_history_confirm: {
-        en: "Are you sure you want to clear your history?\n\n PLEASE NOTE: This will remove any keyword latches you have.\n\nLearn more using builtin 'Documentation' command.",
-        de: "Are you sure you want to clear your history?\n\n PLEASE NOTE: This will remove any keyword latches you have.\n\nLearn more using builtin 'Documentation' command.",
-        ru: "Are you sure you want to clear your history?\n\n PLEASE NOTE: This will remove any keyword latches you have.\n\nLearn more using builtin 'Documentation' command.",
-        zh_TW: "\u78ba\u5b9a\u8981\u6e05\u9664\u6b77\u53f2\u7d00\u9304\u55ce\uff1f\n\n\u6ce8\u610f\uff1a\u9019\u4e5f\u6703\u79fb\u9664\u5df2\u8a18\u9304\u7684\u95dc\u9375\u5b57\u504f\u597d\u3002\n\n\u53ef\u4f7f\u7528\u5167\u5efa\u7684\u300c\u8aaa\u660e\u6587\u4ef6\u300d\u6307\u4ee4\u9032\u4e00\u6b65\u4e86\u89e3\u3002",
+        en: "Are you sure you want to clear your history?\n\n PLEASE NOTE: This will remove any keyword latches you have.",
+        de: "Are you sure you want to clear your history?\n\n PLEASE NOTE: This will remove any keyword latches you have.",
+        ru: "Are you sure you want to clear your history?\n\n PLEASE NOTE: This will remove any keyword latches you have.",
+        zh_TW: "\u78ba\u5b9a\u8981\u6e05\u9664\u6b77\u53f2\u7d00\u9304\u55ce\uff1f\n\n\u6ce8\u610f\uff1a\u9019\u4e5f\u6703\u79fb\u9664\u5df2\u8a18\u9304\u7684\u641c\u5c0b\u95dc\u9375\u5b57\u504f\u597d\u3002",
+    },
+    cd_clear_history_title: {
+        en: "Clear History",
+        de: "Clear History",
+        ru: "Clear History",
+        zh_TW: "\u6e05\u9664\u6b77\u53f2\u7d00\u9304",
     },
     cd_add_to_startup: {
         en: "Add new command(s) to your startup?",
         de: "Add new command(s) to your startup?",
         ru: "Add new command(s) to your startup?",
-        zh_TW: "\u8981\u5c07\u65b0\u6307\u4ee4\u52a0\u5165\u555f\u52d5\u6307\u4ee4\u55ce\uff1f",
+        zh_TW: "\u8981\u5c07\u65b0\u6307\u4ee4\u52a0\u5165\u555f\u52d5\u756b\u9762\u55ce\uff1f",
     },
     cd_add_to_startup_title: {
         en: "Add To Startup Commands",
         de: "Add To Startup Commands",
         ru: "Add To Startup Commands",
-        zh_TW: "\u52a0\u5165\u555f\u52d5\u6307\u4ee4",
+        zh_TW: "\u52a0\u5165\u555f\u52d5\u756b\u9762",
     },
     cd_delete_confirm: {
         en: "Delete Commands?\nDeleted commands will longer work in any workflows you previously created where they were used as a step.\n\n%1",
@@ -244,7 +251,7 @@ const strings = {
         en: "Select Hidden Menu Commands To Unhide",
         de: "W\u00e4hlen Sie die ausgeblendeten Men\u00fcbefehle aus, die angezeigt werden sollen.",
         ru: "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0441\u043a\u0440\u044b\u0442\u044b\u0435 \u043a\u043e\u043c\u0430\u043d\u0434\u044b \u0434\u043b\u044f \u043f\u043e\u043a\u0430\u0437\u0430",
-        zh_TW: "\u9078\u64c7\u8981\u91cd\u65b0\u986f\u793a\u7684\u96b1\u85cf\u9078\u55ae\u6307\u4ee4",
+        zh_TW: "\u9078\u64c7\u8981\u91cd\u65b0\u986f\u793a\u7684\u96b1\u85cf\u6307\u4ee4",
     },
     cd_revealed_total: {
         en: "Total hidden commands revealed:\n%1",
@@ -299,7 +306,7 @@ const strings = {
         en: "Enter your custom commands below (one per line).\n\nCommands should be in the comma separated (CSV) format:\n'Command Name,Command Action,Command Type'\n\n* No extraneous spaces between commands.",
         de: "Enter your custom commands below (one per line).\n\nCommands should be in the comma separated (CSV) format:\n'Command Name,Command Action,Command Type'\n\n* No extraneous spaces between commands.",
         ru: "Enter your custom commands below (one per line).\n\nCommands should be in the comma separated (CSV) format:\n'Command Name,Command Action,Command Type'\n\n* No extraneous spaces between commands.",
-        zh_TW: "\u8acb\u5728\u4e0b\u65b9\u8f38\u5165\u81ea\u8a02\u6307\u4ee4\uff0c\u6bcf\u884c\u4e00\u500b\u3002\n\n\u6307\u4ee4\u8acb\u4f7f\u7528\u9017\u865f\u5206\u9694\uff08CSV\uff09\u683c\u5f0f\uff1a\n\u300c\u6307\u4ee4\u540d\u7a31,\u6307\u4ee4\u52d5\u4f5c,\u6307\u4ee4\u985e\u578b\u300d\n\n* \u6307\u4ee4\u4e4b\u9593\u8acb\u52ff\u52a0\u5165\u591a\u9918\u7a7a\u683c\u3002",
+        zh_TW: "\u8acb\u5728\u4e0b\u65b9\u8f38\u5165\u81ea\u8a02\u6307\u4ee4\uff0c\u6bcf\u884c\u4e00\u500b\u3002\n\n\u6307\u4ee4\u8acb\u4f7f\u7528\u9017\u865f\u5206\u9694\uff08CSV\uff09\u683c\u5f0f\uff1a\n\u300c\u986f\u793a\u540d\u7a31,Command Action,\u985e\u578b\uff08menu \u6216 tool\uff09\u300d\n\n* \u9017\u865f\u524d\u5f8c\u8acb\u52ff\u52a0\u5165\u7a7a\u683c\u3002",
     },
     defaults: {
         en: "Defaults",
@@ -342,7 +349,7 @@ const strings = {
         en: "File Created: ",
         de: "Datei erstellt am: ",
         ru: "File Created: ",
-        zh_TW: "\u5efa\u7acb\u6642\u9593\uff1a",
+        zh_TW: "\u5831\u544a\u7522\u751f\u6642\u9593\uff1a",
     },
     dr_file_found: {
         en: "File Found: ",
@@ -361,6 +368,12 @@ const strings = {
         de: "Datei-Information\n-----\n",
         ru: "File Information\n-----\n",
         zh_TW: "\u6a94\u6848\u8cc7\u8a0a\n-----\n",
+    },
+    dr_include: {
+        en: "Include",
+        de: "Include",
+        ru: "Include",
+        zh_TW: "\u5305\u542b\u9805\u76ee",
     },
     dr_height: {
         en: "Height: ",
@@ -406,7 +419,7 @@ const strings = {
         en: "Folder $1 already watched.",
         de: "Folder $1 already watched.",
         ru: "Folder $1 already watched.",
-        zh_TW: "\u8cc7\u6599\u593e %1 \u5df2\u5728\u76e3\u770b\u4e2d\u3002",
+        zh_TW: "\u8cc7\u6599\u593e\u300c%1\u300d\u5df2\u5728\u76e3\u770b\u4e2d\u3002",
     },
     fonts: { en: "Fonts", de: "Schriften", ru: "Fonts", zh_TW: "\u5b57\u9ad4" },
     github: {
@@ -453,6 +466,12 @@ const strings = {
     },
     layer_title_case: { en: "Layer", de: "Layer", ru: "Layer", zh_TW: "\u5716\u5c64" },
     layers: { en: "Layers", de: "Ebenen", ru: "Layers", zh_TW: "\u5716\u5c64" },
+    listbox_missing: {
+        en: "Missing",
+        de: "Missing",
+        ru: "Missing",
+        zh_TW: "\u7f3a\u5c11\u8cc7\u6599",
+    },
     menu: { en: "Menu", de: "Menu", ru: "Menu", zh_TW: "\u9078\u55ae" },
     menu_commands: {
         en: "Menu Commands",
@@ -481,6 +500,12 @@ const strings = {
         zh_TW: "\u958b\u555f\u6700\u8fd1\u4f7f\u7528\u7684\u6a94\u6848",
     },
     picker: { en: "Picker", de: "Picker", ru: "Picker", zh_TW: "\u9078\u64c7\u5668" },
+    picker_option_type: {
+        en: "Option",
+        de: "Option",
+        ru: "Option",
+        zh_TW: "\u9078\u9805",
+    },
     placed_items: {
         en: "Placed Items",
         de: "Platzierte Objecte",
@@ -498,13 +523,13 @@ const strings = {
         en: "Enter your custom commands below (one per line).",
         de: "Enter your custom commands below (one per line).",
         ru: "Enter your custom commands below (one per line).",
-        zh_TW: "\u8acb\u5728\u4e0b\u65b9\u8f38\u5165\u81ea\u8a02\u6307\u4ee4\uff0c\u6bcf\u884c\u4e00\u500b\u3002",
+        zh_TW: "\u8acb\u5728\u4e0b\u65b9\u8f38\u5165\u9078\u9805\uff0c\u6bcf\u884c\u4e00\u500b\u3002",
     },
     picker_builder_multi_select: {
         en: "Multi-Select Enabled?",
         de: "Multi-Select Enabled?",
         ru: "Multi-Select Enabled?",
-        zh_TW: "\u555f\u7528\u591a\u91cd\u9078\u53d6\uff1f",
+        zh_TW: "\u5141\u8a31\u591a\u91cd\u9078\u53d6",
     },
     picker_builder_name: {
         en: "Custom Picker Name",
@@ -582,7 +607,7 @@ const strings = {
         en: "Confirm Watched Folder(s) To Delete",
         de: "Confirm Watched Folder(s) To Delete",
         ru: "Confirm Watched Folder(s) To Delete",
-        zh_TW: "\u78ba\u8a8d\u522a\u9664\u76e3\u770b\u8cc7\u6599\u593e",
+        zh_TW: "\u78ba\u8a8d\u79fb\u9664\u76e3\u770b\u8cc7\u6599\u593e",
     },
     ruler_units_title_case: {
         en: "Ruler Units",
@@ -656,7 +681,7 @@ const strings = {
         ru: "Scripts",
         zh_TW: "\u6307\u4ee4\u78bc",
     },
-    set_title_case: { en: "Set", de: "Set", ru: "Set", zh_TW: "\u7d44\u5408" },
+    set_title_case: { en: "Set", de: "Set", ru: "Set", zh_TW: "\u52d5\u4f5c\u96c6" },
     spot_colors: {
         en: "Spot Colors",
         de: "Volltonfarben",
@@ -673,25 +698,25 @@ const strings = {
         en: "Error saving startup commands.\nPrevious settings were reloaded.",
         de: "Error saving startup commands.\nPrevious settings were reloaded.",
         ru: "Error saving startup commands.\nPrevious settings were reloaded.",
-        zh_TW: "\u5132\u5b58\u555f\u52d5\u6307\u4ee4\u6642\u767c\u751f\u932f\u8aa4\u3002\n\u5df2\u91cd\u65b0\u8f09\u5165\u5148\u524d\u7684\u8a2d\u5b9a\u3002",
+        zh_TW: "\u5132\u5b58\u555f\u52d5\u756b\u9762\u6307\u4ee4\u6642\u767c\u751f\u932f\u8aa4\u3002\n\u5df2\u91cd\u65b0\u8f09\u5165\u5148\u524d\u7684\u8a2d\u5b9a\u3002",
     },
     startup_helptip: {
         en: "Double-click a command to add it to your startup command list below.",
         de: "Double-click a command to add it to your startup command list below.",
         ru: "Double-click a command to add it to your startup command list below.",
-        zh_TW: "\u9023\u6309\u5169\u4e0b\u6307\u4ee4\uff0c\u53ef\u5c07\u5b83\u52a0\u5165\u4e0b\u65b9\u7684\u555f\u52d5\u6307\u4ee4\u6e05\u55ae\u3002",
+        zh_TW: "\u9023\u6309\u5169\u4e0b\u6307\u4ee4\uff0c\u53ef\u5c07\u5b83\u52a0\u5165\u4e0b\u65b9\u7684\u555f\u52d5\u756b\u9762\u6307\u4ee4\u6e05\u55ae\u3002",
     },
     startup_steps: {
         en: "Startup Commands",
         de: "Startup Commands",
         ru: "Startup Commands",
-        zh_TW: "\u555f\u52d5\u6307\u4ee4",
+        zh_TW: "\u555f\u52d5\u756b\u9762\u6307\u4ee4",
     },
     startup_steps_helptip: {
         en: "Startup commands will displayed in order from top to bottom.",
         de: "Startup commands will displayed in order from top to bottom.",
         ru: "Startup commands will displayed in order from top to bottom.",
-        zh_TW: "\u555f\u52d5\u6307\u4ee4\u6703\u4f9d\u7167\u7531\u4e0a\u5230\u4e0b\u7684\u9806\u5e8f\u986f\u793a\u3002",
+        zh_TW: "\u555f\u52d5\u756b\u9762\u6307\u4ee4\u6703\u4f9d\u7167\u7531\u4e0a\u5230\u4e0b\u7684\u9806\u5e8f\u986f\u793a\u3002",
     },
     step_delete: {
         en: "Delete",
@@ -742,7 +767,7 @@ const strings = {
         en: "User Preferences Inconsistency\nIt seems your preferences file may be from a different computer than this one.\n\n PLEASE NOTE: There is a small chance this could cause some features to break.",
         de: "User Preferences Inconsistency\nIt seems your preferences file may be from a different computer than this one.\n\n PLEASE NOTE: There is a small chance this could cause some features to break.",
         ru: "User Preferences Inconsistency\nIt seems your preferences file may be from a different computer than this one.\n\n PLEASE NOTE: There is a small chance this could cause some features to break.",
-        zh_TW: "\u4f7f\u7528\u8005\u504f\u597d\u8a2d\u5b9a\u4e0d\u4e00\u81f4\n\u504f\u597d\u8a2d\u5b9a\u6a94\u53ef\u80fd\u4f86\u81ea\u53e6\u4e00\u90e8\u96fb\u8166\u3002\n\n\u6ce8\u610f\uff1a\u9019\u6709\u5c0f\u5e45\u6a5f\u7387\u6703\u9020\u6210\u90e8\u5206\u529f\u80fd\u7121\u6cd5\u6b63\u5e38\u904b\u4f5c\u3002",
+        zh_TW: "\u4f7f\u7528\u8005\u504f\u597d\u8a2d\u5b9a\u4e0d\u4e00\u81f4\n\u504f\u597d\u8a2d\u5b9a\u6a94\u53ef\u80fd\u4f86\u81ea\u53e6\u4e00\u90e8\u96fb\u8166\u3002\n\n\u6ce8\u610f\uff1a\u5c11\u6578\u60c5\u6cc1\u4e0b\u53ef\u80fd\u9020\u6210\u90e8\u5206\u529f\u80fd\u7121\u6cd5\u6b63\u5e38\u904b\u4f5c\u3002",
     },
     version: {
         en: "Version %1",
@@ -754,7 +779,13 @@ const strings = {
         en: "Watched folder '%1' not found!\nYou can remove this folder using the 'Remove Watched Folders' command.",
         de: "Watched folder '%1' not found!\nYou can remove this folder using the 'Remove Watched Folders' command.",
         ru: "Watched folder '%1' not found!\nYou can remove this folder using the 'Remove Watched Folders' command.",
-        zh_TW: "\u627e\u4e0d\u5230\u76e3\u770b\u8cc7\u6599\u593e\u300c%1\u300d\uff01\n\u53ef\u4ee5\u4f7f\u7528\u300c\u79fb\u9664\u76e3\u770b\u8cc7\u6599\u593e\u300d\u6307\u4ee4\u79fb\u9664\u6b64\u8cc7\u6599\u593e\u3002",
+        zh_TW: "\u627e\u4e0d\u5230\u76e3\u770b\u8cc7\u6599\u593e\u300c%1\u300d\uff01\n\u53ef\u4ee5\u4f7f\u7528\u300c\u79fb\u9664\u76e3\u770b\u8cc7\u6599\u593e\uff08Remove Watched Folder(s)\uff09\u300d\u6307\u4ee4\u79fb\u9664\u6b64\u8cc7\u6599\u593e\u3002",
+    },
+    watched_folder_title_case: {
+        en: "Watched Folder",
+        de: "Watched Folder",
+        ru: "Watched Folder",
+        zh_TW: "\u76e3\u770b\u8cc7\u6599\u593e",
     },
     wf_already_exists: {
         en: "A workflow with that name already exists.\nWould you like to overwrite the previous workflow with the new one?",
@@ -790,7 +821,7 @@ const strings = {
         en: "Workflow needs attention.\nThe following action steps from your workflow are not currently available.\n\n%1",
         de: "Achtung!\nDie folgenden Aktionsschritte sind nicht mehr vorhanden\n\n%1",
         ru: "\u041d\u0430\u0431\u043e\u0440 \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u044f\n\u0423\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0435 \u0448\u0430\u0433\u0438 \u0432 \u0432\u0430\u0448\u0435\u043c \u043d\u0430\u0431\u043e\u0440\u0435 \u043a\u043e\u043c\u0430\u043d\u0434 \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b.\n\n%1",
-        zh_TW: "\u5de5\u4f5c\u6d41\u7a0b\u9700\u8981\u8655\u7406\u3002\n\u4e0b\u5217\u52d5\u4f5c\u6b65\u9a5f\u76ee\u524d\u7121\u6cd5\u4f7f\u7528\uff1a\n\n%1",
+        zh_TW: "\u5de5\u4f5c\u6d41\u7a0b\u9700\u8981\u8655\u7406\u3002\n\u4e0b\u5217\u6b65\u9a5f\u76ee\u524d\u7121\u6cd5\u4f7f\u7528\uff1a\n\n%1",
     },
     wf_none_attention: {
         en: "There are no workflows that need attention.",
@@ -816,6 +847,18 @@ const strings = {
         de: "Arbeitsablauf speichern als",
         ru: "\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u043d\u0430\u0431\u043e\u0440 \u043a\u0430\u043a",
         zh_TW: "\u5de5\u4f5c\u6d41\u7a0b\u53e6\u5b58\u70ba",
+    },
+    wf_step_incompatible_ai_version: {
+        en: "INCOMPATIBLE ILLUSTRATOR VERSION",
+        de: "INCOMPATIBLE ILLUSTRATOR VERSION",
+        ru: "INCOMPATIBLE ILLUSTRATOR VERSION",
+        zh_TW: "Illustrator \u7248\u672c\u4e0d\u76f8\u5bb9",
+    },
+    wf_step_not_found: {
+        en: "NOT FOUND",
+        de: "NOT FOUND",
+        ru: "NOT FOUND",
+        zh_TW: "\u627e\u4e0d\u5230\u6307\u4ee4",
     },
     wf_step_not_editable: {
         en: "Selected Step Not Editable",
