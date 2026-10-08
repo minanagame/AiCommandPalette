@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Traditional Chinese (`zh_TW`) interface localization
+- Traditional Chinese Astute Graphics custom command reference
+- Illustrator locale check script
+
+### Changed
+
+- Load locale-specific string overrides from `data/strings.<locale>.csv`
+- Add Prettier as a development dependency for reproducible data generation
+
 ## [0.16.1] 2026-09-23
 
 ### Added
