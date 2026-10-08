@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Load locale-specific string overrides from `data/strings.<locale>.csv`
 - Add Prettier as a development dependency for reproducible data generation
+- Emit the distributable JSX without source comments while preserving comments in the TypeScript source
 
 ### Fixed
 
@@ -24,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Correct workflow command version checks and handle cancelled picker dialogs safely
 - Preserve watched folder paths in removal confirmations
 - Correct document report height units and use a locale-neutral report timestamp
+- Move the Illustrator target directive out of the generated IIFE so it is emitted at the file start
 
 ## [0.16.1] 2026-09-23
 

@@ -1,3 +1,5 @@
+//@target illustrator
+
 /*
 Ai Command Palette
 Copyright 2026 Josh Duncan
@@ -6,6 +8,7 @@ https://joshbduncan.com
 This script is distributed under the MIT License.
 See the LICENSE file for details.
 */
+
 (function () {
     var __spreadArray =
         (this && this.__spreadArray) ||
@@ -19,142 +22,11 @@ See the LICENSE file for details.
                 }
             return to.concat(ar || Array.prototype.slice.call(from));
         };
-    //@target illustrator
-    // SCRIPT INFORMATION
     var _title = "Ai Command Palette";
     var _version = "0.16.1";
     var _copyright = "Copyright 2026 Josh Duncan";
     var _website = "joshbduncan.com";
     var _github = "https://github.com/joshbduncan";
-    //  json2.js
-    //  2023-05-10
-    //  Public Domain.
-    //  NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
-    //  USE YOUR OWN COPY. IT IS EXTREMELY UNWISE TO LOAD CODE FROM SERVERS YOU DO
-    //  NOT CONTROL.
-    //  This file creates a global JSON object containing two methods: stringify
-    //  and parse. This file provides the ES5 JSON capability to ES3 systems.
-    //  If a project might run on IE8 or earlier, then this file should be included.
-    //  This file does nothing on ES5 systems.
-    //      JSON.stringify(value, replacer, space)
-    //          value       any JavaScript value, usually an object or array.
-    //          replacer    an optional parameter that determines how object
-    //                      values are stringified for objects. It can be a
-    //                      function or an array of strings.
-    //          space       an optional parameter that specifies the indentation
-    //                      of nested structures. If it is omitted, the text will
-    //                      be packed without extra whitespace. If it is a number,
-    //                      it will specify the number of spaces to indent at each
-    //                      level. If it is a string (such as "\t" or "&nbsp;"),
-    //                      it contains the characters used to indent at each level.
-    //          This method produces a JSON text from a JavaScript value.
-    //          When an object value is found, if the object contains a toJSON
-    //          method, its toJSON method will be called and the result will be
-    //          stringified. A toJSON method does not serialize: it returns the
-    //          value represented by the name/value pair that should be serialized,
-    //          or undefined if nothing should be serialized. The toJSON method
-    //          will be passed the key associated with the value, and this will be
-    //          bound to the value.
-    //          For example, this would serialize Dates as ISO strings.
-    //              Date.prototype.toJSON = function (key) {
-    //                  function f(n) {
-    //                      // Format integers to have at least two digits.
-    //                      return (n < 10)
-    //                          ? "0" + n
-    //                          : n;
-    //                  }
-    //                  return this.getUTCFullYear()   + "-" +
-    //                       f(this.getUTCMonth() + 1) + "-" +
-    //                       f(this.getUTCDate())      + "T" +
-    //                       f(this.getUTCHours())     + ":" +
-    //                       f(this.getUTCMinutes())   + ":" +
-    //                       f(this.getUTCSeconds())   + "Z";
-    //              };
-    //          You can provide an optional replacer method. It will be passed the
-    //          key and value of each member, with this bound to the containing
-    //          object. The value that is returned from your method will be
-    //          serialized. If your method returns undefined, then the member will
-    //          be excluded from the serialization.
-    //          If the replacer parameter is an array of strings, then it will be
-    //          used to select the members to be serialized. It filters the results
-    //          such that only members with keys listed in the replacer array are
-    //          stringified.
-    //          Values that do not have JSON representations, such as undefined or
-    //          functions, will not be serialized. Such values in objects will be
-    //          dropped; in arrays they will be replaced with null. You can use
-    //          a replacer function to replace those with JSON values.
-    //          JSON.stringify(undefined) returns undefined.
-    //          The optional space parameter produces a stringification of the
-    //          value that is filled with line breaks and indentation to make it
-    //          easier to read.
-    //          If the space parameter is a non-empty string, then that string will
-    //          be used for indentation. If the space parameter is a number, then
-    //          the indentation will be that many spaces.
-    //          Example:
-    //          text = JSON.stringify(["e", {pluribus: "unum"}]);
-    //          // text is '["e",{"pluribus":"unum"}]'
-    //          text = JSON.stringify(["e", {pluribus: "unum"}], null, "\t");
-    //          // text is '[\n\t"e",\n\t{\n\t\t"pluribus": "unum"\n\t}\n]'
-    //          text = JSON.stringify([new Date()], function (key, value) {
-    //              return this[key] instanceof Date
-    //                  ? "Date(" + this[key] + ")"
-    //                  : value;
-    //          });
-    //          // text is '["Date(---current time---)"]'
-    //      JSON.parse(text, reviver)
-    //          This method parses a JSON text to produce an object or array.
-    //          It can throw a SyntaxError exception.
-    //          The optional reviver parameter is a function that can filter and
-    //          transform the results. It receives each of the keys and values,
-    //          and its return value is used instead of the original value.
-    //          If it returns what it received, then the structure is not modified.
-    //          If it returns undefined then the member is deleted.
-    //          Example:
-    //          // Parse the text. Values that look like ISO date strings will
-    //          // be converted to Date objects.
-    //          myData = JSON.parse(text, function (key, value) {
-    //              var a;
-    //              if (typeof value === "string") {
-    //                  a =
-    //   /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
-    //                  if (a) {
-    //                      return new Date(Date.UTC(
-    //                         +a[1], +a[2] - 1, +a[3], +a[4], +a[5], +a[6]
-    //                      ));
-    //                  }
-    //                  return value;
-    //              }
-    //          });
-    //          myData = JSON.parse(
-    //              "[\"Date(09/09/2001)\"]",
-    //              function (key, value) {
-    //                  var d;
-    //                  if (
-    //                      typeof value === "string"
-    //                      && value.slice(0, 5) === "Date("
-    //                      && value.slice(-1) === ")"
-    //                  ) {
-    //                      d = new Date(value.slice(5, -1));
-    //                      if (d) {
-    //                          return d;
-    //                      }
-    //                  }
-    //                  return value;
-    //              }
-    //          );
-    //  This is a reference implementation. You are free to copy, modify, or
-    //  redistribute.
-    /*jslint
-    eval, for, this
-*/
-    /*property
-    JSON, apply, call, charCodeAt, getUTCDate, getUTCFullYear, getUTCHours,
-    getUTCMinutes, getUTCMonth, getUTCSeconds, hasOwnProperty, join,
-    lastIndex, length, parse, prototype, push, replace, slice, stringify,
-    test, toJSON, toString, valueOf
-*/
-    // Create a JSON object only if one does not already exist. We create the
-    // methods in a closure to avoid creating global variables.
     if (typeof JSON !== "object") {
         JSON = {};
     }
@@ -170,7 +42,6 @@ See the LICENSE file for details.
         var rx_dangerous =
             /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
         function f(n) {
-            // Format integers to have at least two digits.
             return n < 10 ? "0" + n : n;
         }
         function this_value() {
@@ -202,10 +73,6 @@ See the LICENSE file for details.
         var meta;
         var rep;
         function quote(string) {
-            // If the string contains no control characters, no quote characters, and no
-            // backslash characters, then we can safely slap some quotes around it.
-            // Otherwise we must also replace the offending characters with safe escape
-            // sequences.
             rx_escapable.lastIndex = 0;
             return rx_escapable.test(string)
                 ? '"' +
@@ -220,15 +87,13 @@ See the LICENSE file for details.
                 : '"' + string + '"';
         }
         function str(key, holder) {
-            // Produce a string from holder[key].
-            var i; // The loop counter.
-            var k; // The member key.
-            var v; // The member value.
+            var i;
+            var k;
+            var v;
             var length;
             var mind = gap;
             var partial;
             var value = holder[key];
-            // If the value has a toJSON method, call it to obtain a replacement value.
             if (
                 value &&
                 typeof value === "object" &&
@@ -236,45 +101,28 @@ See the LICENSE file for details.
             ) {
                 value = value.toJSON(key);
             }
-            // If we were called with a replacer function, then call the replacer to
-            // obtain a replacement value.
             if (typeof rep === "function") {
                 value = rep.call(holder, key, value);
             }
-            // What happens next depends on the value's type.
             switch (typeof value) {
                 case "string":
                     return quote(value);
                 case "number":
-                    // JSON numbers must be finite. Encode non-finite numbers as null.
                     return isFinite(value) ? String(value) : "null";
                 case "boolean":
                 case "null":
-                    // If the value is a boolean or null, convert it to a string. Note:
-                    // typeof null does not produce "null". The case is included here in
-                    // the remote chance that this gets fixed someday.
                     return String(value);
-                // If the type is "object", we might be dealing with an object or an array or
-                // null.
                 case "object":
-                    // Due to a specification blunder in ECMAScript, typeof null is "object",
-                    // so watch out for that case.
                     if (!value) {
                         return "null";
                     }
-                    // Make an array to hold the partial results of stringifying this object value.
                     gap += indent;
                     partial = [];
-                    // Is the value an array?
                     if (Object.prototype.toString.apply(value) === "[object Array]") {
-                        // The value is an array. Stringify every element. Use null as a placeholder
-                        // for non-JSON values.
                         length = value.length;
                         for (i = 0; i < length; i += 1) {
                             partial[i] = str(i, value) || "null";
                         }
-                        // Join all of the elements together, separated with commas, and wrap them in
-                        // brackets.
                         v =
                             partial.length === 0
                                 ? "[]"
@@ -289,7 +137,6 @@ See the LICENSE file for details.
                         gap = mind;
                         return v;
                     }
-                    // If the replacer is an array, use it to select the members to be stringified.
                     if (rep && typeof rep === "object") {
                         length = rep.length;
                         for (i = 0; i < length; i += 1) {
@@ -302,7 +149,6 @@ See the LICENSE file for details.
                             }
                         }
                     } else {
-                        // Otherwise, iterate through all of the keys in the object.
                         for (k in value) {
                             if (Object.prototype.hasOwnProperty.call(value, k)) {
                                 v = str(k, value);
@@ -312,8 +158,6 @@ See the LICENSE file for details.
                             }
                         }
                     }
-                    // Join all of the member texts together, separated with commas,
-                    // and wrap them in braces.
                     v =
                         partial.length === 0
                             ? "{}"
@@ -329,7 +173,6 @@ See the LICENSE file for details.
                     return v;
             }
         }
-        // If the JSON object does not yet have a stringify method, give it one.
         if (typeof JSON.stringify !== "function") {
             meta = {
                 "\b": "\\b",
@@ -341,26 +184,16 @@ See the LICENSE file for details.
                 "\\": "\\\\",
             };
             JSON.stringify = function (value, replacer, space) {
-                // The stringify method takes a value and an optional replacer, and an optional
-                // space parameter, and returns a JSON text. The replacer can be a function
-                // that can replace values, or an array of strings that will select the keys.
-                // A default replacer method can be provided. Use of the space parameter can
-                // produce text that is more easily readable.
                 var i;
                 gap = "";
                 indent = "";
-                // If the space parameter is a number, make an indent string containing that
-                // many spaces.
                 if (typeof space === "number") {
                     for (i = 0; i < space; i += 1) {
                         indent += " ";
                     }
-                    // If the space parameter is a string, it will be used as the indent string.
                 } else if (typeof space === "string") {
                     indent = space;
                 }
-                // If there is a replacer, it must be a function or an array.
-                // Otherwise, throw an error.
                 rep = replacer;
                 if (
                     replacer &&
@@ -370,20 +203,13 @@ See the LICENSE file for details.
                 ) {
                     throw new Error("JSON.stringify");
                 }
-                // Make a fake root object containing our value under the key of "".
-                // Return the result of stringifying the value.
                 return str("", { "": value });
             };
         }
-        // If the JSON object does not yet have a parse method, give it one.
         if (typeof JSON.parse !== "function") {
             JSON.parse = function (text, reviver) {
-                // The parse method takes a text and an optional reviver function, and returns
-                // a JavaScript value if the text is a valid JSON text.
                 var j;
                 function walk(holder, key) {
-                    // The walk method is used to recursively walk the resulting structure so
-                    // that modifications can be made.
                     var k;
                     var v;
                     var value = holder[key];
@@ -401,9 +227,6 @@ See the LICENSE file for details.
                     }
                     return reviver.call(holder, key, value);
                 }
-                // Parsing happens in four stages. In the first stage, we replace certain
-                // Unicode characters with escape sequences. JavaScript handles many characters
-                // incorrectly, either silently deleting them, or treating them as line endings.
                 text = String(text);
                 rx_dangerous.lastIndex = 0;
                 if (rx_dangerous.test(text)) {
@@ -413,17 +236,6 @@ See the LICENSE file for details.
                         );
                     });
                 }
-                // In the second stage, we run the text against regular expressions that look
-                // for non-JSON patterns. We are especially concerned with "()" and "new"
-                // because they can cause invocation, and "=" because it can cause mutation.
-                // But just to be safe, we want to reject all unexpected forms.
-                // We split the second stage into 4 regexp operations in order to work around
-                // crippling inefficiencies in IE's and Safari's regexp engines. First we
-                // replace the JSON backslash pairs with "@" (a non-JSON character). Second, we
-                // replace all simple value tokens with "]" characters. Third, we delete all
-                // open brackets that follow a colon or comma or that begin the text. Finally,
-                // we look to see that the remaining characters are only whitespace or "]" or
-                // "," or ":" or "{" or "}". If that is so, then the text is safe for eval.
                 if (
                     rx_one.test(
                         text
@@ -432,21 +244,13 @@ See the LICENSE file for details.
                             .replace(rx_four, "")
                     )
                 ) {
-                    // In the third stage we use the eval function to compile the text into a
-                    // JavaScript structure. The "{" operator is subject to a syntactic ambiguity
-                    // in JavaScript: it can begin a block or an object literal. We wrap the text
-                    // in parens to eliminate the ambiguity.
                     j = eval("(" + text + ")");
-                    // In the optional fourth stage, we recursively walk the new structure, passing
-                    // each name/value pair to a reviver function for possible transformation.
                     return typeof reviver === "function" ? walk({ "": j }, "") : j;
                 }
-                // If the text is not JSON parseable, then a SyntaxError is thrown.
                 throw new SyntaxError("JSON.parse");
             };
         }
     })();
-    // Array.prototype.indexOf
     if (!Array.prototype.indexOf) {
         Array.prototype.indexOf = function (searchElement, fromIndex) {
             var k;
@@ -465,7 +269,6 @@ See the LICENSE file for details.
             return -1;
         };
     }
-    // Array.prototype.every
     if (!Array.prototype.every) {
         Array.prototype.every = function (callbackfn, thisArg) {
             "use strict";
@@ -489,7 +292,6 @@ See the LICENSE file for details.
             return true;
         };
     }
-    // Array.prototype.map
     if (!Array.prototype.map) {
         Array.prototype.map = function (callback, thisArg) {
             var T, A, k;
@@ -510,7 +312,6 @@ See the LICENSE file for details.
             return A;
         };
     }
-    // Array.prototype.filter
     if (!Array.prototype.filter) {
         Array.prototype.filter = function (func, thisArg) {
             "use strict";
@@ -530,7 +331,6 @@ See the LICENSE file for details.
             return res;
         };
     }
-    // Array.prototype.findIndex
     if (!Array.prototype.findIndex) {
         Array.prototype.findIndex = function (callback, thisArg) {
             if (this === null) throw new TypeError("called on null or undefined");
@@ -544,7 +344,6 @@ See the LICENSE file for details.
             return -1;
         };
     }
-    // Array.prototype.find
     if (!Array.prototype.find) {
         Array.prototype.find = function (predicate, thisArg) {
             if (this == null) throw new TypeError('"this" is null or not defined');
@@ -559,19 +358,16 @@ See the LICENSE file for details.
             return undefined;
         };
     }
-    // Array.prototype.includes
     if (!Array.prototype.includes) {
         Array.prototype.includes = function (search) {
             return this.indexOf(search) !== -1;
         };
     }
-    // Array.prototype.last
     if (!Array.prototype.last) {
         Array.prototype.last = function () {
             return this.length > 0 ? this[this.length - 1] : null;
         };
     }
-    // Array.prototype.forEach
     if (!Array.prototype.forEach) {
         Array.prototype.forEach = function (callback, thisArg) {
             if (this == null) throw new TypeError("this is null or not defined");
@@ -584,7 +380,6 @@ See the LICENSE file for details.
             }
         };
     }
-    // Array.from
     if (!Array.from) {
         Array.from = function (arrayLikeObject) {
             var arr = [];
@@ -594,7 +389,6 @@ See the LICENSE file for details.
             return arr;
         };
     }
-    // Array.prototype.some
     if (!Array.prototype.some) {
         Array.prototype.some = function (fun, thisArg) {
             if (this == null)
@@ -608,7 +402,6 @@ See the LICENSE file for details.
             return false;
         };
     }
-    // Array.prototype.reduce
     if (!Array.prototype.reduce) {
         Array.prototype.reduce = function (callback, initialValue) {
             if (this === null) throw new TypeError("called on null or undefined");
@@ -633,7 +426,6 @@ See the LICENSE file for details.
             return value;
         };
     }
-    // Array.prototype.addUnique
     if (!Array.prototype.addUnique) {
         Array.prototype.addUnique = function (searchElement) {
             if (this.indexOf(searchElement) < 0) {
@@ -643,7 +435,6 @@ See the LICENSE file for details.
             return false;
         };
     }
-    // Array.prototype.removeUnique
     if (!Array.prototype.removeUnique) {
         Array.prototype.removeUnique = function (searchElement) {
             var idx = this.indexOf(searchElement);
@@ -654,7 +445,6 @@ See the LICENSE file for details.
             return false;
         };
     }
-    // Array.prototype.removeAtIndex
     if (!Array.prototype.removeAtIndex) {
         Array.prototype.removeAtIndex = function (idx) {
             if (idx > -1) {
@@ -664,7 +454,6 @@ See the LICENSE file for details.
             return false;
         };
     }
-    // Array.prototype.makeUnique
     if (!Array.prototype.makeUnique) {
         Array.prototype.makeUnique = function () {
             return this.sort().filter(function (current, index, array) {
@@ -672,7 +461,6 @@ See the LICENSE file for details.
             });
         };
     }
-    // Array.isArray polyfill
     if (!Array.isArray) {
         Array.isArray = function (arg) {
             return Object.prototype.toString.call(arg) === "[object Array]";
@@ -947,7 +735,6 @@ See the LICENSE file for details.
         }
         return filledMessage;
     }
-    // GENERATED FROM CSV DATA FILES
     var strings = {
         about: {
             en: "About",
@@ -1876,7 +1663,6 @@ See the LICENSE file for details.
             zh_TW: "\u5de5\u4f5c\u6d41\u7a0b",
         },
     };
-    // GENERATED FROM CSV DATA FILES
     var commandsData = {
         menu_1000: {
             id: "menu_new",
@@ -12614,18 +12400,6 @@ See the LICENSE file for details.
             hidden: false,
         },
     };
-    /**
-     * Extracts the base calling script identifier from an Adobe ExtendScript stack trace.
-     *
-     * ExtendScript exposes the current stack as `$.stack`, where entries may include lines
-     * like `[SomeScript.jsx]` or `[123]`. This function returns the first bracketed entry
-     * that is *not* purely numeric (i.e., likely a script name/path).
-     *
-     * This implementation is ES3-safe when compiled (no `Number.isFinite`, no ES2015 APIs).
-     *
-     * @param stack Optional stack trace text to parse. Defaults to `$.stack` when available.
-     * @returns The first non-numeric bracketed entry (e.g. `"MyScript.jsx"`), or `undefined` if none found.
-     */
     function resolveBaseScriptFromStack(stack) {
         var raw =
             stack !== null && stack !== void 0
@@ -12646,22 +12420,13 @@ See the LICENSE file for details.
             }
             var inner = line.slice(1, line.length - 1).replace(/^\s+|\s+$/g, "");
             if (!inner) continue;
-            // ES3-safe numeric check
-            // `isNaN()` coerces; numeric strings => false, non-numeric => true
             if (isNaN(inner)) {
                 return inner;
             }
         }
         return undefined;
     }
-    var Logger = /** @class */ (function () {
-        /**
-         * Class for easy file logging from within Adobe ExtendScript.
-         * @param fp File path for the log file. Defaults to `Folder.userData/{base_script_file_name}.log`.
-         * @param mode Optional log file write mode. Write `w` mode or append `a` mode. If write mode 'w', the log file will be overwritten on each script run. Defaults to `w`.
-         * @param sizeLimit Log file size limit (in bytes) for rotation. Defaults to 5,000,000.
-         * @param consoleOutput Forward calls to `Logger.log()` to the JavaScript Console via `$.writeln()`. Defaults to `false`.
-         */
+    var Logger = (function () {
         function Logger(fp, mode, sizeLimit, consoleOutput) {
             if (mode === void 0) {
                 mode = "w";
@@ -12683,14 +12448,10 @@ See the LICENSE file for details.
             this.mode = mode.toLowerCase();
             this.consoleOutput = consoleOutput;
             this.file = new File(fp);
-            // Rotate log if too big
             if (this.file.length > sizeLimit) {
                 this.backup(true);
             }
         }
-        /**
-         * Backup the log file.
-         */
         Logger.prototype.backup = function (removeOriginal) {
             if (removeOriginal === void 0) {
                 removeOriginal = false;
@@ -12703,9 +12464,6 @@ See the LICENSE file for details.
             if (removeOriginal) this.file.remove();
             return backupFile;
         };
-        /**
-         * Write data to the log file.
-         */
         Logger.prototype.log = function () {
             var text = [];
             for (var _i = 0; _i < arguments.length; _i++) {
@@ -12714,7 +12472,6 @@ See the LICENSE file for details.
             if (this.badPath) return false;
             var f = this.file;
             var ts = new Date().toLocaleString();
-            // Ensure parent folder exists
             if (!f.parent.exists) {
                 if (!f.parent.parent.exists) {
                     alert("Bad log file path!\n'" + f.fullName + "'");
@@ -12743,31 +12500,14 @@ See the LICENSE file for details.
             }
             return true;
         };
-        /**
-         * Open the log file.
-         */
         Logger.prototype.open = function () {
             this.file.execute();
         };
-        /**
-         * Reveal the log file location.
-         */
         Logger.prototype.reveal = function () {
             this.file.parent.execute();
         };
         return Logger;
     })();
-    /**
-     * Attempts to resolve the correct localized string for a given property
-     * on a command object. If the property is a language map, it is passed
-     * directly to `localize()`. If the property is a string that matches a key
-     * in the global `strings` map, the corresponding localized string is returned.
-     * Otherwise, the original string is returned as-is.
-     *
-     * @param command - The command object containing the property to resolve.
-     * @param prop - The property name to check and localize.
-     * @returns The resolved string, either localized or raw.
-     */
     function determineCorrectString(command, prop) {
         var value = command[prop];
         if (typeof value === "object") {
@@ -12778,16 +12518,6 @@ See the LICENSE file for details.
         }
         return value;
     }
-    /**
-     * Type guard to check if a value is a valid LocalizedStringEntry object.
-     *
-     * A valid LocalizedStringEntry is a non-null object (not an array) where all keys
-     * are strings and all values are strings. This is used to verify localized string
-     * dictionaries before passing them to the `localize()` function.
-     *
-     * @param value - The value to check.
-     * @returns True if the value is a valid LocalizedStringEntry, false otherwise.
-     */
     function isLocalizedEntry(value) {
         return (
             typeof value === "object" &&
@@ -12798,13 +12528,6 @@ See the LICENSE file for details.
             })
         );
     }
-    /**
-     * Finds the index position after the last occurrence of `' > '` in the given string.
-     * Useful for locating the final breadcrumb separator in a path-like string.
-     *
-     * @param s - The string to search within.
-     * @returns The position just after the last `' > '` or 0 if not found.
-     */
     function findLastBreadcrumbSeparator(s) {
         var p = 0;
         var re = / > /g;
@@ -12818,13 +12541,6 @@ See the LICENSE file for details.
         }
         return p;
     }
-    /**
-     * Generate a unique command ID for the data model by replacing whitespace and periods,
-     * and appending a number if necessary to ensure uniqueness.
-     *
-     * @param s - Base string to generate the ID from.
-     * @returns A valid, unique command ID.
-     */
     function generateCommandId(s) {
         var re = /\s|\./gi;
         var id = s.replace(re, "_");
@@ -12835,14 +12551,7 @@ See the LICENSE file for details.
         }
         return id;
     }
-    /**
-     * Ask the user if they want to add their new commands to their startup screen.
-     *
-     * @param newCommandIds - Array of new command IDs to add.
-     * @returns `false` if the user declines to add commands, `undefined` otherwise.
-     */
     function addToStartup(newCommandIds) {
-        // Remove any command already in startupCommands
         for (var i = newCommandIds.length - 1; i >= 0; i--) {
             var newCommandId = newCommandIds[i];
             if (prefs.startupCommands.includes(newCommandId)) {
@@ -12858,12 +12567,6 @@ See the LICENSE file for details.
         if (!confirmed) return false;
         prefs.startupCommands = newCommandIds.concat(prefs.startupCommands);
     }
-    /**
-     * Get every unique font used inside the Illustrator document.
-     *
-     * @param doc - The Illustrator document object.
-     * @returns An array of unique fonts used in the document.
-     */
     function getDocumentFonts(doc) {
         var fonts = [];
         for (var i = 0; i < doc.textFrames.length; i++) {
@@ -12877,56 +12580,35 @@ See the LICENSE file for details.
         }
         return fonts;
     }
-    /**
-     * Reset view and zoom in on a specific page item in the active Illustrator document.
-     *
-     * @param pageItem - The page item to focus the view on.
-     */
     function zoomIntoPageItem(pageItem) {
         var view = app.activeDocument.views[0];
-        // Get current screen dimensions
         var screenBounds = view.bounds;
         var screenW = screenBounds[2] - screenBounds[0];
         var screenH = screenBounds[1] - screenBounds[3];
-        // Get page item's visible bounds and center
         var bounds = pageItem.visibleBounds;
         var itemW = bounds[2] - bounds[0];
         var itemH = bounds[1] - bounds[3];
         var itemCX = bounds[0] + itemW / 2;
         var itemCY = bounds[1] - itemH / 2;
-        // Center the view on the page item
         view.centerPoint = [itemCX, itemCY];
-        // Calculate zoom ratio
         var ratioW = screenW / itemW;
         var ratioH = screenH / itemH;
         var zoomRatio = itemW * (screenH / screenW) >= itemH ? ratioW : ratioH;
-        // Apply zoom with a padding factor
         var padding = 0.9;
         view.zoom = zoomRatio * padding;
     }
-    /**
-     * Get information for all placed files in the current Illustrator document.
-     * This includes file name, file path, and whether the file exists.
-     *
-     * @returns An array of localized strings containing file info for reporting.
-     */
     function getPlacedFileInfoForReport() {
-        // Load AdobeXMPScript if not already available
         if (ExternalObject.AdobeXMPScript === undefined) {
             ExternalObject.AdobeXMPScript = new ExternalObject("lib:AdobeXMPScript");
         }
-        // Parse XMP metadata from the current document
         var xmp = new XMPMeta(app.activeDocument.XMPString);
         var allFilePaths = getAllPlacedFilePaths(xmp);
-        // Convert paths to File objects
         var fileObjects = allFilePaths.map(function (path) {
             return new File(path);
         });
-        // Sort files by name
         fileObjects.sort(function (a, b) {
             return a.name.localeCompare(b.name);
         });
-        // Build localized strings for each file
         var result = fileObjects.map(function (f, index) {
             var fileInfo =
                 localize(strings.dr_name) +
@@ -12941,19 +12623,8 @@ See the LICENSE file for details.
         });
         return result;
     }
-    /**
-     * Get all placed file paths (linked and embedded) from the document XMP metadata.
-     * This bypasses issues with the `placedItems` collection in the Illustrator API.
-     *
-     * Credit to @pixxxelschubser via Adobe forums:
-     * https://community.adobe.com/t5/user/viewprofilepage/user-id/7720512
-     *
-     * @param xmp - The parsed XMP metadata object for the current document.
-     * @returns An array of file path strings.
-     */
     function getAllPlacedFilePaths(xmp) {
         var paths = [];
-        // Iterate over all items in the xmpMM:Manifest array
         for (var i = 1; i <= xmp.countArrayItems(XMPConst.NS_XMP_MM, "Manifest"); i++) {
             var xpath = "xmpMM:Manifest[".concat(i, "]/stMfs:reference/stRef:filePath");
             var prop = xmp.getProperty(XMPConst.NS_XMP_MM, xpath);
@@ -12963,15 +12634,6 @@ See the LICENSE file for details.
         }
         return paths;
     }
-    /**
-     * Check for any placed files with broken links in the current Illustrator document.
-     *
-     * This function parses the document's XMP metadata to find broken links listed under
-     * `xmpMM:Ingredients`, which includes externally referenced files (e.g., missing linked images).
-     *
-     * @param xmp - The parsed XMP metadata object for the current document.
-     * @returns An array of file path strings for the broken linked files.
-     */
     function getBrokenFilePaths(xmp) {
         var paths = [];
         for (
@@ -12987,15 +12649,6 @@ See the LICENSE file for details.
         }
         return paths;
     }
-    /**
-     * Check whether a command is compatible with the current Illustrator version.
-     *
-     * Compares the system's Illustrator version against optional `minVersion` and `maxVersion`
-     * properties on the command to determine if the command should be available.
-     *
-     * @param command - The command object to validate.
-     * @returns True if the command is valid for the current Illustrator version, false otherwise.
-     */
     function commandVersionCheck(command) {
         var aiVersion = parseFloat(app.version);
         if (
@@ -13006,13 +12659,6 @@ See the LICENSE file for details.
         }
         return true;
     }
-    /**
-     * Compare two semantic version strings.
-     *
-     * @param a - First semantic version string (e.g. "1.2.3").
-     * @param b - Second semantic version string (e.g. "1.2.0").
-     * @returns 1 if `a` > `b`, -1 if `b` > `a`, 0 if they are equal.
-     */
     function semanticVersionComparison(a, b) {
         if (a === b) {
             return 0;
@@ -13030,7 +12676,6 @@ See the LICENSE file for details.
                 return -1;
             }
         }
-        // If one's a prefix of the other, the longer one is considered greater
         if (a_components.length > b_components.length) {
             return 1;
         }
@@ -13039,14 +12684,6 @@ See the LICENSE file for details.
         }
         return 0;
     }
-    /**
-     * Return the names of each object in an Illustrator collection object.
-     * https://ai-scripting.docsforadobe.dev/scripting/workingWithObjects.html#collection-objects
-     *
-     * @param collection - Illustrator collection object with a `length` and `name` property on each item.
-     * @param sorted - Whether the results should be sorted alphabetically.
-     * @returns An array of names from the collection.
-     */
     function getCollectionObjectNames(collection, sorted) {
         if (sorted === void 0) {
             sorted = false;
@@ -13066,14 +12703,6 @@ See the LICENSE file for details.
         }
         return sorted ? names.sort() : names;
     }
-    /**
-     * Present File.openDialog() for user to select files to load.
-     *
-     * @param prompt - Prompt text for the open dialog.
-     * @param multiselect - Whether multiple files can be selected.
-     * @param fileFilter - A file filter string (e.g., "*.js;*.jsx" or "JavaScript Files:*.js,*.jsx").
-     * @returns An array of selected `File` objects, or an empty array if none selected.
-     */
     function loadFileTypes(prompt, multiselect, fileFilter) {
         var results = [];
         var files = File.openDialog(prompt, fileFilter, multiselect);
@@ -13085,19 +12714,6 @@ See the LICENSE file for details.
         }
         return results;
     }
-    /**
-     * Simulate a key press for Windows users to fix a ScriptUI focus bug.
-     *
-     * This function addresses a known issue where, on some Windows versions of Illustrator,
-     * setting `active = true` on a ScriptUI field causes a brief flash of Windows Explorer
-     * before the Illustrator dialog comes to the front. This workaround, created by Sergey Osokin,
-     * uses a temporary `.vbs` script to simulate a keypress and bring focus back cleanly.
-     *
-     * See: https://github.com/joshbduncan/AiCommandPalette/issues/8
-     *
-     * @param k - The key to simulate (e.g. "TAB", "ESC", etc.).
-     * @param n - Number of times to simulate the keypress. Defaults to 1.
-     */
     function simulateKeypress(k, n) {
         if (n === void 0) {
             n = 1;
@@ -13122,15 +12738,6 @@ See the LICENSE file for details.
             if (f) f.close();
         }
     }
-    /**
-     * Open a URL in the system default browser.
-     *
-     * This function creates a temporary HTML file that redirects to the given URL,
-     * and then opens it using the default system browser. Useful workaround for
-     * opening links from ExtendScript (since `File.execute()` works on HTML files).
-     *
-     * @param url - The URL to open.
-     */
     function openURL(url) {
         var html = new File(Folder.temp.absoluteURI + "/aisLink.html");
         html.open("w");
@@ -13142,14 +12749,6 @@ See the LICENSE file for details.
         html.close();
         html.execute();
     }
-    /**
-     * Get all `.js` and `.jsx` files in a folder.
-     *
-     * @param folder - The starting folder object.
-     * @param recursive - If true, searches subfolders recursively.
-     * @returns An array of matching File objects.
-     * @throws {Error} If the folder parameter is invalid or the folder does not exist.
-     */
     function findScriptFiles(folder, recursive) {
         if (recursive === void 0) {
             recursive = true;
@@ -13172,33 +12771,16 @@ See the LICENSE file for details.
         }
         return result;
     }
-    /**
-     * Generates a deterministic base-36 hash from a string.
-     *
-     * This is a lightweight, non-cryptographic hash intended for identifiers,
-     * cache keys, or filenames. It is safe to compile down to ES3 for
-     * Adobe ExtendScript.
-     *
-     * @param str - Input string to hash.
-     * @returns Base-36 encoded hash string (always non-negative).
-     */
     function hashString(str) {
         if (str.length === 0) return "0";
         var hash = 0;
         for (var i = 0; i < str.length; i++) {
             var code = str.charCodeAt(i);
             hash = (hash << 5) - hash + code;
-            hash |= 0; // force 32-bit signed int (ES3-safe)
+            hash |= 0;
         }
-        // Normalize to positive and encode compactly
         return Math.abs(hash).toString(36);
     }
-    /**
-     * Sort listbox selection items by their index positions.
-     *
-     * @param sel - Array of selected ListItem objects.
-     * @returns Sorted array of index numbers in ascending order.
-     */
     function sortIndexes(sel) {
         return sel
             .map(function (item) {
@@ -13208,57 +12790,17 @@ See the LICENSE file for details.
                 return a - b;
             });
     }
-    /**
-     * Check whether an array of sorted indexes represents a contiguous range.
-     *
-     * For example:
-     * - [0, 1, 2] → true (contiguous)
-     * - [0, 2, 3] → false (missing index 1)
-     * - [5, 6, 7, 8] → true (contiguous)
-     *
-     * @param sel - Array of sorted index numbers.
-     * @returns True if indexes form a contiguous sequence, false otherwise.
-     */
     function contiguous(sel) {
         return sel.length === sel[sel.length - 1] - sel[0] + 1;
     }
-    // FILE/FOLDER OPERATIONS
-    /**
-     * Create a Folder object, creating the folder on disk if it doesn't exist.
-     *
-     * This is a convenience wrapper around ExtendScript's Folder constructor that
-     * ensures the folder exists before returning the object.
-     *
-     * @param path - Absolute file system path to the folder.
-     * @returns Folder object representing the path.
-     */
     function setupFolderObject(path) {
         var folder = new Folder(path);
         if (!folder.exists) folder.create();
         return folder;
     }
-    /**
-     * Create a File object from a folder and filename.
-     *
-     * This is a convenience wrapper that constructs the full file path by combining
-     * the folder path with the filename.
-     *
-     * @param path - Parent folder object.
-     * @param name - Name of the file (including extension).
-     * @returns File object representing the combined path.
-     */
     function setupFileObject(path, name) {
         return new File("".concat(path, "/").concat(name));
     }
-    /**
-     * Read the entire contents of a text file as a UTF-8 string.
-     *
-     * The file is automatically opened, read, and closed. If an error occurs during
-     * reading, the user is shown an alert and the error is logged.
-     *
-     * @param f - File object to read from.
-     * @returns The file contents as a string, or undefined if reading fails.
-     */
     function readTextFile(f) {
         var data;
         try {
@@ -13273,17 +12815,6 @@ See the LICENSE file for details.
         }
         return data;
     }
-    /**
-     * Write string data to a text file with UTF-8 encoding.
-     *
-     * The file is automatically opened, written, and closed. If an error occurs during
-     * writing, the user is shown an alert and the error is logged. The file will be
-     * created if it doesn't exist.
-     *
-     * @param data - String data to write to the file.
-     * @param fp - File path (as string) or File object to write to.
-     * @param mode - File open mode: "w" for write (overwrite) or "a" for append. Defaults to "w".
-     */
     function writeTextFile(data, fp, mode) {
         if (mode === void 0) {
             mode = "w";
@@ -13300,23 +12831,15 @@ See the LICENSE file for details.
             f.close();
         }
     }
-    // DEVELOPMENT SETTINGS
     var _a, _b;
-    // localization testing
-    // $.locale = false;
-    // $.locale = "de";
-    // $.locale = "ru";
-    // ENVIRONMENT VARIABLES
     var sysOS = /mac/i.test($.os) ? "mac" : "win";
     var windowsFlickerFix =
         sysOS === "win" && parseFloat(app.version) < 26.4 ? true : false;
     var versionUpdate0_16_0 = false;
-    // PLUG-IN DATA STORAGE
     var pluginDataFolder = setupFolderObject(Folder.userData + "/JBD/AiCommandPalette");
     var logFilePath = pluginDataFolder + "/AiCommandPalette.log";
     var userPrefsFileName = "Preferences.json";
     var userHistoryFileName = "History.json";
-    // DEVELOPMENT SETTINGS
     var devMode = $.getenv("USER") === "jbd" ? true : false;
     var debugLogging = $.getenv("AICP_DEBUG_LOGGING") !== "false" ? true : false;
     var logger;
@@ -13328,47 +12851,18 @@ See the LICENSE file for details.
             $.writeln(text);
         };
     }
-    /**
-     * Development utilities for inspecting and exporting plugin state.
-     *
-     * This object provides helper methods for developers to access plugin data
-     * during development. When `devMode` is enabled, these methods can be used
-     * to save preferences and command data to JSON files for inspection.
-     */
     var devInfo = {
-        /**
-         * Get the plugin data folder location.
-         *
-         * @returns The plugin data folder object.
-         */
         folder: function () {
             return pluginDataFolder;
         },
-        /**
-         * Get a File object pointing to the dev prefs export location.
-         *
-         * @returns File object for the development preferences JSON file.
-         */
         prefsFile: function () {
             var folder = this.folder();
             return setupFileObject(folder, "prefs.json");
         },
-        /**
-         * Get a File object pointing to the dev commands export location.
-         *
-         * @returns File object for the development commands JSON file.
-         */
         commandsFile: function () {
             var folder = this.folder();
             return setupFileObject(folder, "commands.json");
         },
-        /**
-         * Save current preferences and command data to JSON files for inspection.
-         *
-         * This method exports the current state of `prefs` and `commandsData` to
-         * prettified JSON files in the plugin data folder. Useful for debugging
-         * and understanding the plugin's runtime state.
-         */
         save: function () {
             writeTextFile(JSON.stringify(prefs, undefined, 4), this.prefsFile());
             writeTextFile(
@@ -13397,20 +12891,10 @@ See the LICENSE file for details.
                 _b),
         },
     };
-    // MISCELLANEOUS SETTINGS
-    // Number of items visible in the listbox viewport without scrolling.
-    // Based on the listbox height (paletteHeight) and standard row height in ScriptUI.
     var visibleListItems = 9;
-    // Maximum number of recent commands to track in user history.
-    // Keeps the recent commands list manageable and performant.
     var mostRecentCommandsCount = 25;
-    // Maximum number of named objects to load from a document.
-    // Prevents performance issues when documents have thousands of objects.
-    // If exceeded, user is shown a warning and objects are still loaded.
     var namedObjectLimit = 2000;
-    // Regex to match trailing ellipsis in menu command names (e.g., "Save As...")
     var regexEllipsis = /\.\.\.$/;
-    // Regex to match the breadcrumb separator (greater-than sign) in menu paths (e.g., "File > Open")
     var regexBreadcrumbSeparator = /\s>\s/g;
     var prefs = {
         startupCommands: null,
@@ -13421,7 +12905,7 @@ See the LICENSE file for details.
         scripts: [],
         watchedFolders: [],
         pickers: [],
-        fuzzy: true, // set to new fuzzy matcher as default
+        fuzzy: true,
         version: _version,
         os: $.os,
         locale: $.locale,
@@ -13429,53 +12913,30 @@ See the LICENSE file for details.
         timestamp: Date.now(),
     };
     var userPrefs = {
-        /**
-         * Get the folder where user preferences are stored.
-         *
-         * @returns Folder object for the plugin data directory.
-         */
         folder: function () {
             return pluginDataFolder;
         },
-        /**
-         * Get the File object for the user preferences JSON file.
-         *
-         * @returns File object for the preferences file.
-         */
         file: function () {
             var folder = this.folder();
             return setupFileObject(folder, userPrefsFileName);
         },
-        /**
-         * Loads user preferences from disk (migrates legacy formats as needed).
-         * If `inject` is true, calls `this.inject()` after loading.
-         *
-         * @param inject - Inject user commands into `commandsData`.
-         * @throws {Error} Throws a runtime error if the preferences file is corrupted and cannot
-         *                 be parsed. The corrupted file is renamed to .bak and the preferences
-         *                 folder is revealed to the user.
-         */
         load: function (inject) {
             var file = this.file();
             logger.log("loading user preferences:", file.fsName);
             if (!file.exists) return;
-            // Track which updates have been applied
             var updateVersion0_16_0 = false;
             var s = readTextFile(file);
             var data;
-            // try true JSON first
             try {
                 data = JSON.parse(s);
                 logger.log("prefs loaded as valid JSON");
             } catch (e) {
                 logger.log("prefs not valid JSON, will try eval fallback:", e.message);
             }
-            // try json-like eval second
             if (data === undefined) {
                 try {
                     data = eval(s);
                     logger.log("prefs loaded as old JSON-like, saving as true JSON");
-                    // write true JSON back to disk
                     writeTextFile(JSON.stringify(data), file);
                 } catch (e) {
                     file.rename(file.name + ".bak");
@@ -13487,7 +12948,6 @@ See the LICENSE file for details.
             }
             if (!data || typeof data !== "object") return;
             if (Object.keys(data).length === 0) return;
-            // update stored command ids to v0.15.0 unique ids
             logger.log(
                 "loaded prefs saved from ".concat(_title, " v").concat(data.version)
             );
@@ -13509,38 +12969,18 @@ See the LICENSE file for details.
                 this.inject();
             }
         },
-        /**
-         * Apply version-specific migrations to user preferences.
-         *
-         * This method updates the preferences data structure when command IDs or
-         * schemas change between plugin versions. It creates a backup before making
-         * changes and updates command references in:
-         * - Startup commands list
-         * - Hidden commands list
-         * - Workflow action steps
-         *
-         * The migration strategy uses a lookup table to map old command IDs to new
-         * ones, ensuring that user configurations remain valid after updates.
-         *
-         * @param version - The version number to migrate to (e.g., "0.16.0").
-         */
         update: function (version) {
             switch (version) {
                 case "0.16.0":
                     logger.log("applying v0.16.0 prefs command id update");
-                    // backup current prefs files just in case or error
                     this.backup();
-                    // build lut to convert old menu command ids to updated versions
                     var commandsLUT = {};
                     for (var key in commandsData) {
                         var command = commandsData[key];
-                        // only add commands where the is new (menu commands for now)
                         if (key == command.id) continue;
-                        // skip any ids already added to the LUT
                         if (commandsLUT.hasOwnProperty(command.id)) continue;
                         commandsLUT[command.id] = key;
                     }
-                    // update startup commands
                     for (var i = 0; i < prefs.startupCommands.length; i++) {
                         var oldId = prefs.startupCommands[i];
                         if (
@@ -13555,7 +12995,6 @@ See the LICENSE file for details.
                         );
                         prefs.startupCommands[i] = commandsLUT[oldId];
                     }
-                    // update hidden commands
                     for (var i = 0; i < prefs.hiddenCommands.length; i++) {
                         var oldId = prefs.hiddenCommands[i];
                         if (
@@ -13570,7 +13009,6 @@ See the LICENSE file for details.
                         );
                         prefs.hiddenCommands[i] = commandsLUT[oldId];
                     }
-                    // update workflow commands
                     for (var i = 0; i < prefs.workflows.length; i++) {
                         var workflow = prefs.workflows[i];
                         for (var j = 0; j < prefs.workflows[i].actions.length; j++) {
@@ -13595,13 +13033,6 @@ See the LICENSE file for details.
                     break;
             }
         },
-        /**
-         * Inject user-created commands into the global commandsData object.
-         *
-         * This method takes workflows, bookmarks, scripts, pickers, and custom commands
-         * from the loaded preferences and adds them to the main command registry so they
-         * can be executed by the command palette.
-         */
         inject: function () {
             var typesToInject = [
                 "workflows",
@@ -13618,13 +13049,6 @@ See the LICENSE file for details.
                 }
             }
         },
-        /**
-         * Load scripts from all watched folders into the command palette.
-         *
-         * Recursively scans each watched folder for .jsx and .js files, creates command
-         * entries for them, and adds them to commandsData. If a watched folder doesn't
-         * exist, the user is notified.
-         */
         loadWatchedScripts: function () {
             for (var _i = 0, _a = prefs.watchedFolders; _i < _a.length; _i++) {
                 var path = _a[_i];
@@ -13640,7 +13064,6 @@ See the LICENSE file for details.
                     continue;
                 }
                 logger.log("loading watched script folder: ".concat(folder.fsName));
-                // find all scripts
                 var files = findScriptFiles(folder, true);
                 var scripts = [];
                 for (var _b = 0, files_1 = files; _b < files_1.length; _b++) {
@@ -13669,25 +13092,11 @@ See the LICENSE file for details.
                 }
             }
         },
-        /**
-         * Save current preferences to disk as JSON.
-         *
-         * Writes the global `prefs` object to the preferences file with pretty-printing
-         * (4-space indentation) for better readability.
-         */
         save: function () {
             var file = this.file();
             logger.log("writing user prefs");
             writeTextFile(JSON.stringify(prefs, undefined, 4), file);
         },
-        /**
-         * Create a timestamped backup of the preferences file.
-         *
-         * Copies the current preferences file to a new file with the format:
-         * `{filename}.{timestamp}.bak`
-         *
-         * @returns File object representing the backup file.
-         */
         backup: function () {
             var file = this.file();
             var ts = Date.now();
@@ -13696,57 +13105,25 @@ See the LICENSE file for details.
             logger.log("user prefs backed up to:", backupFile.fsName);
             return backupFile;
         },
-        /**
-         * Open the preferences folder in the system file browser.
-         *
-         * This is useful for users who want to manually inspect or edit their
-         * preferences and related files.
-         */
         reveal: function () {
             var folder = this.folder();
             logger.log("revealing user prefs");
             folder.execute();
         },
     };
-    // setup the base prefs model
     var history = [];
     var recentCommands = {};
     var recentQueries = [];
     var mostRecentCommands = [];
     var latches = {};
     var userHistory = {
-        /**
-         * Get the folder where user history is stored.
-         *
-         * @returns Folder object for the plugin data directory.
-         */
         folder: function () {
             return pluginDataFolder;
         },
-        /**
-         * Get the File object for the user history JSON file.
-         *
-         * @returns File object for the history file.
-         */
         file: function () {
             var folder = this.folder();
             return setupFileObject(folder, userHistoryFileName);
         },
-        /**
-         * Load user command history from disk and populate tracking data structures.
-         *
-         * This method reads the history file and builds several lookup tables:
-         * - Recent commands with usage counts (for boosting search results)
-         * - Recent queries (for history scrolling with up arrow)
-         * - Most recent N commands (for "Recent Commands" feature)
-         * - Query latches (most common command for each query string)
-         *
-         * Supports legacy JSON-like format and migrates to proper JSON automatically.
-         *
-         * @throws {Error} Throws a runtime error if the history file is corrupted and cannot
-         *                 be parsed. The corrupted file is renamed to .bak and the history
-         *                 folder is revealed to the user.
-         */
         load: function () {
             var file = this.file();
             logger.log("loading user history:", file.fsName);
@@ -13754,7 +13131,6 @@ See the LICENSE file for details.
             var queryCommandsLUT = {};
             var s = readTextFile(file);
             var data;
-            // try true JSON first
             try {
                 data = JSON.parse(s);
                 logger.log("history loaded as valid JSON");
@@ -13764,12 +13140,10 @@ See the LICENSE file for details.
                     e.message
                 );
             }
-            // try json-like eval second
             if (data === undefined) {
                 try {
                     data = eval(s);
                     logger.log("history loaded as old JSON-like, saving as true JSON");
-                    // write true JSON back to disk
                     writeTextFile(JSON.stringify(data), file);
                 } catch (e) {
                     file.rename(file.name + ".bak");
@@ -13784,21 +13158,17 @@ See the LICENSE file for details.
             history = data;
             for (var i = data.length - 1; i >= 0; i--) {
                 entry = data[i];
-                // track how many times a query ties to a command
                 if (!queryCommandsLUT.hasOwnProperty(entry.query))
                     queryCommandsLUT[entry.query] = {};
                 if (!queryCommandsLUT[entry.query].hasOwnProperty(entry.command))
                     queryCommandsLUT[entry.query][entry.command] = 0;
                 queryCommandsLUT[entry.query][entry.command]++;
-                // track how often recent command have been ran
                 if (!recentCommands.hasOwnProperty(entry.command))
                     recentCommands[entry.command] = 0;
                 recentCommands[entry.command]++;
-                // track recent queries
                 if (!recentQueries.includes(entry.query)) {
                     recentQueries.push(entry.query);
                 }
-                // track the past 25 most recent commands
                 if (
                     mostRecentCommands.length <= mostRecentCommandsCount &&
                     commandsData.hasOwnProperty(entry.command) &&
@@ -13806,53 +13176,33 @@ See the LICENSE file for details.
                 )
                     mostRecentCommands.push(entry.command);
             }
-            // build latches with most common command for each query
             var commands;
             for (var query in queryCommandsLUT) {
                 commands = [];
                 for (var command in queryCommandsLUT[query]) {
                     commands.push([command, queryCommandsLUT[query][command]]);
                 }
-                // sort by most used
                 commands.sort(function (a, b) {
                     return b[1] - a[1];
                 });
                 latches[query] = commands[0][0];
             }
         },
-        /**
-         * Apply version-specific migrations to user command history.
-         *
-         * This method updates historical command references when command IDs change
-         * between plugin versions. It creates a backup before making changes and
-         * updates command IDs in the history entries to match the new ID schema.
-         *
-         * The migration strategy uses a lookup table built from the current
-         * commandsData to map old command IDs to their new equivalents, ensuring
-         * that query latches and usage statistics remain accurate.
-         *
-         * @param version - The version number to migrate to (e.g., "0.16.0").
-         */
         update: function (version) {
             switch (version) {
                 case "0.16.0":
                     logger.log("applying v0.16.0 history command id update");
-                    // backup current prefs files just in case or error
                     this.backup();
-                    // build lut to convert old menu command ids to updated versions
                     var commandsLUT = {};
                     for (var key in commandsData) {
                         var command = commandsData[key];
-                        // only add commands where the is new (menu commands for now)
                         if (key == command.id) continue;
-                        // skip any ids already added to the LUT
                         if (commandsLUT.hasOwnProperty(command.id)) continue;
                         commandsLUT[command.id] = key;
                     }
                     var entry = void 0;
                     for (var i = history.length - 1; i >= 0; i--) {
                         entry = history[i];
-                        // update command
                         var oldId = entry.command;
                         if (
                             !commandsLUT.hasOwnProperty(oldId) ||
@@ -13872,37 +13222,17 @@ See the LICENSE file for details.
                     break;
             }
         },
-        /**
-         * Clear all user command history by deleting the history file.
-         *
-         * This permanently removes all tracked queries, command usage, and latches.
-         * The file will be recreated on the next save() call.
-         */
         clear: function () {
             var file = this.file();
             logger.log("clearing user history");
             file.remove();
         },
-        /**
-         * Save current command history to disk as JSON.
-         *
-         * Automatically trims the history to the most recent 500 entries to prevent
-         * unbounded growth. Writes with pretty-printing (4-space indentation).
-         */
         save: function () {
             var file = this.file();
             logger.log("writing user history");
             if (history.length > 500) history = history.slice(-500);
             writeTextFile(JSON.stringify(history, undefined, 4), file);
         },
-        /**
-         * Create a timestamped backup of the history file.
-         *
-         * Copies the current history file to a new file with the format:
-         * `{filename}.{timestamp}.bak`
-         *
-         * @returns File object representing the backup file.
-         */
         backup: function () {
             var file = this.file();
             var ts = Date.now();
@@ -13911,12 +13241,6 @@ See the LICENSE file for details.
             logger.log("user history backed up to:", backupFile.fsName);
             return backupFile;
         },
-        /**
-         * Open the history folder in the system file browser.
-         *
-         * This is useful for users who want to manually inspect or manage their
-         * history file.
-         */
         reveal: function () {
             var folder = this.folder();
             logger.log("revealing history file");
@@ -13925,16 +13249,6 @@ See the LICENSE file for details.
     };
     var userActions = {
         loadedActions: false,
-        /**
-         * Load all user-installed Illustrator actions into the command data model.
-         *
-         * This method reads action sets from Illustrator's preferences and creates
-         * a command entry for each action. Actions are accessed via the app.preferences
-         * API under the "plugin/Action/SavedSets" path. The loaded actions can then
-         * be executed via the command palette.
-         *
-         * After loading, the `loadedActions` flag is set to true if any actions were found.
-         */
         load: function () {
             logger.log("loading user actions");
             var ct = 0;
@@ -13946,10 +13260,8 @@ See the LICENSE file for details.
             var path = "plugin/Action/SavedSets/set-";
             for (var i = 1; i <= 100; i++) {
                 currentPath = "".concat(path).concat(i, "/");
-                // get action set
                 set = pref.getStringPreference("".concat(currentPath, "name"));
                 if (!set) break;
-                // get actions in set
                 actionCount = Number(
                     pref.getIntegerPreference("".concat(currentPath, "actionCount"))
                 );
@@ -13961,7 +13273,7 @@ See the LICENSE file for details.
                     var id = generateCommandId(
                         "action_".concat(set, "_").concat(name.toLowerCase())
                     );
-                    id = "".concat(set, "_").concat(name); // FIXME: why?
+                    id = "".concat(set, "_").concat(name);
                     var obj = {
                         id: id,
                         action: "action",
@@ -13978,15 +13290,6 @@ See the LICENSE file for details.
             this.loadedActions = ct > 0;
         },
     };
-    /**
-     * Filter the supplied commands by multiple factors.
-     * @param commands Command `id`s to filter through. If `null`, all commands are checked.
-     * @param types Types of commands to include in the results (e.g. builtin, tool, config, etc.).
-     * @param showHidden Should user-hidden commands be included?
-     * @param showNonRelevant Should non-relevant commands be included?
-     * @param hideSpecificCommands Specific commands to exclude from results.
-     * @returns Filtered command IDs.
-     */
     function filterCommands(
         commands,
         types,
@@ -14004,19 +13307,15 @@ See the LICENSE file for details.
             if (!commandsData.hasOwnProperty(id)) continue;
             var command = commandsData[id];
             if (!commandVersionCheck(command)) {
-                // logger.log(`incompatible version command: ${command.name["en"]} (${id})`);
                 continue;
             }
             if (!showHidden && prefs.hiddenCommands.includes(id)) {
-                // logger.log(`hidden command: ${command.name["en"]} (${id})`);
                 continue;
             }
             if (!showNonRelevant && !relevantCommand(command)) {
-                // logger.log(`not relevant command: ${command.name["en"]} (${id})`);
                 continue;
             }
             if (hideSpecificCommands && hideSpecificCommands.includes(id)) {
-                // logger.log(`user hidden command: ${command.name["en"]} (${id})`);
                 continue;
             }
             if (!types || types.includes(command.type.toLowerCase()))
@@ -14024,53 +13323,32 @@ See the LICENSE file for details.
         }
         return filteredCommands;
     }
-    /**
-     * Determine if a command is relevant at the current moment.
-     * @param command Command object to check.
-     * @returns Whether the command is relevant.
-     */
     function relevantCommand(command) {
-        // hide commands requiring an active documents if requested
         if (command.docRequired && app.documents.length < 1) return false;
-        // hide commands requiring an active selection if requested
         if (command.selRequired && app.activeDocument.selection.length < 1)
             return false;
-        // hide `Remove Watched Folder...`
         if (
             command.id === "config_removeWatchedFolders" &&
             !prefs.watchedFolders.length
         )
             return false;
-        // hide `Edit Workflow...` command if no workflows
         if (command.id === "builtin_editWorkflow" && !prefs.workflows.length)
             return false;
-        // hide `All Workflows...` command if no workflows
         if (command.id === "builtin_allWorkflows" && !prefs.workflows.length)
             return false;
-        // hide `All Scripts...` command if no scripts
         if (command.id === "builtin_allScripts" && !prefs.scripts.length) return false;
-        // hide `All Bookmarks...` command if no bookmarks
         if (command.id === "builtin_allBookmarks" && !prefs.bookmarks.length)
             return false;
-        // hide `All Actions...` command if no actions
         if (command.id === "builtin_allActions" && !userActions.loadedActions)
             return false;
-        // hide `Edit Picker...` command if no pickers
         if (command.id === "builtin_editPicker" && !prefs.pickers.length) return false;
-        // hide `All Pickers...` command if no pickers
         if (command.id === "builtin_allPickers" && !prefs.pickers.length) return false;
-        // hide `Enable Fuzzy Matching` command if already enabled
         if (command.id === "config_enableFuzzyMatching" && prefs.fuzzy) return false;
-        // hide `Disable Fuzzy Matching` command if already disabled
         if (command.id === "config_disableFuzzyMatching" && !prefs.fuzzy) return false;
-        // hide `Enable Debug Logging` command if already enabled
         if (command.id === "config_enableDebugLogging" && debugLogging) return false;
-        // hide `Disable Debug Logging` command if already disabled
         if (command.id === "config_disableDebugLogging" && !debugLogging) return false;
-        // hide `Unhide Commands...` command if no hidden commands
         if (command.id === "config_unhideCommand" && !prefs.hiddenCommands.length)
             return false;
-        // hide `Recent Commands...` and `Clear History` if no recent commands
         if (
             command.id === "builtin_recentCommands" &&
             Object.keys(recentCommands).length === 0
@@ -14079,21 +13357,9 @@ See the LICENSE file for details.
         }
         return true;
     }
-    /**
-     * Remove regex-special characters from input string.
-     * @param input The input string to sanitize.
-     * @returns A string safe for regex usage.
-     */
     function stripRegExpChars(input) {
         return input.replace(/[.*+?^=!:${}()|[\]\/\\]/g, "");
     }
-    /**
-     * Fuzzy match a query string against a list of command IDs.
-     * Scores and sorts matches based on relevance.
-     * @param q The user input query.
-     * @param commands List of command IDs to match against.
-     * @returns A sorted array of matching command IDs.
-     */
     function fuzzy(q, commands) {
         var sanitizedQuery = stripRegExpChars(q.toLowerCase());
         var scores = {};
@@ -14123,28 +13389,6 @@ See the LICENSE file for details.
         });
         return matches;
     }
-    /**
-     * Calculates a fuzzy-match relevance score for a command string.
-     *
-     * This scoring function considers both the positional context of each match
-     * span (e.g., word boundaries and sections after the last `>` separator) and the
-     * quality of the match itself. Longer contiguous spans earn exponentially
-     * higher scores, and exact matches against query chunks (when provided) receive
-     * an additional bonus — even when embedded inside larger tokens (e.g. inside
-     * camelCase or compound identifiers).
-     *
-     * Intended use: highlight spans, boost meaningful exact matches, and emulate
-     * modern command-palette ranking where complete token matches outrank scattered
-     * partial matches.
-     *
-     * @param command The command text being evaluated.
-     * @param spans Array of `[start, end)` tuples representing fuzzy-matched
-     *        character ranges within `command`.
-     * @param chunks (Optional) Original query chunks; used to award extra credit
-     *        when a span exactly equals a user-typed chunk, regardless of position.
-     * @returns A numeric relevance score where higher values indicate a stronger
-     *          fuzzy match.
-     */
     function calculateScore(command, spans, chunks) {
         var lastSeparator = findLastBreadcrumbSeparator(command);
         var score = 0;
@@ -14154,7 +13398,7 @@ See the LICENSE file for details.
             var endBoundary = e === command.length || command.charAt(e) === " ";
             var boundaryMult = startBoundary && endBoundary ? 3 : startBoundary ? 2 : 1;
             var spanScore = len * boundaryMult;
-            spanScore += len * len; // contiguity boost
+            spanScore += len * len;
             if (chunks) {
                 var spanText_1 = command.slice(s, e).toLowerCase();
                 if (
@@ -14162,7 +13406,6 @@ See the LICENSE file for details.
                         return c.toLowerCase() === spanText_1;
                     })
                 ) {
-                    // Exact-chunk bonus (tune the factor as you like)
                     spanScore += len * 3;
                 }
             }
@@ -14177,13 +13420,6 @@ See the LICENSE file for details.
         }
         return score;
     }
-    /**
-     * Finds fuzzy match spans for chunks within a target string.
-     * Each span is a pair of indices [start, end].
-     * @param chunks Query words to match.
-     * @param str The target string to search.
-     * @returns Array of matching spans or empty array if no match.
-     */
     function findMatches(chunks, str) {
         var spans = [];
         for (var _i = 0, chunks_1 = chunks; _i < chunks_1.length; _i++) {
@@ -14224,18 +13460,11 @@ See the LICENSE file for details.
         }
         return spans;
     }
-    /**
-     * Score array items based on regex string match.
-     * @param query String to search for.
-     * @param commands Command IDs to match `query` against.
-     * @returns Matching command IDs sorted by relevance score.
-     */
     function scoreMatches(query, commands) {
         var words = query.toLowerCase().split(" ");
         var matches = [];
         var scores = {};
         var maxScore = 0;
-        // Prioritize latched query
         if (latches.hasOwnProperty(query) && commands.includes(latches[query])) {
             var latchedId = latches[query];
             scores[latchedId] = 1000;
@@ -14256,16 +13485,9 @@ See the LICENSE file for details.
             if (!name) {
                 name = id.toLowerCase().replace("_", " ");
             }
-            // Exact match checks
             if (query === name || query === strippedName || query === type) {
                 score += query.length;
             }
-            // add the command type to the name if user requested searching type
-            // if (prefs.searchIncludesType) {
-            //   name += " " + type;
-            // }
-            // TODO: maybe allow searching on all columns (pulled from paletteSettings.columnSets)
-            // Word-by-word matching
             for (var _a = 0, words_1 = words; _a < words_1.length; _a++) {
                 var word = words_1[_a];
                 if (!word) continue;
@@ -14274,7 +13496,6 @@ See the LICENSE file for details.
                     score += word.length;
                 }
             }
-            // Score boost for recent commands
             if (score > 0) {
                 if (recentCommands.hasOwnProperty(command.id)) {
                     score += recentCommands[command.id];
@@ -14286,41 +13507,20 @@ See the LICENSE file for details.
                 }
             }
         }
-        // Sort matches by score descending
         return matches
             .filter(function (id, i, self) {
                 return self.indexOf(id) === i;
-            }) // remove duplicates
+            })
             .sort(function (a, b) {
                 return scores[b] - scores[a];
             });
     }
-    // LISTBOXWRAPPER LISTENERS
-    /**
-     * Close the window when an item in the listbox is double-clicked.
-     *
-     * This is the standard behavior for command selection in the main palette.
-     * When a user double-clicks a command in the listbox, the window closes with
-     * a return value of 1, signaling that a selection was made.
-     *
-     * @param listbox - The ScriptUI ListBox to attach the double-click handler to.
-     */
     function selectOnDoubleClick(listbox) {
         listbox.onDoubleClick = function () {
             var _a;
             (_a = listbox.window) === null || _a === void 0 ? void 0 : _a.close(1);
         };
     }
-    /**
-     * Add listbox command to Workflow builder steps when double-clicking.
-     *
-     * This listener is used in the Workflow Builder to allow users to quickly add
-     * commands to their workflow by double-clicking them. The selected command is
-     * added to the "steps" listbox, and special handling is provided for the
-     * "buildPicker" command which requires user input to create a custom picker.
-     *
-     * @param listbox - The ScriptUI ListBox to attach the double-click handler to.
-     */
     function addToStepsOnDoubleClick(listbox) {
         listbox.onDoubleClick = function () {
             var win = listbox.window;
@@ -14342,16 +13542,6 @@ See the LICENSE file for details.
             steps.notify("onChange");
         };
     }
-    /**
-     * Swap two listbox items in place (along with their corresponding IDs).
-     *
-     * This function exchanges all properties between two ListBox items, including
-     * their main text, subitem text, and custom ID property. Used in the Workflow
-     * Builder to reorder workflow steps.
-     *
-     * @param x - First listbox item to swap.
-     * @param y - Second listbox item to swap.
-     */
     function swapListboxItems(x, y) {
         var tempText = x.text;
         var tempSubText = x.subItems[0].text;
@@ -14363,20 +13553,6 @@ See the LICENSE file for details.
         y.subItems[0].text = tempSubText;
         y.id = tempId;
     }
-    /**
-     * Add arrow key navigation support to an EditText field for controlling a ListBoxWrapper.
-     * Allows users to navigate the listbox using arrow keys from the EditText input field.
-     *
-     * Features:
-     * - Up/Down arrows: Navigate through listbox items with frame scrolling
-     * - Shift+Up/Down: Simple navigation without frame adjustments
-     * - End-to-end wrapping: Jump from top to bottom or vice versa
-     * - Smart frame positioning: Keeps selected item visible in the listbox viewport
-     *
-     * @param q - The EditText field to attach navigation to
-     * @param list - The ListBoxWrapper instance to control
-     * @param callbacks - Optional callbacks for custom behavior (e.g., history scrolling)
-     */
     function addListboxArrowKeyNavigation(q, list, callbacks) {
         q.addEventListener("keydown", function (e) {
             var listbox = list.listbox;
@@ -14392,7 +13568,6 @@ See the LICENSE file for details.
                     listbox.selection = 0;
                     return;
                 }
-                // Check if Up navigation should be blocked (e.g., for history scrolling)
                 if (
                     e.keyName === "Up" &&
                     (callbacks === null || callbacks === void 0
@@ -14402,7 +13577,6 @@ See the LICENSE file for details.
                 ) {
                     return;
                 }
-                // Notify callback that navigation occurred
                 if (
                     callbacks === null || callbacks === void 0
                         ? void 0
@@ -14411,7 +13585,6 @@ See the LICENSE file for details.
                     callbacks.onNavigate();
                 }
                 if (e.getModifierState("Shift")) {
-                    // Simple navigation without frame adjustments
                     if (e.keyName === "Up") {
                         if (listboxSelection.index === 0) {
                             listbox.selection = listbox.items.length - 1;
@@ -14426,10 +13599,8 @@ See the LICENSE file for details.
                         }
                     }
                 } else {
-                    // Full navigation with frame scrolling
                     if (e.keyName === "Up") {
                         if (listboxSelection.index == 0) {
-                            // jump to the bottom it at top
                             listbox.selection = listbox.items.length - 1;
                             listbox.frameStart =
                                 listbox.items.length - 1 - visibleListItems;
@@ -14440,7 +13611,6 @@ See the LICENSE file for details.
                         }
                     } else if (e.keyName === "Down") {
                         if (listboxSelection.index === listbox.items.length - 1) {
-                            // jump to the top if at the bottom
                             listbox.selection = 0;
                             listbox.frameStart = 0;
                         } else {
@@ -14462,13 +13632,6 @@ See the LICENSE file for details.
                             }
                         }
                     }
-                    /*
-                If a selection is made inside of the actual listbox frame by the user,
-                the API doesn't offer any way to know which part of the list is currently
-                visible in the listbox "frame". If the user was to re-enter the `q` edittext
-                and then hit an arrow key the above event listener will not work correctly so
-                I just move the next selection (be it up or down) to the middle of the "frame".
-                */
                     var updatedListboxSelection = listbox.selection;
                     if (
                         updatedListboxSelection.index < listbox.frameStart ||
@@ -14478,31 +13641,13 @@ See the LICENSE file for details.
                         listbox.frameStart =
                             updatedListboxSelection.index -
                             Math.floor(visibleListItems / 2);
-                    // don't move the frame if list items don't fill the available rows
                     if (listbox.items.length <= visibleListItems) return;
-                    // move the frame by revealing the calculated `listbox.frameStart`
                     listbox.revealItem(listbox.frameStart);
                 }
             }
         });
     }
-    /**
-     * A custom wrapper for a ScriptUI ListBox that supports multiple columns,
-     * optional tooltips, multiselect, and command loading.
-     */
-    var ListBoxWrapper = /** @class */ (function () {
-        /**
-         * Create a new ListBoxWrapper instance.
-         *
-         * @param commands - The command IDs to populate the listbox.
-         * @param container - The ScriptUI container to which the listbox will be added.
-         * @param name - A name for the listbox instance.
-         * @param bounds - The bounds of the listbox (left, top, right, bottom).
-         * @param columns - Column definitions including width and key.
-         * @param multiselect - Whether multiple items can be selected.
-         * @param helptip - Optional help tooltip for the listbox.
-         * @param listeners - Optional array of event listeners to attach to the listbox.
-         */
+    var ListBoxWrapper = (function () {
         function ListBoxWrapper(
             commands,
             container,
@@ -14522,17 +13667,6 @@ See the LICENSE file for details.
             this.listeners = listeners;
             this.listbox = this.make(commands, this.bounds);
         }
-        /**
-         * Create and configure a new ScriptUI ListBox with columns and commands.
-         *
-         * This private method handles the actual creation of the ListBox ScriptUI element,
-         * configuring columns, loading commands, setting up event listeners, and enabling
-         * end-to-end scrolling (jumping from top to bottom and vice versa with arrow keys).
-         *
-         * @param commands - Array of command IDs to populate the listbox.
-         * @param bounds - The bounds of the listbox [left, top, right, bottom].
-         * @returns The configured ListBox ScriptUI element.
-         */
         ListBoxWrapper.prototype.make = function (commands, bounds) {
             var columnTitles = [];
             var columnWidths = [];
@@ -14557,7 +13691,6 @@ See the LICENSE file for details.
                 this.loadCommands(listbox, commands, columnKeys);
                 listbox.selection = 0;
             }
-            // Allow end-to-end scrolling from within a listbox.
             listbox.addEventListener("keydown", function (e) {
                 if (
                     typeof listbox.selection === "number" ||
@@ -14583,33 +13716,11 @@ See the LICENSE file for details.
             this.addListeners(listbox);
             return listbox;
         };
-        /**
-         * Update the listbox with a new set of commands.
-         *
-         * This method replaces the current listbox with a new one containing the specified
-         * commands. Used when filtering/searching to update the displayed results. The old
-         * listbox is removed and a new one is created with the same configuration but
-         * different content.
-         *
-         * @param matches - Array of command IDs to display in the updated listbox.
-         */
         ListBoxWrapper.prototype.update = function (matches) {
             var newListbox = this.make(matches, this.listbox.bounds);
             this.container.remove(this.listbox);
             this.listbox = newListbox;
         };
-        /**
-         * Load commands into the listbox by creating ListItem elements.
-         *
-         * For each command ID, this method creates a ListItem and populates it with
-         * data from the command object. The first column shows the main text (usually
-         * the command name), and subsequent columns are populated from the command
-         * properties specified in columnKeys.
-         *
-         * @param listbox - The ListBox to populate with items.
-         * @param commands - Array of command IDs to load.
-         * @param columnKeys - Array of property keys to display in each column.
-         */
         ListBoxWrapper.prototype.loadCommands = function (
             listbox,
             commands,
@@ -14635,15 +13746,6 @@ See the LICENSE file for details.
                 item.id = id;
             }
         };
-        /**
-         * Attach all custom event listeners to the listbox.
-         *
-         * This method iterates through the listeners array provided during construction
-         * and attaches each listener function to the listbox. Common listeners include
-         * double-click handlers and custom navigation behaviors.
-         *
-         * @param listbox - The ListBox to attach listeners to.
-         */
         ListBoxWrapper.prototype.addListeners = function (listbox) {
             for (var _i = 0, _a = this.listeners; _i < _a.length; _i++) {
                 var listener = _a[_i];
@@ -14652,18 +13754,6 @@ See the LICENSE file for details.
         };
         return ListBoxWrapper;
     })();
-    /**
-     * Display a modal command palette dialog and return user selection.
-     *
-     * @param commands - List of available command IDs. Defaults to user startup commands.
-     * @param title - Window title. Defaults to `_title_.
-     * @param columns - Column configuration for listbox. Defaults to `paletteSettings.columnSets.standard`
-     * @param multiselect - Whether multiple commands can be selected. Defaults to false.
-     * @param showOnly - Optional subset of commands to display. Defaults to null.
-     * @param saveHistory - Whether to store query and command in user history. Defaults to true.
-     * @param scrollHistory - Should command history be accessible via the up arrow. Defaults to false.
-     * @returns The selected command ID(s), or false if cancelled.
-     */
     function commandPalette(
         commands,
         title,
@@ -14727,7 +13817,6 @@ See the LICENSE file for details.
         } else {
             q.active = true;
         }
-        // catch escape key and close window to stop default startup command reload on escape
         win.addEventListener("keydown", function (e) {
             if (e.keyName === "Escape") {
                 e.preventDefault();
@@ -14760,7 +13849,6 @@ See the LICENSE file for details.
             });
             userHistory.save();
         };
-        // allow scrolling through query history
         if (scrollHistory) {
             q.addEventListener("keydown", function (e) {
                 if (e.keyName === "Up" && historyScrolling) {
@@ -14783,7 +13871,6 @@ See the LICENSE file for details.
                 }
             });
         }
-        // allow scrolling of the listbox from within the query input
         if (!multiselect) {
             addListboxArrowKeyNavigation(q, list, {
                 shouldBlockUpNavigation: function () {
@@ -14818,16 +13905,10 @@ See the LICENSE file for details.
         }
         return false;
     }
-    /**
-     * Show dialog for entering custom commands in CSV format.
-     * @returns User-entered CSV string, or empty string if cancelled.
-     */
     function addCustomCommandsDialog() {
-        // Create the dialog window
         var win = new Window("dialog");
         win.text = localize(strings.add_custom_commands_dialog_title);
         win.alignChildren = "fill";
-        // Header text
         var header = win.add(
             "statictext",
             [0, 0, 500, 100],
@@ -14835,12 +13916,10 @@ See the LICENSE file for details.
             { justify: "center", multiline: true }
         );
         header.justify = "center";
-        // Multiline input field for custom commands
         var customCommands = win.add("edittext", [0, 0, 400, 200], "", {
             multiline: true,
         });
         customCommands.text = "";
-        // Dialog buttons
         var winButtons = win.add("group");
         winButtons.orientation = "row";
         winButtons.alignChildren = ["center", "center"];
@@ -14853,19 +13932,12 @@ See the LICENSE file for details.
             name: "cancel",
         });
         cancel.preferredSize.width = 100;
-        // Enable save button only if text is entered
         customCommands.onChanging = function () {
             save.enabled = customCommands.text.length > 0;
         };
-        // Show the dialog and return the result
         var confirmed = win.show() === 1;
         return confirmed ? customCommands.text : "";
     }
-    /**
-     * Build or edit a picker command via dialog interface.
-     * @param editPickerId The ID of the picker to edit, if any.
-     * @returns Picker configuration object or false if canceled.
-     */
     function pickerBuilder(editPickerId) {
         var overwrite = false;
         var win = new Window("dialog");
@@ -14953,12 +14025,6 @@ See the LICENSE file for details.
         }
         return false;
     }
-    /**
-     * Launch the Workflow Builder dialog to create or edit command workflows.
-     * @param commands List of available command IDs.
-     * @param editWorkflowId ID of the workflow to edit, or undefined to create a new one.
-     * @returns Workflow data or false if cancelled.
-     */
     function workflowBuilder(commands, editWorkflowId) {
         var qCache = {};
         var overwrite = false;
@@ -14966,7 +14032,6 @@ See the LICENSE file for details.
         var win = new Window("dialog");
         win.text = localize(strings.wf_builder);
         win.alignChildren = "fill";
-        // Search panel
         var pSearch = win.add("panel", undefined, localize(strings.cd_search_for));
         pSearch.alignChildren = ["fill", "center"];
         pSearch.margins = 20;
@@ -15070,7 +14135,6 @@ See the LICENSE file for details.
         } else {
             q.active = true;
         }
-        // catch escape key and close window to stop default startup command reload/flicker on escape
         win.addEventListener("keydown", function (e) {
             if (e.keyName === "Escape") {
                 e.preventDefault();
@@ -15086,10 +14150,8 @@ See the LICENSE file for details.
                 matches = matcher(q.text, commands);
                 qCache[q.text] = matches;
             }
-            // alert(matches.length.toString());
             list.update(matches);
         };
-        // allow scrolling of the listbox from within the query input
         addListboxArrowKeyNavigation(q, list);
         steps.listbox.onChange = function () {
             workflowName.enabled = steps.listbox.items.length > 0;
@@ -15186,17 +14248,11 @@ See the LICENSE file for details.
         }
         return false;
     }
-    /**
-     * Launch the Startup Command Builder dialog for selecting and ordering startup commands.
-     * @param commands List of available command IDs.
-     * @returns An array of selected command IDs in the desired startup order, or `false` if cancelled.
-     */
     function startupBuilder(commands) {
         var qCache = {};
         var win = new Window("dialog");
         win.text = localize(strings.startup_builder);
         win.alignChildren = "fill";
-        // Search Panel
         var pSearch = win.add("panel", undefined, localize(strings.cd_search_for));
         pSearch.alignChildren = ["fill", "center"];
         pSearch.margins = 20;
@@ -15213,7 +14269,6 @@ See the LICENSE file for details.
             localize(strings.startup_helptip),
             [addToStepsOnDoubleClick]
         );
-        // Steps Panel
         var pSteps = win.add("panel", undefined, localize(strings.startup_steps));
         pSteps.alignChildren = ["fill", "center"];
         pSteps.margins = 20;
@@ -15235,7 +14290,6 @@ See the LICENSE file for details.
         down.preferredSize.width = 100;
         var del = stepButtons.add("button", undefined, localize(strings.step_delete));
         del.preferredSize.width = 100;
-        // Window Buttons
         var winButtons = win.add("group");
         winButtons.orientation = "row";
         winButtons.alignChildren = ["center", "center"];
@@ -15253,7 +14307,6 @@ See the LICENSE file for details.
         } else {
             q.active = true;
         }
-        // catch escape key and close window to stop default startup command reload/flicker on escape
         win.addEventListener("keydown", function (e) {
             if (e.keyName === "Escape") {
                 e.preventDefault();
@@ -15271,7 +14324,6 @@ See the LICENSE file for details.
             }
             list.update(matches);
         };
-        // allow scrolling of the listbox from within the query input
         addListboxArrowKeyNavigation(q, list);
         up.onClick = function () {
             var rawSelection = steps.listbox.selection;
@@ -15345,11 +14397,6 @@ See the LICENSE file for details.
         }
         return false;
     }
-    /**
-     * Process a command by its ID.
-     * Handles workflows recursively and validates them before execution.
-     * @param id - The ID of the command to process.
-     */
     function processCommand(id) {
         var command = commandsData[id];
         logger.log("processing command:", command.id);
@@ -15357,7 +14404,6 @@ See the LICENSE file for details.
             var badActions = checkWorkflowActions(command.actions);
             if (badActions.length > 0) {
                 alert(localize(strings.wf_needs_attention, badActions.join("\n")));
-                // TODO: should bad actions be displayed differently in the workflow builder?
                 buildWorkflow(id);
                 userPrefs.save();
                 return;
@@ -15370,12 +14416,7 @@ See the LICENSE file for details.
             executeAction(command);
         }
     }
-    /**
-     * Execute a command action based on its type.
-     * @param command - The command object to execute.
-     */
     function executeAction(command) {
-        // Check if an active document is required
         if (command.docRequired && app.documents.length < 1) {
             var shouldProceed = confirm(
                 localize(strings.cd_active_document_required, command.action),
@@ -15384,7 +14425,6 @@ See the LICENSE file for details.
             );
             if (!shouldProceed) return;
         }
-        // Check if an active selection is required
         if (command.selRequired && app.activeDocument.selection.length < 1) {
             var shouldProceed = confirm(
                 localize(strings.cd_active_selection_required, command.action),
@@ -15440,36 +14480,12 @@ See the LICENSE file for details.
             alert(localize(alertString, name, e.message));
         }
     }
-    /**
-     * Execute an Adobe Illustrator menu command.
-     *
-     * Calls the native app.executeMenuCommand() with the command's action string.
-     * This is the primary way to trigger Illustrator's built-in menu functionality.
-     *
-     * @param command - Command entry containing the menu command action string.
-     */
     function menuAction(command) {
         app.executeMenuCommand(command.action);
     }
-    /**
-     * Select a tool in Adobe Illustrator.
-     *
-     * Activates a tool using the app.selectTool() API. Note: This API is not
-     * officially documented in ExtendScript, hence the @ts-ignore directive.
-     *
-     * @param command - Command entry containing the tool identifier.
-     */
     function toolAction(command) {
         app.selectTool(command.action);
     }
-    /**
-     * Execute an Adobe Illustrator action (script recorded in Actions panel).
-     *
-     * Runs a user-recorded action using app.doScript(). The action must exist
-     * in the specified action set, or this will fail.
-     *
-     * @param command - Command entry containing the action name and set.
-     */
     function actionAction(command) {
         var actionName = isLocalizedEntry(command.name)
             ? localize(command.name)
@@ -15477,15 +14493,6 @@ See the LICENSE file for details.
         app.doScript(actionName, command.set);
         app.redraw();
     }
-    /**
-     * Open a bookmarked file or folder.
-     *
-     * Opens a file in Illustrator (if it's a .ai file) or opens a folder in the
-     * system file browser. Checks that the file/folder exists before attempting
-     * to open it.
-     *
-     * @param command - Command entry containing the file/folder path.
-     */
     function bookmarkAction(command) {
         if (command.type === "file") {
             var f = new File(command.path);
@@ -15503,18 +14510,6 @@ See the LICENSE file for details.
             f.execute();
         }
     }
-    /**
-     * Display a custom picker dialog and store the user's selection(s).
-     *
-     * Creates temporary command entries for each picker option, displays them in
-     * a command palette, and stores the selected option(s) in the environment
-     * variable 'aic_picker_last' for external scripts to access.
-     *
-     * Pickers support both single and multi-select modes based on the picker
-     * configuration.
-     *
-     * @param picker - Picker configuration with name, options, and multiselect flag.
-     */
     function runCustomPicker(picker) {
         var commands = [];
         for (var i = 0; i < picker.commands.length; i++) {
@@ -15547,14 +14542,6 @@ See the LICENSE file for details.
         });
         $.setenv("aic_picker_last", args.toSource());
     }
-    /**
-     * Execute an external ExtendScript (.jsx or .js) file.
-     *
-     * Loads and runs a script file using $.evalFile(). The script is executed
-     * in the current scope. Checks that the file exists before attempting to run it.
-     *
-     * @param command - Command entry containing the script file path.
-     */
     function scriptAction(command) {
         var f = new File(command.path);
         if (!f.exists) {
@@ -15563,15 +14550,10 @@ See the LICENSE file for details.
         }
         $.evalFile(f);
     }
-    /**
-     * Execute internal script actions.
-     * @param command Command to execute.
-     */
     function internalAction(command) {
         var shouldWritePrefs = true;
         var action = command.action;
         switch (action) {
-            // config commands
             case "about":
                 shouldWritePrefs = false;
                 about();
@@ -15618,7 +14600,6 @@ See the LICENSE file for details.
                 shouldWritePrefs = false;
                 settings();
                 break;
-            // builtin commands
             case "addCustomCommands":
                 addCustomCommands();
                 break;
@@ -15726,21 +14707,16 @@ See the LICENSE file for details.
             userPrefs.save();
         }
     }
-    /**
-     * Ai Command Palette About Dialog.
-     */
     function about() {
         var win = new Window("dialog");
         win.text = localize(strings.about);
         win.alignChildren = "fill";
-        // Script info panel
         var pAbout = win.add("panel");
         pAbout.margins = 20;
         pAbout.alignChildren = "fill";
         pAbout.add("statictext", [0, 0, 500, 100], localize(strings.description), {
             multiline: true,
         });
-        // Info + GitHub link
         var links = pAbout.add("group");
         links.orientation = "column";
         links.alignChildren = ["center", "center"];
@@ -15751,21 +14727,16 @@ See the LICENSE file for details.
             ": https://github.com/joshbduncan/AiCommandPalette"
         );
         var github = links.add("statictext", undefined, githubText);
-        // Footer buttons
         var winButtons = win.add("group");
         winButtons.orientation = "row";
         winButtons.alignChildren = ["center", "center"];
         var ok = winButtons.add("button", undefined, localize(strings.button_ok));
         ok.preferredSize.width = 100;
-        // Event: click GitHub link
         github.addEventListener("mousedown", function () {
             openURL("https://github.com/joshbduncan/AiCommandPalette");
         });
         win.show();
     }
-    /**
-     * Present a palette with Ai Command Palette configuration commands.
-     */
     function settings() {
         var configCommands = filterCommands(null, ["config"], true, false, [
             "config_settings",
@@ -15780,18 +14751,12 @@ See the LICENSE file for details.
         var commandId = Array.isArray(result) ? result[0] : result;
         processCommand(commandId);
     }
-    /**
-     * Present the Picker Builder dialog for building/editing a user picker.
-     * @param editPickerId Id of a current user picker to edit.
-     * @returns The created or updated PickerCommandEntry, or undefined if cancelled.
-     */
     function buildPicker(editPickerId) {
         var result = pickerBuilder(editPickerId);
         if (!result) return;
         var id;
         var picker;
         if (result.overwrite) {
-            // Update existing picker
             for (var i = prefs.pickers.length - 1; i >= 0; i--) {
                 if (prefs.pickers[i].name === result.name) {
                     prefs.pickers[i].commands = result.commands;
@@ -15802,7 +14767,6 @@ See the LICENSE file for details.
                 }
             }
         } else {
-            // Create new picker
             id = generateCommandId("picker_".concat(result.name.toLowerCase()));
             picker = {
                 id: id,
@@ -15821,10 +14785,6 @@ See the LICENSE file for details.
         addToStartup([id]);
         return picker;
     }
-    /**
-     * Present a palette with all user-created pickers. The selected picker will
-     * be opened in the picker builder.
-     */
     function editPicker() {
         var pickers = filterCommands(null, ["picker"], true, false);
         var result = commandPalette(
@@ -15837,9 +14797,6 @@ See the LICENSE file for details.
         var commandId = Array.isArray(result) ? result[0] : result;
         processCommand(commandId);
     }
-    /**
-     * Clear all user history.
-     */
     function clearHistory() {
         var confirmed = confirm(
             localize(strings.cd_clear_history_confirm),
@@ -15851,9 +14808,6 @@ See the LICENSE file for details.
             alert(localize(strings.history_cleared));
         }
     }
-    /**
-     * Present the Ai Command Palette startup configurator dialog.
-     */
     function customizeStartup() {
         var availableStartupCommands = filterCommands(
             null,
@@ -15868,18 +14822,14 @@ See the LICENSE file for details.
                 "builtin",
                 "config",
             ],
-            true, // showHidden
-            true, // showNonRelevant
-            prefs.startupCommands // hideSpecificCommands
+            true,
+            true,
+            prefs.startupCommands
         );
-        // Show the startup builder dialog
         var result = startupBuilder(availableStartupCommands);
         if (!result) return;
         prefs.startupCommands = result;
     }
-    /**
-     * Present a dialog for adding/editing custom user commands.
-     */
     function addCustomCommands() {
         function parseCSVLine(line) {
             var result = [];
@@ -15907,9 +14857,6 @@ See the LICENSE file for details.
         }
         var result = addCustomCommandsDialog();
         if (!result || result == "") return;
-        // if (!("customCommands" in prefs)) {
-        //     prefs.customCommands = [];
-        // }
         var newCustomCommandIds = [];
         var normalized = result.replace(/\r\n|\r/g, "\n");
         var lines = normalized.split("\n");
@@ -15941,10 +14888,6 @@ See the LICENSE file for details.
         }
         addToStartup(newCustomCommandIds);
     }
-    /**
-     * Present a palette with all user-created commands (e.g. bookmarks, scripts, workflows).
-     * The selected command(s) will be deleted.
-     */
     function deleteCommand() {
         var deletableCommands = filterCommands(
             null,
@@ -15969,7 +14912,6 @@ See the LICENSE file for details.
             localize(strings.cd_delete_confirm_title)
         );
         if (!confirmed) return;
-        // Delete from prefs collections
         var typesToCheck = [
             prefs.workflows,
             prefs.bookmarks,
@@ -15988,17 +14930,12 @@ See the LICENSE file for details.
                 }
             }
         }
-        // Delete from startup commands
         for (var i = prefs.startupCommands.length - 1; i >= 0; i--) {
             if (result.includes(prefs.startupCommands[i])) {
                 prefs.startupCommands.splice(i, 1);
             }
         }
     }
-    /**
-     * Present a palette with all user watched folders.
-     * The selected command(s) will be deleted.
-     */
     function removeWatchedFolders() {
         var commands = [];
         for (var i = 0; i < prefs.watchedFolders.length; i++) {
@@ -16041,11 +14978,9 @@ See the LICENSE file for details.
         var indexesToRemove = commandIds.map(function (id) {
             return commandsData[id].index;
         });
-        // sort descending so we remove from the end first
         indexesToRemove.sort(function (a, b) {
             return b - a;
         });
-        // Delete watched folders from prefs
         for (
             var _i = 0, indexesToRemove_1 = indexesToRemove;
             _i < indexesToRemove_1.length;
@@ -16057,22 +14992,12 @@ See the LICENSE file for details.
             }
         }
     }
-    /**
-     * Toggle fuzzy command matching in user preferences.
-     */
     function toggleFuzzyMatching() {
         prefs.fuzzy = Boolean(!prefs.fuzzy);
     }
-    /**
-     * Toggle debug logging by updating the environment variable.
-     */
     function toggleDebugLogging() {
         $.setenv("AICP_DEBUG_LOGGING", debugLogging ? "false" : "true");
     }
-    /**
-     * Present a palette with all possible commands (excluding config commands).
-     * The selected command(s) will be hidden from the palette.
-     */
     function hideCommand() {
         var hideableCommands = filterCommands(
             null,
@@ -16100,21 +15025,12 @@ See the LICENSE file for details.
         var commandIds = Array.isArray(result) ? result : [result];
         prefs.hiddenCommands = prefs.hiddenCommands.concat(commandIds);
     }
-    /**
-     * Reveal the plugin log file in the file system.
-     */
     function revealLog() {
         logger.reveal();
     }
-    /**
-     * Reveal the user preference file in the file system.
-     */
     function revealPrefFile() {
         userPrefs.reveal();
     }
-    /**
-     * Present a palette with all built-in commands.
-     */
     function builtinCommands() {
         var builtins = filterCommands(null, ["builtin"], true, false);
         var result = commandPalette(
@@ -16127,10 +15043,6 @@ See the LICENSE file for details.
         var commandId = Array.isArray(result) ? result[0] : result;
         processCommand(commandId);
     }
-    /**
-     * Present a palette with all hidden commands.
-     * The selected command will be unhidden.
-     */
     function unhideCommand() {
         var result = commandPalette(
             prefs.hiddenCommands,
@@ -16143,7 +15055,7 @@ See the LICENSE file for details.
         if (typeof result === "string") {
             ids = [result];
         } else {
-            ids = result; // CommandId[]
+            ids = result;
         }
         for (var i = 0; i < ids.length; i++) {
             var id = ids[i];
@@ -16151,21 +15063,6 @@ See the LICENSE file for details.
             if (index !== -1) prefs.hiddenCommands.splice(index, 1);
         }
     }
-    // AI COMMAND PALETTE BUILT-IN OPERATIONS
-    /**
-     * Display a comprehensive report about the active document.
-     *
-     * Generates and displays a dialog containing detailed information about the
-     * current document, including:
-     * - File information (name, path, color space, resolution, etc.)
-     * - Document dimensions and artboards
-     * - Layer structure and properties
-     * - Pattern, swatch, and symbol counts
-     * - Font usage and text properties
-     *
-     * The report can be customized by checking/unchecking sections, and can be
-     * saved to a text file.
-     */
     function documentReport() {
         var doc = app.activeDocument;
         var rulerUnits = doc.rulerUnits.toString().split(".").pop();
@@ -16454,18 +15351,6 @@ See the LICENSE file for details.
         var commandId = Array.isArray(result) ? result[0] : result;
         processCommand(commandId);
     }
-    /**
-     * Launch the Workflow Builder to create or edit a command workflow.
-     *
-     * Displays a dialog where users can select commands from a filtered list and
-     * arrange them into a sequential workflow. Workflows allow users to execute
-     * multiple commands with a single palette selection.
-     *
-     * If editWorkflowId is provided, the workflow is opened for editing; otherwise,
-     * a new workflow is created.
-     *
-     * @param editWorkflowId - Optional ID of an existing workflow to edit.
-     */
     function buildWorkflow(editWorkflowId) {
         var commandsToHide = [
             "builtin_editPicker",
@@ -16518,10 +15403,6 @@ See the LICENSE file for details.
         }
         addToStartup([id]);
     }
-    /**
-     * Present a palette with all user-created workflows. The selected workflow will
-     * be opened in the workflow builder.
-     */
     function editWorkflow() {
         var workflows = filterCommands(null, ["workflow"], true, false);
         var result = commandPalette(
@@ -16534,10 +15415,6 @@ See the LICENSE file for details.
         var commandId = Array.isArray(result) ? result[0] : result;
         buildWorkflow(commandId);
     }
-    /**
-     * Export the active artboard as a PNG file using the `Document.imageCapture()` method.
-     * https://ai-scripting.docsforadobe.dev/jsobjref/Document.html?#document-imagecapture
-     */
     function imageCapture() {
         if (app.documents.length === 0) {
             alert(localize(strings.no_active_document));
@@ -16552,7 +15429,6 @@ See the LICENSE file for details.
             alert(localize(strings.fl_error_writing, file));
             return;
         }
-        // Ensure the filename ends with ".png"
         if (!file.name.toLowerCase().endsWith(".png")) {
             file.rename("".concat(file.name, ".png"));
         }
@@ -16560,10 +15436,6 @@ See the LICENSE file for details.
             alert(localize(strings.file_saved, file.fsName));
         }
     }
-    /**
-     * Export active document dataset variables to a file.
-     * https://ai-scripting.docsforadobe.dev/jsobjref/Document.html#document-exportvariables
-     */
     function exportVariables() {
         var doc = app.activeDocument;
         if (doc.variables.length === 0) {
@@ -16583,10 +15455,6 @@ See the LICENSE file for details.
             alert(localize(strings.file_saved, file.fsName));
         }
     }
-    /**
-     * Load all artboards from the active document as objects into the data model.
-     * @returns Artboard command ids.
-     */
     function loadActiveDocumentArtboards() {
         var artboardIds = [];
         var artboards = app.activeDocument.artboards;
@@ -16608,10 +15476,6 @@ See the LICENSE file for details.
         }
         return artboardIds;
     }
-    /**
-     * Present a goto palette with artboards from the active document.
-     * The selected artboard is made active and brought into view.
-     */
     function goToArtboard() {
         var _a;
         var artboards = loadActiveDocumentArtboards();
@@ -16645,10 +15509,6 @@ See the LICENSE file for details.
         app.activeDocument.artboards.setActiveArtboardIndex(idx);
         app.executeMenuCommand("fitin");
     }
-    /**
-     * Load all page items from the active document as objects into the data model.
-     * @returns Object command IDs.
-     */
     function loadActiveDocumentPageItems() {
         var pageItems = [];
         for (var i = 0; i < app.activeDocument.pageItems.length; i++) {
@@ -16671,10 +15531,6 @@ See the LICENSE file for details.
         }
         return pageItems;
     }
-    /**
-     * Present a goto palette with named objects from the active document.
-     * The selected object is selected within the UI and brought into view.
-     */
     function goToNamedObject() {
         var _a;
         var doc = app.activeDocument;
@@ -16718,14 +15574,9 @@ See the LICENSE file for details.
         }
         doc.selection = null;
         pageItem.selected = true;
-        // reset zoom for current document
         doc.views[0].zoom = 1;
         zoomIntoPageItem(pageItem);
     }
-    /**
-     * Load all open documents into the data model.
-     * @returns Document command IDs.
-     */
     function loadOpenDocuments() {
         var _a, _b;
         var openDocuments = [];
@@ -16758,10 +15609,6 @@ See the LICENSE file for details.
         }
         return openDocuments;
     }
-    /**
-     * Present a goto palette with currently open documents.
-     * The selected document is activated.
-     */
     function goToOpenDocument() {
         var _a;
         var openDocuments = loadOpenDocuments();
@@ -16795,9 +15642,6 @@ See the LICENSE file for details.
         var entry = commandsData[commandId];
         entry.document.activate();
     }
-    /**
-     * Load file bookmarks from the user's system into the command palette.
-     */
     function loadFileBookmark() {
         var acceptedTypes = [
             ".ai",
@@ -16847,7 +15691,7 @@ See the LICENSE file for details.
             ".tiff",
             ".webp",
             ".wmf",
-        ]; // file types taken from Ai open dialog
+        ];
         var re = new RegExp("".concat(acceptedTypes.join("|"), "$"), "i");
         var files = loadFileTypes(
             localize(strings.bm_load_bookmark),
@@ -16890,9 +15734,6 @@ See the LICENSE file for details.
         );
         addToStartup(newBookmarkIds);
     }
-    /**
-     * Load folder bookmarks from the user's system into the command palette.
-     */
     function loadFolderBookmark() {
         var folder = Folder.selectDialog(localize(strings.bm_load_bookmark));
         if (!folder) return;
@@ -16921,14 +15762,9 @@ See the LICENSE file for details.
         prefs.bookmarks.push(bookmark);
         addToStartup([bookmark.id]);
     }
-    /**
-     * Watch a folder, and load all found scripts into the command palette.
-     */
     function watchScriptFolder() {
-        // pick a folder
         var folder = Folder.selectDialog(localize(strings.watched_folder_select));
         if (!folder) return;
-        // check prefs to see if folder is already watched
         if (prefs.watchedFolders.includes(folder.fsName)) {
             logger.log("watched folder already in prefs: ".concat(folder.fsName));
             alert(localize(strings.folder_already_watched, decodeURI(folder.name)));
@@ -16936,9 +15772,6 @@ See the LICENSE file for details.
         }
         prefs.watchedFolders.push(folder.fsName);
     }
-    /**
-     * Load ExtendScript (.jsx and .js) scripts into the command palette.
-     */
     function loadScripts() {
         var acceptedTypes = [".jsx", ".js"];
         var re = new RegExp("".concat(acceptedTypes.join("|"), "$"), "i");
@@ -16976,10 +15809,6 @@ See the LICENSE file for details.
         prefs.scripts = prefs.scripts.concat(scripts);
         addToStartup(newScriptIDs);
     }
-    /**
-     * Present a palette with the most recent user commands.
-     * The selected is executed.
-     */
     function recentUserCommands() {
         var result = commandPalette(
             mostRecentCommands,
@@ -16991,10 +15820,6 @@ See the LICENSE file for details.
         var commandId = Array.isArray(result) ? result[0] : result;
         processCommand(commandId);
     }
-    /**
-     * Load recently opened files as objects into the data model.
-     * @returns File command ids.
-     */
     function loadRecentFiles() {
         var recentFiles = [];
         var fileCount = app.preferences.getIntegerPreference("RecentFileNumber");
@@ -17021,10 +15846,6 @@ See the LICENSE file for details.
         }
         return recentFiles;
     }
-    /**
-     * Present a palette with recently opened files.
-     * The selected file is opened.
-     */
     function recentFiles() {
         var _a;
         var arr = loadRecentFiles();
@@ -17060,15 +15881,9 @@ See the LICENSE file for details.
             alert(localize(strings.fl_error_loading, result));
         }
     }
-    /**
-     * Redraw all application windows.
-     */
     function redrawWindows() {
         app.redraw();
     }
-    /**
-     * Reveal the active document on the user's system by opening its parent folder.
-     */
     function revealActiveDocument() {
         var _a;
         if (app.documents.length === 0) {
@@ -17086,11 +15901,6 @@ See the LICENSE file for details.
             alert(localize(strings.active_document_not_saved));
         }
     }
-    /**
-     * Check if any workflow actions are currently non-active (nonexistent or AI version incompatible).
-     * @param actions Array of command IDs representing workflow action steps.
-     * @returns Array of non-active command IDs.
-     */
     function checkWorkflowActions(actions) {
         var badActions = [];
         for (var i = 0; i < actions.length; i++) {
@@ -17105,26 +15915,20 @@ See the LICENSE file for details.
         return badActions;
     }
     logger.log("**SCRIPT LAUNCH**", _title, "v" + _version, $.fileName);
-    // load the user data
     userPrefs.load(true);
     userActions.load();
     userHistory.load();
     userPrefs.loadWatchedScripts();
-    // apply version updates for user preferences
     if (versionUpdate0_16_0) {
         userPrefs.update("0.16.0");
         userHistory.update("0.16.0");
     }
-    // debugging flag
     devMode && devInfo.save();
-    // set command palette matching algo
     var matcher = prefs["fuzzy"] ? fuzzy : scoreMatches;
     logger.log("fuzzy matcher ".concat(prefs["fuzzy"] ? "enabled" : "disabled"));
-    // add basic defaults to the startup on a first-run/fresh install
     if (!prefs.startupCommands) {
         prefs.startupCommands = ["builtin_recentCommands", "config_settings"];
     }
-    // SHOW THE COMMAND PALETTE
     var queryableCommands = filterCommands(null, null, false, false);
     var startupCommands = filterCommands(prefs.startupCommands, null, false, false);
     var result = commandPalette(
