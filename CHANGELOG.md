@@ -9,18 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Traditional Chinese (`zh_TW`) interface localization
-- Traditional Chinese Astute Graphics custom command reference
+- 756 Traditional Chinese Illustrator command search names
+- 134 bundled Traditional Chinese Astute Graphics command aliases
 - Illustrator locale check script
 
 ### Changed
 
 - Load locale-specific string overrides from `data/strings.<locale>.csv`
+- Search all bundled localized command names and Command Actions
 - Add Prettier as a development dependency for reproducible data generation
 - Emit the distributable JSX without source comments while preserving comments in the TypeScript source
 
 ### Fixed
 
 - Localize remaining user-facing labels in the Traditional Chinese interface
+- Fall back to English when a command name has no `zh_TW` value
+- Include Traditional Chinese Illustrator and Astute Graphics names in the generated JSX command data
 - Display missing or version-incompatible workflow status text without modifying saved command IDs
 - Correct workflow command version checks and handle cancelled picker dialogs safely
 - Preserve watched folder paths in removal confirmations
